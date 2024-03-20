@@ -1,0 +1,3942 @@
+<!DOCTYPE html><html lang="en" class="no-js">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-domain-script="6e91be4c-3145-4ea2-aa64-89d716064836" data-dLayer-ignore="true" data-document-language="true"></script><script type="text/javascript">function OptanonWrapper() {}</script><script>window.dataLayer = window.dataLayer || []; dataLayer.push({ event: 'dataLayer-initialized', user: { user_unity_id: undefined, user_logged_in: 'no' }, environment: { environment_locale: 'en-us', environment_currency: undefined }});</script><script>var offline=(location.href.indexOf('docs.unity3d.com')==-1)?true:false;if(!offline){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);  })(window,document,'script','dataLayer','GTM-5V25JL6');}</script><link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unity Manual</title>
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
+<meta name="author" content="Unity Technologies">
+<link rel="shortcut icon" href="https://unity.com/themes/contrib/unity_base/images/favicons/favicon.ico">
+<link rel="icon" type="image/png" href="../StaticFilesManual/images/favicons/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../StaticFilesManual/images/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../StaticFilesManual/images/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="../StaticFilesManual/images/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../StaticFilesManual/images/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../StaticFilesManual/images/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon-precomposed" href="../StaticFilesManual/images/favicons/apple-touch-icon.png">
+<meta name="msapplication-TileColor" content="#222c37">
+<meta name="msapplication-TileImage" content="../StaticFilesManual/images/favicons/tileicon-144x144.png">
+<script type="text/javascript" src="https://docs.unity3d.com/StaticFilesConfig/UnityVersionsInfo.js"></script><script type="text/javascript" src="../StaticFilesManual/js/jquery.js?ts=20231214"></script><script type="text/javascript" src="../StaticFilesManual/js/core.js?ts=20231214"></script><script type="text/javascript" src="docdata/toc.js?ts=20231214"></script><script type="text/javascript" src="docdata/global_toc.js?ts=20231214"></script><link rel="stylesheet" type="text/css" href="../StaticFilesManual/css/core.css?ts=20231214">
+<link rel="stylesheet" href="../StaticFilesManual/css/prism.css">
+<script src="../StaticFilesManual/js/prism.js"></script><script src="/StaticFilesConfig/feedback/feedback.js"></script><script src="../StaticFilesManual/js/jquery.sidebar.min.js"></script><link rel="stylesheet" href="../StaticFilesManual/css/mobileoptimisation.css">
+<script src="../StaticFilesManual/js/mobileoptimisation.js"></script>
+</head>
+<body>
+<div id="DocsAnalyticsData" data-area="none" data-pagetype="manual"></div>
+<div class="header-wrapper">
+<div id="header" class="header"><div class="content">
+<div class="spacer"><div class="menu">
+<div id="nav-open" for="nav-input"><span></span></div>
+<div class="logo"><a href="https://docs.unity3d.com"></a></div>
+<div class="search-form"><form action="30_search.html" method="get" class="apisearch">
+<input type="text" name="q" placeholder="Search manual..." autosave="Unity Reference" results="5" class="sbox field" id="q"><input type="submit" class="submit">
+</form></div>
+<ul>
+<li><a href="../Manual/index.html" class="selected">Manual</a></li>
+<li><a href="../ScriptReference/index.html">Scripting API</a></li>
+</ul>
+</div></div>
+<div class="more">
+<div class="filler"></div>
+<ul><li><a href="https://unity.com/">unity.com</a></li></ul>
+</div>
+</div></div>
+<div class="toolbar"><div class="content">
+<div class="toggle version-number" id="VersionNumber" data-target=".otherversionscontent">
+                                Version: <b>2022.3</b><div class="otherversionscontent" id="OtherVersionsContent" style="display: none;">
+<ul id="OtherVersionsContentUl"></ul>
+<div id="otherVersionsLegend"><ul>
+<li>
+<div id="supportedColour" class="legendBox"></div>Supported</li>
+<li>
+<div id="notFoundColour" class="legendBox"></div>Legacy</li>
+</ul></div>
+</div>
+<div id="VersionSwitcherArrow" class="arrow versionSwitcherArrow"></div>
+</div>
+<div class="lang-switcher"><div class="current toggle" data-target=".lang-list">
+<div class="lbl">Language
+:                <span class="b">English</span>
+</div>
+<div class="arrow"></div>
+<div class="lang-list" style="display:none;"><ul>
+<li><a href="/Manual/TableOfContents.html">English</a></li>
+<li><a href="/cn/current/Manual/TableOfContents.html">中文</a></li>
+<li><a href="/ja/current/Manual/TableOfContents.html">日本語</a></li>
+<li><a href="/kr/current/Manual/TableOfContents.html">한국어</a></li>
+</ul></div>
+</div></div>
+</div></div>
+<div class="mobileLogo"><a href="https://docs.unity3d.com"></a></div>
+</div>
+<div id="master-wrapper" class="master-wrapper clear">
+<div id="sidebar" class="sidebar"><div class="sidebar-wrap"><div class="content"><div class="sidebar-menu"><div class="toc" id="customScrollbar">
+<h2>Unity Manual</h2>
+<div class="search-form sidebar-search-form"><form action="30_search.html" method="get" class="apisearch">
+<input type="text" name="q" placeholder="Search manual..." autosave="Unity Reference" results="5" class="sbox field" id="q"><input type="submit" id="mobileSearchBtn" class="submit" value="Search">
+</form></div>
+<div class="toggle version-number sidebar-version-switcher" id="VersionNumber" data-target=".otherversionscontent"><form id="otherVersionsContentMobileForm"><div class="ui-field-contain">
+<label for="select-native-4">Version: 2022.3</label><select name="select-native-4" id="versionsSelectMobile"><option>Select a different version</option>
+<optgroup id="versionsWithThisPageMobile" label="Versions with this page"></optgroup>
+<optgroup id="versionsWithoutThisPageMobile" label="Versions without this page"></optgroup></select>
+</div></form></div>
+<div class="lang-switcher"><div class="current toggle" data-target=".lang-list">
+<div class="lbl">Language
+:                <span class="b">English</span>
+</div>
+<div class="arrow"></div>
+<div class="lang-list" style="display:none;"><ul>
+<li><a href="/Manual/TableOfContents.html">English</a></li>
+<li><a href="/cn/current/Manual/TableOfContents.html">中文</a></li>
+<li><a href="/ja/current/Manual/TableOfContents.html">日本語</a></li>
+<li><a href="/kr/current/Manual/TableOfContents.html">한국어</a></li>
+</ul></div>
+</div></div>
+</div></div></div></div></div>
+<div id="content-wrap" class="content-wrap"><div class="content-block"><div class="content">
+<div class="section">
+<div class="breadcrumbs clear"><ul></ul></div>
+<div class="mb20"><div class="nextprev clear"></div></div>
+<div id="_leavefeedback"></div>
+<h1>Unity Manual ToC</h1>
+<!--BeginSwitchLink--><!--EndSwitchLink-->
+<div class="clear"></div>
+
+<ul>
+<li><p><a href="UnityManual.html"> Unity User Manual 2022.3 (LTS)</a></p></li>
+<li>
+<a href="UnityManual.html"> Unity User Manual 2022.3 (LTS)</a>
+ * <a href="ManualVersions.html"> Documentation versions</a>
+ * <a href="OfflineDocumentation.html"> Offline documentation</a>
+ * <a href="TermsOfUse.html"> Trademarks and terms of use</a>
+
+<ul>
+<li>
+<a href="WhatsNew2022LTS.html"> New in Unity 2022 LTS</a>
+
+<ul>
+<li><a href="WhatsNew20222.html"> New in Unity 2022.2</a></li>
+<li><a href="WhatsNew20221.html"> New in Unity 2022.1</a></li>
+</ul>
+</li>
+<li>
+<a href="PackagesList.html"> Packages and feature sets</a>
+
+<ul>
+<li>
+<a href="pack-safe.html"> Released packages</a>
+
+<ul>
+<li><a href="com.unity.2d.animation.html"> 2D Animation </a></li>
+<li><a href="com.unity.2d.aseprite.html"> 2D Aseprite Importer </a></li>
+<li><a href="com.unity.2d.pixel-perfect.html"> 2D Pixel Perfect </a></li>
+<li><a href="com.unity.2d.psdimporter.html"> 2D PSD Importer </a></li>
+<li><a href="com.unity.2d.spriteshape.html"> 2D SpriteShape </a></li>
+<li><a href="com.unity.2d.tilemap.extras.html"> 2D Tilemap Extras </a></li>
+<li><a href="com.unity.adaptiveperformance.html"> Adaptive Performance </a></li>
+<li><a href="com.unity.addressables.html"> Addressables </a></li>
+<li><a href="com.unity.services.levelplay.html"> Ads Mediation </a></li>
+<li><a href="com.unity.ads.html"> Advertisement Legacy </a></li>
+<li><a href="com.unity.ai.navigation.html"> AI Navigation </a></li>
+<li><a href="com.unity.formats.alembic.html"> Alembic </a></li>
+<li><a href="com.unity.services.analytics.html"> Analytics </a></li>
+<li><a href="com.unity.mobile.android-logcat.html"> Android Logcat </a></li>
+<li><a href="com.unity.animation.rigging.html"> Animation Rigging </a></li>
+<li><a href="com.unity.xr.arkit.html"> Apple ARKit XR Plugin </a></li>
+<li><a href="com.unity.xr.arfoundation.html"> AR Foundation </a></li>
+<li><a href="com.unity.services.authentication.html"> Authentication </a></li>
+<li><a href="com.unity.services.cloud-build.html"> Build Automation </a></li>
+<li><a href="com.unity.burst.html"> Burst </a></li>
+<li><a href="com.unity.services.ccd.management.html"> CCD Management </a></li>
+<li><a href="com.unity.cinemachine.html"> Cinemachine </a></li>
+<li><a href="com.unity.services.cloudcode.html"> Cloud Code </a></li>
+<li><a href="com.unity.services.cloud-diagnostics.html"> Cloud Diagnostics </a></li>
+<li><a href="com.unity.services.cloudsave.html"> Cloud Save </a></li>
+<li><a href="com.unity.testtools.codecoverage.html"> Code Coverage </a></li>
+<li><a href="com.unity.collections.html"> Collections </a></li>
+<li><a href="com.unity.services.deployment.html"> Deployment </a></li>
+<li><a href="com.unity.device-simulator.devices.html"> Device Simulator Devices </a></li>
+<li><a href="com.unity.services.economy.html"> Economy </a></li>
+<li><a href="com.unity.editorcoroutines.html"> Editor Coroutines </a></li>
+<li><a href="com.unity.entities.html"> Entities </a></li>
+<li><a href="com.unity.entities.graphics.html"> Entities Graphics </a></li>
+<li><a href="com.unity.formats.fbx.html"> FBX Exporter </a></li>
+<li><a href="com.unity.services.friends.html"> Friends </a></li>
+<li><a href="com.unity.xr.arcore.html"> Google ARCore XR Plugin </a></li>
+<li><a href="com.havok.physics.html"> Havok Physics for Unity </a></li>
+<li><a href="com.unity.purchasing.html"> In App Purchasing </a></li>
+<li><a href="com.unity.inputsystem.html"> Input System </a></li>
+<li><a href="com.unity.ads.ios-support.html"> iOS 14 Advertising Support </a></li>
+<li><a href="com.unity.ide.rider.html"> JetBrains Rider Editor </a></li>
+<li><a href="com.unity.live-capture.html"> Live Capture </a></li>
+<li><a href="com.unity.services.lobby.html"> Lobby </a></li>
+<li><a href="com.unity.localization.html"> Localization </a></li>
+<li><a href="com.unity.xr.magicleap.html"> Magic Leap XR Plugin </a></li>
+<li><a href="com.unity.services.matchmaker.html"> Matchmaker </a></li>
+<li><a href="com.unity.mathematics.html"> Mathematics </a></li>
+<li><a href="com.unity.memoryprofiler.html"> Memory Profiler </a></li>
+<li><a href="com.unity.ml-agents.html"> ML Agents </a></li>
+<li><a href="com.unity.mobile.notifications.html"> Mobile Notifications </a></li>
+<li><a href="com.unity.multiplayer.tools.html"> Multiplayer Tools </a></li>
+<li><a href="com.unity.netcode.html"> Netcode for Entities </a></li>
+<li><a href="com.unity.netcode.gameobjects.html"> Netcode for GameObjects </a></li>
+<li><a href="com.unity.xr.oculus.html"> Oculus XR Plugin </a></li>
+<li><a href="com.unity.xr.openxr.html"> OpenXR Plugin </a></li>
+<li><a href="com.unity.services.playeraccounts.html"> Player Accounts </a></li>
+<li><a href="com.unity.polybrush.html"> Polybrush </a></li>
+<li><a href="com.unity.postprocessing.html"> Post Processing </a></li>
+<li><a href="com.unity.probuilder.html"> ProBuilder </a></li>
+<li><a href="com.unity.performance.profile-analyzer.html"> Profile Analyzer </a></li>
+<li><a href="com.unity.services.push-notifications.html"> Push Notifications </a></li>
+<li><a href="com.unity.scripting.python.html"> Python Scripting </a></li>
+<li><a href="com.unity.recorder.html"> Recorder </a></li>
+<li><a href="com.unity.services.relay.html"> Relay </a></li>
+<li><a href="com.unity.remote-config.html"> Remote Config </a></li>
+<li><a href="com.unity.scriptablebuildpipeline.html"> Scriptable Build Pipeline </a></li>
+<li><a href="com.unity.sequences.html"> Sequences </a></li>
+<li><a href="com.unity.serialization.html"> Serialization </a></li>
+<li><a href="com.unity.splines.html"> Splines </a></li>
+<li><a href="com.unity.sysroot.html"> Sysroot Base </a></li>
+<li><a href="com.unity.sysroot.linux-x86_64.html"> Sysroot Linux x64 </a></li>
+<li><a href="com.unity.profiling.systemmetrics.mali.html"> System Metrics Mali </a></li>
+<li><a href="com.unity.terrain-tools.html"> Terrain Tools </a></li>
+<li><a href="com.unity.test-framework.html"> Test Framework </a></li>
+<li><a href="com.unity.textmeshpro.html"> TextMeshPro </a></li>
+<li><a href="com.unity.timeline.html"> Timeline </a></li>
+<li><a href="com.unity.toolchain.linux-x86_64.html"> Toolchain Linux x64 </a></li>
+<li><a href="com.unity.toolchain.macos-x86_64-linux-x86_64.html"> Toolchain MacOS Linux x64 </a></li>
+<li><a href="com.unity.toolchain.win-x86_64-linux-x86_64.html"> Toolchain Win Linux x64 </a></li>
+<li><a href="com.unity.learn.iet-framework.authoring.html"> Tutorial Authoring Tools </a></li>
+<li><a href="com.unity.learn.iet-framework.html"> Tutorial Framework </a></li>
+<li><a href="com.unity.purchasing.udp.html"> Unity Distribution Portal </a></li>
+<li><a href="com.unity.logging.html"> Unity Logging </a></li>
+<li><a href="com.unity.xr.meta-openxr.html"> Unity OpenXR Meta </a></li>
+<li><a href="com.unity.physics.html"> Unity Physics </a></li>
+<li><a href="com.unity.profiling.core.html"> Unity Profiling Core API </a></li>
+<li><a href="com.unity.transport.html"> Unity Transport </a></li>
+<li><a href="com.unity.services.ugc.html"> User Generated Content </a></li>
+<li><a href="com.unity.services.ugc.bridge.html"> User Generated Content Bridge </a></li>
+<li><a href="com.unity.services.user-reporting.html"> User Reporting </a></li>
+<li><a href="com.unity.collab-proxy.html"> Version Control </a></li>
+<li><a href="com.unity.visualscripting.html"> Visual Scripting </a></li>
+<li><a href="com.unity.ide.vscode.html"> Visual Studio Code Editor </a></li>
+<li><a href="com.unity.ide.visualstudio.html"> Visual Studio Editor </a></li>
+<li><a href="com.unity.connect.share.html"> WebGL Publisher </a></li>
+<li><a href="com.unity.xr.hands.html"> XR Hands </a></li>
+<li><a href="com.unity.xr.interaction.toolkit.html"> XR Interaction Toolkit </a></li>
+<li><a href="com.unity.xr.management.html"> XR Plugin Management </a></li>
+</ul>
+</li>
+<li><a href="pack-releasecandidate.html"> Release Candidates</a></li>
+<li>
+<a href="pack-preview.html"> Pre-release packages</a>
+
+<ul>
+<li><a href="com.unity.services.leaderboards.html"> Leaderboards </a></li>
+<li><a href="com.unity.services.moderation.html"> Moderation </a></li>
+<li><a href="com.unity.services.multiplay.html"> Multiplay </a></li>
+</ul>
+</li>
+<li>
+<a href="pack-core.html"> Core packages</a>
+
+<ul>
+<li><a href="com.unity.2d.sprite.html"> 2D Sprite </a></li>
+<li><a href="com.unity.2d.tilemap.html"> 2D Tilemap Editor </a></li>
+<li><a href="com.unity.render-pipelines.core.html"> Core RP Library </a></li>
+<li><a href="com.unity.render-pipelines.high-definition.html"> High Definition RP </a></li>
+<li><a href="com.unity.shadergraph.html"> Shader Graph </a></li>
+<li><a href="com.unity.ugui.html"> Unity UI </a></li>
+<li><a href="com.unity.render-pipelines.universal.html"> Universal RP </a></li>
+<li><a href="com.unity.visualeffectgraph.html"> Visual Effect Graph </a></li>
+</ul>
+</li>
+<li>
+<a href="pack-build.html"> Built-in packages</a>
+
+<ul>
+<li><a href="com.unity.modules.ai.html"> AI </a></li>
+<li><a href="com.unity.modules.androidjni.html"> Android JNI </a></li>
+<li><a href="com.unity.modules.animation.html"> Animation </a></li>
+<li><a href="com.unity.modules.assetbundle.html"> Asset Bundle </a></li>
+<li><a href="com.unity.modules.audio.html"> Audio </a></li>
+<li><a href="com.unity.modules.cloth.html"> Cloth </a></li>
+<li><a href="com.unity.modules.director.html"> Director </a></li>
+<li><a href="com.unity.modules.imageconversion.html"> Image Conversion </a></li>
+<li><a href="com.unity.modules.imgui.html"> IMGUI </a></li>
+<li><a href="com.unity.modules.jsonserialize.html"> JSONSerialize </a></li>
+<li><a href="com.unity.modules.nvidia.html"> NVIDIA </a></li>
+<li><a href="com.unity.modules.particlesystem.html"> Particle System </a></li>
+<li><a href="com.unity.modules.physics.html"> Physics </a></li>
+<li><a href="com.unity.modules.physics2d.html"> Physics 2D </a></li>
+<li><a href="com.unity.modules.screencapture.html"> Screen Capture </a></li>
+<li><a href="com.unity.modules.terrain.html"> Terrain </a></li>
+<li><a href="com.unity.modules.terrainphysics.html"> Terrain Physics </a></li>
+<li><a href="com.unity.modules.tilemap.html"> Tilemap </a></li>
+<li><a href="com.unity.modules.ui.html"> UI </a></li>
+<li><a href="com.unity.modules.uielements.html"> UIElements </a></li>
+<li><a href="com.unity.modules.umbra.html"> Umbra </a></li>
+<li><a href="com.unity.modules.unityanalytics.html"> Unity Analytics </a></li>
+<li><a href="com.unity.modules.unitywebrequest.html"> Unity Web Request </a></li>
+<li><a href="com.unity.modules.unitywebrequestassetbundle.html"> Unity Web Request Asset Bundle </a></li>
+<li><a href="com.unity.modules.unitywebrequestaudio.html"> Unity Web Request Audio </a></li>
+<li><a href="com.unity.modules.unitywebrequesttexture.html"> Unity Web Request Texture </a></li>
+<li><a href="com.unity.modules.unitywebrequestwww.html"> Unity Web Request WWW </a></li>
+<li><a href="com.unity.modules.vehicles.html"> Vehicles </a></li>
+<li><a href="com.unity.modules.video.html"> Video </a></li>
+<li><a href="com.unity.modules.vr.html"> VR </a></li>
+<li><a href="com.unity.modules.wind.html"> Wind </a></li>
+<li><a href="com.unity.modules.xr.html"> XR </a></li>
+</ul>
+</li>
+<li><a href="pack-exp.html"> Experimental packages</a></li>
+<li><a href="pack-keys.html"> Packages by keywords </a></li>
+<li>
+<a href="Packages.html"> Unity’s Package Manager</a>
+
+<ul>
+<li><a href="upm-overview.html"> How Unity works with packages</a></li>
+<li>
+<a href="upm-concepts.html"> Concepts</a>
+
+<ul>
+<li><a href="upm-lifecycle.html"> Package states and lifecycle</a></li>
+<li><a href="upm-dependencies.html"> Dependency and resolution</a></li>
+<li><a href="upm-cache.html"> Global Cache</a></li>
+</ul>
+</li>
+<li>
+<a href="upm-config.html"> Configuration</a>
+
+<ul>
+<li><a href="upm-config-network.html"> Solving network issues</a></li>
+<li><a href="upm-config-scoped.html"> Scoped registry authentication</a></li>
+<li><a href="upm-config-cache.html"> Customize the global cache location</a></li>
+<li><a href="upm-config-cache-as.html"> Customize the Asset Store cache location</a></li>
+<li><a href="upm-config-https-git.html"> Using private repositories with HTTPS Git URLs</a></li>
+<li>
+<a href="upm-config-ssh-git.html"> Using passphrase-protected SSH keys with SSH Git URLs</a>
+
+<ul>
+<li><a href="upm-config-ssh-git-win.html"> Loading SSH keys automatically on Windows (OpenSSH)</a></li>
+<li><a href="upm-config-ssh-git-putty.html"> Loading SSH keys automatically on Windows (PuTTY)</a></li>
+<li><a href="upm-config-ssh-git-mac.html"> Loading SSH keys automatically on macOS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="upm-ui.html"> Package Manager window</a>
+
+<ul>
+<li><a href="upm-ui-access.html"> Access the Package Manager window</a></li>
+<li><a href="upm-ui-list.html"> List view</a></li>
+<li><a href="upm-ui-details.html"> Details view</a></li>
+<li><a href="fs-details.html"> Features (detail) view</a></li>
+<li>
+<a href="upm-ui-find.html"> Finding packages and feature sets</a>
+
+<ul>
+<li><a href="upm-ui-filter.html"> Packages list context</a></li>
+<li><a href="upm-ui-sort.html"> Sorting the list</a></li>
+<li><a href="upm-ui-filter2.html"> Filtering the list</a></li>
+<li><a href="upm-ui-search.html"> Search box</a></li>
+</ul>
+</li>
+<li>
+<a href="upm-ui-actions.html"> Adding and removing</a>
+
+<ul>
+<li><a href="fs-install.html"> Install a feature set from the Unity registry</a></li>
+<li><a href="upm-ui-install.html"> Install a package from a registry</a></li>
+<li><a href="upm-ui-local.html"> Install a package from a local folder</a></li>
+<li><a href="upm-ui-tarball.html"> Install a package from a local tarball file</a></li>
+<li><a href="upm-ui-giturl.html"> Install a package from a Git URL</a></li>
+<li><a href="upm-ui-quick.html"> Install a package from a registry by name</a></li>
+<li><a href="upm-ui-remove.html"> Removing an installed package from a project</a></li>
+<li><a href="upm-ui-disable.html"> Disabling a built-in package</a></li>
+<li><a href="upm-ui-update.html"> Switching to another package version</a></li>
+<li><a href="upm-ui-import.html"> Importing an Asset Store package</a></li>
+<li><a href="upm-ui-update2.html"> Updating your Asset Store package</a></li>
+<li><a href="upm-ui-remove-asset.html"> Remove imported assets from a project</a></li>
+<li><a href="upm-del-pkg-as-cache.html"> Delete a package from the Asset Store cache</a></li>
+<li><a href="upm-ui-multi.html"> Perform an action on multiple packages</a></li>
+</ul>
+</li>
+<li><a href="upm-docs.html"> Finding package documentation</a></li>
+</ul>
+</li>
+<li>
+<a href="upm-inspect.html"> Inspecting packages</a>
+
+<ul>
+<li><a href="class-PackageManifestImporter.html"> Package Manifest window</a></li>
+</ul>
+</li>
+<li>
+<a href="upm-api.html"> Scripting API for packages</a>
+
+<ul>
+<li><a href="upm-assets.html"> Accessing package assets</a></li>
+</ul>
+</li>
+<li><a href="upm-scoped.html"> Scoped registries</a></li>
+<li>
+<a href="upm-conflicts.html"> Resolution and conflict</a>
+
+<ul>
+<li><a href="upm-conflicts-auto.html"> Lock files</a></li>
+</ul>
+</li>
+<li>
+<a href="upm-manifestPrj.html"> Project manifest</a>
+
+<ul>
+<li><a href="upm-embed.html"> Embedded dependencies</a></li>
+<li><a href="upm-git.html"> Git dependencies</a></li>
+<li><a href="upm-localpath.html"> Local folder or tarball paths</a></li>
+</ul>
+</li>
+<li>
+<a href="upm-errors.html"> Troubleshooting</a>
+
+<ul>
+<li><a href="upm-network.html"> Diagnose network issues</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="CustomPackages.html"> Creating custom packages</a>
+
+<ul>
+<li><a href="cus-naming.html"> Naming your package</a></li>
+<li><a href="cus-layout.html"> Package layout</a></li>
+<li><a href="cus-tests.html"> Adding tests to a package</a></li>
+<li><a href="cus-samples.html"> Creating samples for packages</a></li>
+<li>
+<a href="upm-manifestPkg.html"> Package manifest</a>
+
+<ul>
+<li><a href="upm-semver.html"> Versioning</a></li>
+</ul>
+</li>
+<li><a href="cus-asmdef.html"> Assembly definition and packages</a></li>
+<li><a href="cus-legal.html"> Meeting legal requirements</a></li>
+<li><a href="cus-document.html"> Documenting your package</a></li>
+<li><a href="cus-share.html"> Sharing your package</a></li>
+</ul>
+</li>
+<li>
+<a href="FeatureSets.html"> Feature sets</a>
+
+<ul>
+<li><a href="2DFeature.html"> 2D feature set</a></li>
+<li><a href="CharacterAnimationFeature.html"> 3D Characters and Animation feature set</a></li>
+<li><a href="WorldBuildingFeature.html"> 3D World Building feature set</a></li>
+<li><a href="ARFeature.html"> AR feature set</a></li>
+<li><a href="CinematicStudioFeature.html"> Cinematic Studio feature set</a></li>
+<li><a href="DeveloperToolsFeature.html"> Engineering feature set</a></li>
+<li><a href="GameplayStorytellingFeature.html"> Gameplay and Storytelling feature set</a></li>
+<li><a href="MobileFeature.html"> Mobile feature set</a></li>
+<li><a href="VRFeature.html"> VR feature set</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="UnityOverview.html"> Working in Unity</a>
+
+<ul>
+<li>
+<a href="GettingStartedInstallingUnity.html"> Installing Unity</a>
+
+<ul>
+<li><a href="system-requirements.html"> System requirements for Unity 2022.3</a></li>
+<li><a href="InstallingUnity.html"> Installing Unity from the command line</a></li>
+<li><a href="DeployingUnityOffline.html"> Install Unity offline without the Hub</a></li>
+<li>
+<a href="LicensesAndActivation.html"> Licenses and activation</a>
+
+<ul>
+<li><a href="LicenseActivationMethods.html"> License activation methods</a></li>
+<li><a href="ManagingYourUnityLicense.html"> Manage your license through the command line</a></li>
+<li>
+<a href="ManualActivationGuide.html"> Manual license activation</a>
+
+<ul>
+<li><a href="ManualActivationHub.html"> Submit a license request from the Hub</a></li>
+<li><a href="ManualActivationCmdWin.html"> Submit a license request from a command line and browser (Windows)</a></li>
+<li><a href="ManualActivationCmdMac.html"> Submit a license request from a command line and browser (macOS, Linux)</a></li>
+</ul>
+</li>
+<li><a href="ActivationFAQ.html"> License Troubleshooting</a></li>
+</ul>
+</li>
+<li><a href="2Dor3D.html"> 2D or 3D projects</a></li>
+</ul>
+</li>
+<li>
+<a href="UpgradeGuides.html">Upgrading Unity</a>
+
+<ul>
+<li><a href="APIUpdater.html"> API updater</a></li>
+<li>
+<a href="UpgradeGuide2022LTS.html"> Upgrading to Unity 2022 LTS</a>
+
+<ul>
+<li><a href="UpgradeGuide20222.html"> Upgrade to Unity 2022.2</a></li>
+<li><a href="UpgradeGuide20221.html"> Upgrade to Unity 2022.1</a></li>
+</ul>
+</li>
+<li>
+<a href="UpgradeGuide2021LTS.html"> Upgrading to Unity 2021 LTS</a>
+
+<ul>
+<li><a href="UpgradeGuide20212.html"> Upgrading to Unity 2021.2</a></li>
+<li><a href="UpgradeGuide20211.html">Upgrading to Unity 2021.1</a></li>
+</ul>
+</li>
+<li><a href="UpgradeGuide2020LTS.html">Upgrading to Unity 2020 LTS</a></li>
+<li><a href="UpgradeGuide2019LTS.html">Upgrading to Unity 2019 LTS</a></li>
+</ul>
+</li>
+<li>
+<a href="UsingTheEditor.html"> Unity’s interface</a>
+
+<ul>
+<li><a href="ProjectView.html">The Project window</a></li>
+<li>
+<a href="UsingTheSceneView.html"> The Scene view</a>
+
+<ul>
+<li>
+<a href="overlays.html"> Overlays</a>
+
+<ul>
+<li><a href="default-overlays-reference.html"> Default Scene view overlay reference</a></li>
+<li><a href="display-and-hide-overlay.html"> Display or hide an overlay</a></li>
+<li><a href="position-overlay.html"> Position an overlay</a></li>
+<li><a href="manage-overlay-layouts.html"> Manage overlay layouts</a></li>
+<li><a href="manage-overlay-configurations.html"> Create and manage overlay configurations</a></li>
+<li><a href="overlays-custom.html"> Create your own overlay </a></li>
+</ul>
+</li>
+<li>
+<a href="PositioningGameObjects.html"> Position GameObjects</a>
+
+<ul>
+<li><a href="GridSnapping.html"> Grid snapping</a></li>
+</ul>
+</li>
+<li><a href="SceneViewNavigation.html"> Scene view navigation</a></li>
+<li><a href="SceneViewCamera.html"> Scene view Camera</a></li>
+<li><a href="ScenePicking.html"> Pick and select GameObjects</a></li>
+<li><a href="SceneVisibility.html"> Scene visibility</a></li>
+<li><a href="ViewModes.html"> Scene view View Options toolbar</a></li>
+<li><a href="GizmosMenu.html"> Gizmos menu</a></li>
+<li><a href="UsingCustomEditorTools.html"> Custom Editor tools</a></li>
+</ul>
+</li>
+<li><a href="GameView.html"> The Game view</a></li>
+<li>
+<a href="device-simulator.html"> Device Simulator</a>
+
+<ul>
+<li><a href="device-simulator-introduction.html"> Device Simulator introduction</a></li>
+<li><a href="device-simulator-view.html"> The Simulator view</a></li>
+<li><a href="device-simulator-simulated-classes.html"> Simulated classes</a></li>
+<li><a href="device-simulator-adding-a-device.html"> Adding a device</a></li>
+<li><a href="device-simulator-plugins.html"> Extending the device simulator</a></li>
+</ul>
+</li>
+<li><a href="Hierarchy.html"> The Hierarchy window</a></li>
+<li>
+<a href="UsingTheInspector.html"> The Inspector window</a>
+
+<ul>
+<li><a href="InspectorOptions.html"> Working in the Inspector</a></li>
+<li><a href="InspectorFocused.html"> Focused Inspectors</a></li>
+</ul>
+</li>
+<li><a href="EditingValueProperties.html"> Editing properties</a></li>
+<li><a href="Toolbar.html">The Toolbar</a></li>
+<li><a href="StatusBar.html"> The status bar</a></li>
+<li><a href="BackgroundTasksWindow.html"> The Background Tasks window</a></li>
+<li><a href="Console.html"> Console Window</a></li>
+<li><a href="OtherViews.html"> Additional windows</a></li>
+<li><a href="UndoWindow.html"> Undo</a></li>
+<li><a href="Searching.html"> Search in the Editor</a></li>
+<li><a href="CustomizingYourWorkspace.html"> Customizing your workspace</a></li>
+<li><a href="UnityHotkeys.html"> Unity shortcuts</a></li>
+</ul>
+</li>
+<li>
+<a href="QuickstartGuides.html">Quickstart guides</a>
+
+<ul>
+<li><a href="Quickstart3D.html"> 3D game development quickstart guide</a></li>
+<li><a href="Quickstart3DCreate.html"> Creating a 3D game</a></li>
+</ul>
+</li>
+<li><a href="best-practice-guides.html"> Advanced best practice guides</a></li>
+<li>
+<a href="CreatingGameplay.html"> Create Gameplay</a>
+
+<ul>
+<li><a href="CreatingScenes.html"> Scenes</a></li>
+<li><a href="scenes-working-with.html"> Creating, loading, and saving Scenes</a></li>
+<li>
+<a href="MultiSceneEditing.html"> Work with multiple scenes in Unity</a>
+
+<ul>
+<li><a href="setupmultiplescenes.html"> Set up multiple scenes</a></li>
+<li><a href="bakemultiplescenes.html"> Bake data in multiple scenes</a></li>
+<li><a href="scriptmultiplescenes.html"> Use scripts to edit multiple scenes</a></li>
+</ul>
+</li>
+<li>
+<a href="scene-templates.html"> Scene Templates</a>
+
+<ul>
+<li><a href="scene-templates-creating.html"> Creating scene templates</a></li>
+<li><a href="scene-templates-editing.html"> Editing scene templates</a></li>
+<li><a href="scene-templates-customizing-scene-instantiation.html"> Customizing new scene creation</a></li>
+<li><a href="scene-templates-settings.html"> Scene template settings</a></li>
+</ul>
+</li>
+<li>
+<a href="GameObjects.html"> GameObjects</a>
+
+<ul>
+<li><a href="class-Transform.html"> Transforms</a></li>
+<li><a href="Components.html"> Introduction to components</a></li>
+<li><a href="UsingComponents.html"> Use components</a></li>
+<li>
+<a href="PrimitiveObjects.html"> Primitive and placeholder objects</a>
+
+<ul>
+<li><a href="2DPrimitiveObjects.html"> Types of 2D primitive GameObjects</a></li>
+</ul>
+</li>
+<li><a href="CreatingComponents.html"> Create components with scripts</a></li>
+<li><a href="DeactivatingGameObjects.html"> Deactivate GameObjects</a></li>
+<li><a href="Tags.html"> Tags</a></li>
+<li><a href="StaticObjects.html"> Static GameObjects</a></li>
+<li><a href="Saving.html"> Save your work</a></li>
+</ul>
+</li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="Prefabs.html">Prefabs</a><span class="tooltiptext">An asset type that allows you to store a GameObject complete with components and properties. The prefab acts as a template from which you can create new object instances in the scene. <a href="Prefabs.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#Prefab">Glossary</a></span></span></span>
+
+<ul>
+<li><a href="CreatingPrefabs.html"> Creating Prefabs</a></li>
+<li><a href="EditingInPrefabMode.html"> Editing a Prefab in Prefab Mode</a></li>
+<li><a href="PrefabInstanceOverrides.html">Instance overrides</a></li>
+<li><a href="EditingPrefabViaInstance.html">Editing a Prefab via its instances</a></li>
+<li><a href="NestedPrefabs.html">Nested Prefabs</a></li>
+<li><a href="PrefabVariants.html">Prefab Variants</a></li>
+<li><a href="PrefabOverridesMultiLevel.html">Overrides at multiple levels</a></li>
+<li><a href="UnusedOverrides.html"> Unused Overrides</a></li>
+<li><a href="UnpackingPrefabInstances.html">Unpacking Prefab instances</a></li>
+</ul>
+</li>
+<li>
+<a href="Layers.html"> Layers</a>
+
+<ul>
+<li><a href="use-layers.html"> Uses of layers in Unity</a></li>
+<li><a href="create-layers.html"> Create functional layers in Unity</a></li>
+<li><a href="LayerBasedCollision.html">Layer-based collision detection</a></li>
+<li>
+<a href="layers-and-layermasks.html"> Layers and layerMasks</a>
+
+<ul>
+<li><a href="layermask-set.html"> Set a layerMask</a></li>
+<li><a href="layermask-add.html"> Add a layer to a layerMask</a></li>
+<li><a href="layermask-remove.html"> Remove a layer from a layerMask</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="Constraints.html"> Constraints</a>
+
+<ul>
+<li><a href="class-AimConstraint.html"> Aim Constraints</a></li>
+<li><a href="class-LookAtConstraint.html"> Look At Constraints</a></li>
+<li><a href="class-ParentConstraint.html"> Parent Constraints </a></li>
+<li><a href="class-PositionConstraint.html"> Position Constraints</a></li>
+<li><a href="class-RotationConstraint.html"> Rotation Constraints</a></li>
+<li><a href="class-ScaleConstraint.html"> Scale Constraints</a></li>
+</ul>
+</li>
+<li><a href="QuaternionAndEulerRotationsInUnity.html"> Rotation and orientation in Unity</a></li>
+<li><a href="Lights.html">Lights</a></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="Cameras.html">Cameras</a><span class="tooltiptext">A component which creates an image of a particular viewpoint in your scene. The output is either drawn to the screen or captured as a texture. <a href="CamerasOverview.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#Camera">Glossary</a></span></span></span></li>
+<li><a href="CrossPlatformConsiderations.html"> Cross-Platform Considerations</a></li>
+<li>
+<a href="PublishingBuilds.html">Publishing Builds</a>
+
+<ul>
+<li><a href="ReducingFilesize.html">Reducing the file size of your build</a></li>
+<li><a href="BuildPlayerPipeline.html">Build Player Pipeline</a></li>
+</ul>
+</li>
+<li><a href="TroubleShooting.html"> Troubleshooting</a></li>
+</ul>
+</li>
+<li>
+<a href="EditorFeatures.html">Editor Features</a>
+
+<ul>
+<li><a href="2DAnd3DModeSettings.html">2D and 3D mode settings</a></li>
+<li><a href="Preferences.html"> Preferences</a></li>
+<li><a href="ShortcutsManager.html"> Shortcuts Manager</a></li>
+<li><a href="BuildSettings.html"> Build Settings</a></li>
+<li><a href="incremental-build-pipeline.html"> Incremental build pipeline</a></li>
+<li>
+<a href="comp-ManagerGroup.html"> Project Settings</a>
+
+<ul>
+<li><a href="class-AudioManager.html">Audio</a></li>
+<li><a href="class-EditorManager.html"> Editor</a></li>
+<li><a href="class-GraphicsSettings.html"> Graphics</a></li>
+<li><a href="class-PackageManager.html"> Package Manager</a></li>
+<li><a href="class-PhysicsManager.html"> Physics</a></li>
+<li><a href="class-Physics2DManager.html"> Physics 2D</a></li>
+<li>
+<a href="class-PlayerSettings.html"> Player</a>
+
+<ul>
+<li><a href="class-PlayerSettingsSplashScreen.html"> Splash Image Player settings</a></li>
+</ul>
+</li>
+<li><a href="class-PresetManager.html"> Preset Manager</a></li>
+<li><a href="class-QualitySettings.html"> Quality</a></li>
+<li><a href="class-MonoManager.html">Script Execution Order settings</a></li>
+<li><a href="class-TagManager.html"> Tags and Layers</a></li>
+<li><a href="class-TimeManager.html">Time</a></li>
+<li><a href="UIB-project-setting.html"> UI Builder project settings</a></li>
+</ul>
+</li>
+<li><a href="VisualStudioIntegration.html">Visual Studio C# integration</a></li>
+<li><a href="RenderDocIntegration.html">RenderDoc Integration</a></li>
+<li><a href="EditorAnalytics.html"> Editor Analytics</a></li>
+<li><a href="VersionCheck.html">Check For Updates</a></li>
+<li><a href="IMEInput.html">IME in Unity</a></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="VersionControl.html">Version Control</a><span class="tooltiptext">A system for managing file changes. You can use Unity in conjunction with most common version control tools, including Perforce, Git, Mercurial and PlasticSCM. <a href="VersionControl.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#VersionControl">Glossary</a></span></span></span>
+
+<ul>
+<li><a href="Versioncontrolintegration.html"> Version control integrations</a></li>
+<li><a href="perForceIntegration.html">Perforce Integration</a></li>
+<li><a href="SmartMerge.html"> Smart merge</a></li>
+</ul>
+</li>
+<li><a href="SafeMode.html"> Safe Mode</a></li>
+<li>
+<a href="CommandLineArguments.html"> Command-line arguments</a>
+
+<ul>
+<li><a href="EditorCommandLineArguments.html"> Unity Editor command line arguments</a></li>
+<li><a href="PlayerCommandLineArguments.html"> Unity Standalone Player command line arguments</a></li>
+<li><a href="CLIBatchmodeCoroutines.html"> Batch mode and built-in coroutine compatibility</a></li>
+</ul>
+</li>
+<li>
+<a href="TextSceneFormat.html">Text-Based Scene Files</a>
+
+<ul>
+<li><a href="FormatDescription.html">Format of Text Serialized files</a></li>
+<li><a href="UnityYAML.html">UnityYAML</a></li>
+<li><a href="YAMLSceneExample.html">An Example of a YAML Scene File</a></li>
+<li><a href="ClassIDReference.html">YAML Class ID Reference</a></li>
+</ul>
+</li>
+<li><a href="TroubleShootingEditor.html"> Troubleshoot the Editor</a></li>
+</ul>
+</li>
+<li>
+<a href="analysis.html"> Analysis</a>
+
+<ul>
+<li>
+<a href="performance-memory-overview.html"> Memory in Unity</a>
+
+<ul>
+<li><a href="performance-managed-memory.html"> Managed memory</a></li>
+<li><a href="memory-allocator-customization.html"> Memory allocator customization</a></li>
+<li>
+<a href="performance-garbage-collector.html"> Garbage collector overview</a>
+
+<ul>
+<li><a href="performance-incremental-garbage-collection.html"> Incremental garbage collection</a></li>
+<li><a href="performance-disabling-garbage-collection.html"> Disabling garbage collection</a></li>
+<li><a href="performance-garbage-collection-best-practices.html"> Garbage collection best practices</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="Profiler.html"> Profiler overview</a>
+
+<ul>
+<li><a href="profiler-profiling-applications.html"> Profiling your application</a></li>
+<li><a href="profiler-markers.html"> Common Profiler markers</a></li>
+<li>
+<a href="ProfilerWindow.html"> The Profiler window</a>
+
+<ul>
+<li><a href="profiler-asset-loading-module.html">Asset Loading Profiler module</a></li>
+<li><a href="ProfilerAudio.html"> Audio Profiler module</a></li>
+<li><a href="ProfilerCPU.html"> CPU Usage Profiler module</a></li>
+<li><a href="profiler-file-access-module.html">File Access Profiler module</a></li>
+<li><a href="ProfilerGI.html"> Global Illumination Profiler module</a></li>
+<li><a href="ProfilerGPU.html"> GPU Usage Profiler module</a></li>
+<li><a href="ProfilerMemory.html"> Memory Profiler module</a></li>
+<li><a href="ProfilerPhysics.html"> Physics Profiler module</a></li>
+<li><a href="profiler-2d-physics-profiler-module.html"> Physics 2D Profiler module</a></li>
+<li><a href="ProfilerRendering.html"> Rendering Profiler module</a></li>
+<li><a href="ProfilerUI.html"> UI and UI Details Profiler</a></li>
+<li><a href="profiler-video-profiler-module.html"> Video Profiler module</a></li>
+<li><a href="profiler-virtual-texturing-module.html"> Virtual Texturing Profiler module</a></li>
+</ul>
+</li>
+<li>
+<a href="Profiler-customizing.html"> Customizing the Profiler</a>
+
+<ul>
+<li><a href="Profiler-creating-custom-counters.html"> Creating custom Profiler counters</a></li>
+<li>
+<a href="Profiler-creating-custom-modules.html"> Creating Custom Profiler modules</a>
+
+<ul>
+<li><a href="profiler-module-editor.html"> Profiler Module Editor</a></li>
+</ul>
+</li>
+<li><a href="Profiler-customizing-details-view.html"> Creating a custom module details panel</a></li>
+</ul>
+</li>
+<li><a href="LowLevelNativePluginProfiler.html"> Low-level native plug-in Profiler API</a></li>
+</ul>
+</li>
+<li>
+<a href="performance-profiling-tools.html"> Profiling tools</a>
+
+<ul>
+<li><a href="performance-profiler-traces.html"> Analyzing profiler traces</a></li>
+</ul>
+</li>
+<li><a href="LogFiles.html"> Log files</a></li>
+<li>
+<a href="BestPracticeUnderstandingPerformanceInUnity.html"> Understanding optimization in Unity</a>
+
+<ul>
+<li><a href="BestPracticeUnderstandingPerformanceInUnity4.html"> Asset auditing</a></li>
+<li><a href="BestPracticeUnderstandingPerformanceInUnity5.html"> Strings and text</a></li>
+<li><a href="BestPracticeUnderstandingPerformanceInUnity6.html"> The Resources folder</a></li>
+<li><a href="BestPracticeUnderstandingPerformanceInUnity7.html"> General Optimizations</a></li>
+<li><a href="BestPracticeUnderstandingPerformanceInUnity8.html"> Special optimizations</a></li>
+</ul>
+</li>
+<li><a href="AsyncReadManagerMetrics.html">Asset loading metrics</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="AssetWorkflow.html"> Asset workflow</a>
+
+<ul>
+<li>
+<a href="ImportingAssets.html"> Importing assets</a>
+
+<ul>
+<li><a href="ParallelImport.html"> Importing assets simultaneously</a></li>
+</ul>
+</li>
+<li>
+<a href="AssetTypes.html"> Supported Asset Types</a>
+
+<ul>
+<li><a href="BuiltInImporters.html"> Built-in Importers</a></li>
+<li><a href="ScriptedImporters.html"> Scripted Importers</a></li>
+<li><a href="ImporterConsistency.html"> Importer Consistency</a></li>
+<li><a href="class-TextAsset.html">Text assets</a></li>
+</ul>
+</li>
+<li><a href="AssetMetadata.html"> Asset Metadata</a></li>
+<li>
+<a href="AssetDatabase.html"> The Asset Database</a>
+
+<ul>
+<li><a href="AssetDatabaseRefreshing.html"> Refreshing the Asset Database</a></li>
+<li><a href="AssetDatabaseCustomizingWorkflow.html"> Customizing the Asset Database workflow</a></li>
+<li><a href="AssetDatabaseBatching.html"> Batching with the AssetDatabase</a></li>
+</ul>
+</li>
+<li><a href="SpecialFolders.html"> Special folder names</a></li>
+<li><a href="ImportActivityWindow.html"> Import Activity window</a></li>
+<li>
+<a href="Presets.html"> Presets</a>
+
+<ul>
+<li><a href="SupportingPresets.html"> Supporting presets</a></li>
+<li><a href="DefaultPresetsByFolder.html"> Applying default presets to Assets by folder</a></li>
+</ul>
+</li>
+<li>
+<a href="AssetBundlesIntro.html"> AssetBundles</a>
+
+<ul>
+<li><a href="AssetBundles-Workflow.html"> AssetBundle workflow</a></li>
+<li><a href="AssetBundles-Preparing.html"> Preparing Assets for AssetBundles</a></li>
+<li><a href="AssetBundles-Building.html"> Building AssetBundles</a></li>
+<li><a href="AssetBundles-Dependencies.html">AssetBundle Dependencies</a></li>
+<li><a href="AssetBundles-Native.html"> Using AssetBundles Natively</a></li>
+<li><a href="AssetBundles-Cache.html"> AssetBundle compression</a></li>
+<li><a href="AssetBundles-Patching.html"> Patching with AssetBundles</a></li>
+<li><a href="AssetBundles-Troubleshooting.html"> Troubleshooting</a></li>
+<li><a href="AssetBundles-Browser.html"> Unity Asset Bundle Browser tool</a></li>
+<li><a href="AssetBundles-Integrity.html"> AssetBundle Download Integrity and Security</a></li>
+</ul>
+</li>
+<li>
+<a href="ScriptingAssets.html"> Scripting with Assets</a>
+
+<ul>
+<li><a href="LoadingResourcesatRuntime.html">Loading Resources at Runtime</a></li>
+<li><a href="StreamingAssets.html"> Streaming Assets</a></li>
+<li><a href="ModifyingSourceAssetsThroughScripting.html">Modifying Source Assets Through Scripting</a></li>
+</ul>
+</li>
+<li>
+<a href="AssetPackages.html"> Asset packages</a>
+
+<ul>
+<li><a href="AssetPackagesCreate.html"> Create and export asset packages</a></li>
+<li><a href="AssetPackagesImport.html"> Importing local asset packages</a></li>
+</ul>
+</li>
+<li>
+<a href="Archives.html"> Archives</a>
+
+<ul>
+<li><a href="ContentNamespace.html"> ContentNamespaces</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="Input.html"> Input</a>
+
+<ul>
+<li><a href="class-InputManager.html"> Input Manager</a></li>
+<li>
+<a href="MobileInput.html">Mobile device input</a>
+
+<ul>
+<li><a href="MobileKeyboard.html">Mobile Keyboard</a></li>
+</ul>
+</li>
+<li><a href="xr_input.html"> Unity XR Input</a></li>
+</ul>
+</li>
+<li>
+<a href="Unity2D.html"> 2D game development</a>
+
+<ul>
+<li><a href="2D-introduction.html"> Introduction to 2D</a></li>
+<li>
+<a href="Quickstart2D.html"> 2D game development quickstart guide</a>
+
+<ul>
+<li><a href="Quickstart2DPerspective.html"> Game perspectives for 2D games</a></li>
+<li><a href="Quickstart2DArt.html"> Art styles for 2D games</a></li>
+<li><a href="Quickstart2DSetup.html"> Initial setup for 2D games</a></li>
+<li><a href="Quickstart2DCreate.html"> Creating a 2D game</a></li>
+</ul>
+</li>
+<li><a href="2DSorting.html"> 2D Sorting</a></li>
+<li>
+<a href="Sprites.html"> Work with sprites</a>
+
+<ul>
+<li><a href="sprites-setup.html"> Set up sprites</a></li>
+<li><a href="sprites-sort.html"> Sort sprites</a></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="class-SpriteRenderer.html">Sprite Renderer</a><span class="tooltiptext">A component that lets you display images as Sprites for use in both 2D and 3D scenes. <a href="class-SpriteRenderer.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#SpriteRenderer">Glossary</a></span></span></span></li>
+<li><a href="SpriteCreator.html"> Sprite Creator</a></li>
+<li>
+<a href="SpriteEditor.html"> Sprite Editor</a>
+
+<ul>
+<li><a href="sprite-editor-use.html"> Use the Sprite Editor</a></li>
+<li><a href="sprite-automatic-slicing.html"> Automatic slicing</a></li>
+<li><a href="sprite-polygon-resizing.html"> Resize polygons</a></li>
+<li><a href="SpriteOutlineEditor.html"> Sprite Editor: Custom Outline</a></li>
+<li><a href="CustomPhysicsShape.html"> Sprite Editor: Custom Physics Shape</a></li>
+<li><a href="SpriteEditor-SecondaryTextures.html"> Sprite Editor: Secondary Textures</a></li>
+<li><a href="Sprite-data-provider-api.html"> Sprite Editor Data Provider API</a></li>
+</ul>
+</li>
+<li><a href="class-SortingGroup.html"> Sorting Groups</a></li>
+<li><a href="9SliceSprites.html"> 9-slicing Sprites </a></li>
+<li><a href="class-SpriteMask.html"> Sprite Masks</a></li>
+<li>
+<a href="sprite-atlas.html"> Sprite Atlas</a>
+
+<ul>
+<li><a href="class-SpriteAtlas.html"> Sprite Atlas properties reference</a></li>
+<li>
+<a href="MasterVariantAtlases.html"> Master and Variant Sprite Atlases</a>
+
+<ul>
+<li><a href="VariantSpriteAtlas.html"> Variant Sprite Atlas</a></li>
+</ul>
+</li>
+<li><a href="SpriteAtlasWorkflow.html"> Sprite Atlas workflow</a></li>
+<li>
+<a href="SpriteAtlasDistribution.html"> Preparing Sprite Atlases for distribution</a>
+
+<ul>
+<li><a href="MethodDistribution.html"> Methods of distribution</a></li>
+<li><a href="LateBinding.html"> Late Binding </a></li>
+<li><a href="SpriteAtlasScenarios.html"> Resolving different Sprite Atlas scenarios</a></li>
+</ul>
+</li>
+<li><a href="SpritePacker.html"> Sprite Packer</a></li>
+<li><a href="SpritePackerModes.html"> Sprite Packer Modes</a></li>
+<li><a href="SpriteAtlasV2.html"> Sprite Atlas V2</a></li>
+</ul>
+</li>
+<li><a href="class-SpriteShapeRenderer.html"> Sprite Shape Renderer</a></li>
+</ul>
+</li>
+<li>
+<a href="Tilemap.html"> Tilemaps</a>
+
+<ul>
+<li><a href="class-Tilemap.html"> Tilemap component reference</a></li>
+<li><a href="class-Grid.html"> Grid component reference</a></li>
+<li><a href="class-TilemapRenderer.html"> Tilemap Renderer</a></li>
+<li><a href="Tilemap-TileAsset.html"> Tile asset reference</a></li>
+<li><a href="Tile-Palette-Preferences.html"> Tile Palette Preferences</a></li>
+<li>
+<a href="Tilemap-workflow.html"> Tilemap workflow</a>
+
+<ul>
+<li><a href="Tilemap-CreatingTilemaps.html"> Creating Tilemaps</a></li>
+<li><a href="Tilemap-CreatingTiles.html"> Creating Tiles</a></li>
+<li><a href="Tilemap-Palette.html"> Creating a Tile Palette</a></li>
+<li>
+<a href="Tilemap-Painting.html"> Painting on Tilemaps</a>
+
+<ul>
+<li><a href="TilemapPainting-SelectionTool.html"> Select Tool</a></li>
+</ul>
+</li>
+<li><a href="class-TilemapCollider2D.html"> Tilemap Collider 2D</a></li>
+</ul>
+</li>
+<li><a href="Tilemap-Hexagonal.html"> Hexagonal Tilemaps</a></li>
+<li>
+<a href="Tilemap-Isometric.html"> Isometric Tilemaps</a>
+
+<ul>
+<li><a href="Tilemap-Isometric-SpritesImport.html"> Importing and preparing Sprites for an Isometric Tilemap</a></li>
+<li><a href="Tilemap-Isometric-CreateIso.html"> Creating an Isometric Tilemap</a></li>
+<li><a href="Tilemap-Isometric-Palette.html"> Creating a Tile Palette for an Isometric Tilemap</a></li>
+<li><a href="Tilemap-Isometric-RenderModes.html"> Tilemap Renderer Modes</a></li>
+<li><a href="Tilemap-Isometric-ScriptableBrushes.html"> Scriptable Brushes</a></li>
+</ul>
+</li>
+<li>
+<a href="Tilemap-ScriptableTiles.html"> Scriptable Tiles</a>
+
+<ul>
+<li><a href="Tilemap-ScriptableTiles-TileBase.html"> TileBase</a></li>
+<li><a href="Tilemap-ScriptableTiles-Tile.html"> Tile</a></li>
+<li><a href="Tilemap-ScriptableTiles-TileData.html"> TileData</a></li>
+<li><a href="Tilemap-ScriptableTiles-TileAnimationData.html"> TileAnimationData</a></li>
+<li><a href="Tilemap-ScriptableTiles-OtherClasses.html"> Other useful classes</a></li>
+<li><a href="Tilemap-ScriptableTiles-Example.html"> Scriptable Tile example</a></li>
+</ul>
+</li>
+<li>
+<a href="Tilemap-ScriptableBrushes.html"> Scriptable Brushes</a>
+
+<ul>
+<li><a href="Tilemap-ScriptableBrushes-GridBrushBase.html"> GridBrushBase</a></li>
+<li><a href="Tilemap-ScriptableBrushes-GridBrushEditorBase.html"> GridBrushEditorBase</a></li>
+<li><a href="Tilemap-ScriptableBrushes-TilemapEditorTool.html"> TilemapEditorTool</a></li>
+<li><a href="Tilemap-ScriptableBrushes-OtherClasses.html"> Other useful classes</a></li>
+<li><a href="Tilemap-ScriptableBrushes-Example.html"> Scriptable Brush example</a></li>
+</ul>
+</li>
+<li><a href="Tile-Palette-visual-elements.html"> Tile Palette visual elements</a></li>
+</ul>
+</li>
+<li>
+<a href="Physics2DReference.html">Physics 2D Reference</a>
+
+<ul>
+<li>
+<a href="rigidbody2D.html"> Rigidbody 2D</a>
+
+<ul>
+<li><a href="class-Rigidbody2D.html"> Introduction to Rigidbody 2D</a></li>
+<li>
+<a href="rigidbody2D-body-types.html"> Rigidbody 2D body types</a>
+
+<ul>
+<li><a href="Rigidbody2D-Dynamic.html"> Body Type: Dynamic</a></li>
+<li><a href="Rigidbody2D-Kinematic.html"> Body Type: Kinematic</a></li>
+<li><a href="Rigidbody2D-Static.html"> Body Type: Static</a></li>
+</ul>
+</li>
+<li><a href="rigidbody2D-simulated-property.html"> Rigidbody 2D properties: Simulated</a></li>
+</ul>
+</li>
+<li>
+<a href="Collider2D.html"> Collider 2D</a>
+
+<ul>
+<li><a href="class-CircleCollider2D.html"> Circle Collider 2D</a></li>
+<li><a href="class-BoxCollider2D.html"> Box Collider 2D</a></li>
+<li><a href="class-PolygonCollider2D.html"> Polygon Collider 2D reference</a></li>
+<li><a href="class-EdgeCollider2D.html"> Edge Collider 2D</a></li>
+<li><a href="class-CapsuleCollider2D.html"> Capsule Collider 2D</a></li>
+<li><a href="class-CompositeCollider2D.html"> Composite Collider 2D</a></li>
+<li><a href="class-CustomCollider2D.html"> Custom Collider 2D</a></li>
+</ul>
+</li>
+<li><a href="class-PhysicsMaterial2D.html"> Physics Material 2D</a></li>
+<li>
+<a href="Joints2D.html"> 2D joints</a>
+
+<ul>
+<li><a href="joints2D-constraints.html"> Constraints of 2D joints</a></li>
+<li><a href="class-DistanceJoint2D.html"> Distance Joint 2D</a></li>
+<li><a href="class-FixedJoint2D.html"> Fixed Joint 2D</a></li>
+<li><a href="class-FrictionJoint2D.html"> Friction Joint 2D</a></li>
+<li><a href="class-HingeJoint2D.html"> Hinge Joint 2D</a></li>
+<li><a href="class-RelativeJoint2D.html"> Relative Joint 2D</a></li>
+<li><a href="class-SliderJoint2D.html"> Slider Joint 2D</a></li>
+<li><a href="class-SpringJoint2D.html"> Spring Joint 2D</a></li>
+<li><a href="class-TargetJoint2D.html"> Target Joint 2D</a></li>
+<li><a href="class-WheelJoint2D.html"> Wheel Joint 2D</a></li>
+</ul>
+</li>
+<li><a href="class-ConstantForce2D.html">Constant Force 2D</a></li>
+<li>
+<a href="Effectors2D.html"> Effectors 2D</a>
+
+<ul>
+<li><a href="class-AreaEffector2D.html">Area Effector 2D</a></li>
+<li><a href="class-BuoyancyEffector2D.html"> Buoyancy Effector 2D</a></li>
+<li><a href="class-PointEffector2D.html">Point Effector 2D</a></li>
+<li><a href="class-PlatformEffector2D.html">Platform Effector 2D</a></li>
+<li><a href="class-SurfaceEffector2D.html">Surface Effector 2D</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="Graphics.html">Graphics</a>
+
+<ul>
+<li>
+<a href="render-pipelines.html"> Render pipelines</a>
+
+<ul>
+<li><a href="render-pipelines-overview.html"> Introduction to render pipelines</a></li>
+<li><a href="choose-a-render-pipeline.html"> Choose a render pipeline</a></li>
+<li><a href="render-pipelines-feature-comparison.html"> Render pipeline feature comparison</a></li>
+<li>
+<a href="built-in-render-pipeline.html"> Using the Built-in Render Pipeline</a>
+
+<ul>
+<li><a href="graphics-tiers.html"> Graphics tiers</a></li>
+<li>
+<a href="RenderingPaths.html">Rendering paths in the Built-in Render Pipeline</a>
+
+<ul>
+<li><a href="RenderTech-ForwardRendering.html"> Forward rendering path</a></li>
+<li><a href="RenderTech-DeferredShading.html"> Deferred Shading rendering path</a></li>
+<li><a href="RenderTech-VertexLit.html">Vertex Lit Rendering Path</a></li>
+</ul>
+</li>
+<li><a href="built-in-rendering-order.html"> Rendering order in the Built-in Render Pipeline</a></li>
+<li><a href="GraphicsCommandBuffers.html"> Extending the Built-in Render Pipeline with CommandBuffers</a></li>
+<li><a href="RenderTech-HardwareRequirements.html"> Hardware requirements for the Built-in Render Pipeline</a></li>
+<li>
+<a href="built-in-shader-examples.html"> Example shaders for the Built-in Render Pipeline</a>
+
+<ul>
+<li><a href="SL-VertexFragmentShaderExamples.html"> Custom shader fundamentals</a></li>
+<li><a href="built-in-shader-examples-vertex-data.html"> Visualizing vertex data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="universal-render-pipeline.html"> Using the Universal Render Pipeline</a></li>
+<li><a href="high-definition-render-pipeline.html"> Using the High Definition Render Pipeline</a></li>
+<li>
+<a href="ScriptableRenderPipeline.html"> Scriptable Render Pipeline fundamentals</a>
+
+<ul>
+<li><a href="scriptable-render-pipeline-introduction.html"> Scriptable Render Pipeline introduction</a></li>
+<li><a href="srp-using-scriptable-render-context.html"> Scheduling and executing rendering commands in the Scriptable Render Pipeline</a></li>
+</ul>
+</li>
+<li>
+<a href="srp-custom.html"> Creating a custom render pipeline</a>
+
+<ul>
+<li><a href="srp-custom-getting-started.html"> Creating a custom render pipeline based on the Scriptable Render Pipeline</a></li>
+<li><a href="srp-creating-render-pipeline-asset-and-render-pipeline-instance.html"> Creating a Render Pipeline Asset and Render Pipeline Instance in a custom render pipeline</a></li>
+<li><a href="srp-creating-simple-render-loop.html"> Creating a simple render loop in a custom render pipeline</a></li>
+</ul>
+</li>
+<li><a href="srp-setting-render-pipeline-asset.html"> How to get, set, and configure the active render pipeline</a></li>
+</ul>
+</li>
+<li>
+<a href="CamerasOverview.html"> Cameras</a>
+
+<ul>
+<li><a href="MultipleCameras.html">Using more than one camera</a></li>
+<li><a href="PhysicalCameras.html"> Using Physical Cameras</a></li>
+<li><a href="SL-CameraDepthTexture.html"> Cameras and depth textures</a></li>
+<li>
+<a href="CameraTricks.html"> Camera Tricks</a>
+
+<ul>
+<li><a href="UnderstandingFrustum.html">Understanding the View Frustum</a></li>
+<li><a href="FrustumSizeAtDistance.html">The Size of the Frustum at a Given Distance from the Camera</a></li>
+<li><a href="CameraRays.html">Rays from the Camera</a></li>
+<li><a href="ObliqueFrustum.html"> Using an oblique frustum</a></li>
+</ul>
+</li>
+<li>
+<a href="OcclusionCulling.html"> Occlusion culling</a>
+
+<ul>
+<li><a href="occlusion-culling-getting-started.html"> Getting started with occlusion culling</a></li>
+<li><a href="occlusion-culling-dynamic-gameobjects.html"> Using occlusion culling with dynamic GameObjects</a></li>
+<li><a href="occlusion-culling-scene-loading.html"> Occlusion culling and Scene loading</a></li>
+<li><a href="class-OcclusionArea.html"> Occlusion Areas</a></li>
+<li><a href="class-OcclusionPortal.html"> Occlusion Portals</a></li>
+<li><a href="occlusion-culling-window.html"> The Occlusion Culling window </a></li>
+<li><a href="occlusion-culling-additional-resources.html"> Occlusion culling additional resources</a></li>
+</ul>
+</li>
+<li><a href="CullingGroupAPI.html"> CullingGroup API</a></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="DynamicResolution.html">Dynamic resolution</a><span class="tooltiptext">A Camera setting that allows you to dynamically scale individual render targets, to reduce workload on the GPU. <a href="DynamicResolution.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#dynamicresolution">Glossary</a></span></span></span>
+
+<ul>
+<li><a href="frame-timing-manager.html"> FrameTimingManager</a></li>
+</ul>
+</li>
+<li><a href="deep-learning-super-sampling.html"> Deep learning super sampling</a></li>
+<li><a href="MultiDisplay.html"> Multi-display</a></li>
+<li><a href="class-Camera.html"> Camera component</a></li>
+</ul>
+</li>
+<li>
+<a href="LightingOverview.html"> Lighting</a>
+
+<ul>
+<li><a href="LightingInUnity.html"> Introduction to lighting</a></li>
+<li><a href="choose-a-lighting-setup.html"> Choose a lighting setup</a></li>
+<li>
+<a href="lighting-light-sources.html"> Light sources</a>
+
+<ul>
+<li>
+<a href="class-Light.html"> Lights</a>
+
+<ul>
+<li><a href="Lighting.html"> Types of light</a></li>
+<li><a href="UsingLights.html"> Using Lights</a></li>
+<li>
+<a href="LightModes.html"> Light Modes</a>
+
+<ul>
+<li><a href="LightMode-Realtime.html"> Light Mode: Realtime</a></li>
+<li><a href="LightMode-Mixed.html"> Light Mode: Mixed</a></li>
+<li><a href="LightMode-Baked.html"> Light Mode: Baked</a></li>
+</ul>
+</li>
+<li>
+<a href="Cookies.html"> Cookies</a>
+
+<ul>
+<li><a href="creating-cookies-built-in-render-pipeline.html"> Creating cookies for the Built-in Render Pipeline</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="lighting-emissive-materials.html"> Emissive materials</a></li>
+<li><a href="lighting-ambient-light.html"> Ambient light</a></li>
+</ul>
+</li>
+<li>
+<a href="Shadows.html"> Shadows</a>
+
+<ul>
+<li><a href="shadow-mapping.html"> Shadow mapping</a></li>
+<li><a href="shadow-configuration.html"> Configuring shadows</a></li>
+<li><a href="shadow-distance.html"> Shadow Distance</a></li>
+<li><a href="shadow-cascades.html"> Shadow Cascades</a></li>
+<li><a href="ShadowPerformance.html"> Shadow troubleshooting</a></li>
+</ul>
+</li>
+<li><a href="lighting-window.html"> The Lighting window</a></li>
+<li>
+<a href="class-LightingSettings.html"> Lighting Settings Asset</a>
+
+<ul>
+<li>
+<a href="lighting-mode.html"> Lighting Mode</a>
+
+<ul>
+<li><a href="LightMode-Mixed-BakedIndirect.html"> Lighting Mode: Baked Indirect</a></li>
+<li><a href="LightMode-Mixed-Shadowmask.html"> Lighting Mode: Shadowmask</a></li>
+<li><a href="LightMode-Mixed-Subtractive.html"> Lighting Mode: Subtractive</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="LightingExplorer.html"> The Light Explorer window</a>
+
+<ul>
+<li><a href="LightExplorerExtension.html"> Light Explorer extension</a></li>
+</ul>
+</li>
+<li>
+<a href="Lightmappers.html"> Lightmapping</a>
+
+<ul>
+<li>
+<a href="progressive-lightmapper.html"> The Progressive Lightmapper</a>
+
+<ul>
+<li><a href="GPUProgressiveLightmapper.html"> The Progressive GPU Lightmapper (preview)</a></li>
+</ul>
+</li>
+<li><a href="GI-Enlighten.html"> Lightmapping using Enlighten Baked Global Illumination</a></li>
+<li><a href="Lightmapping.html"> Lightmapping: Getting started</a></li>
+<li><a href="class-LightmapParameters.html"> Lightmap Parameters Asset</a></li>
+<li><a href="LightmappingDirectional.html"> Directional Mode</a></li>
+<li><a href="LODForBakedGI.html"> Lightmaps and LOD</a></li>
+<li><a href="LightingBakedAmbientOcclusion.html"> Ambient occlusion</a></li>
+<li><a href="Lightmaps-TechnicalInformation.html"> Lightmaps: Technical information</a></li>
+<li><a href="MetaPass.html"> Lightmapping and shaders</a></li>
+<li><a href="LightingGiUvs.html"> Lightmap UVs introduction</a></li>
+<li>
+<a href="LightingGiUvs.html"> Lightmap UVs introduction</a>
+
+<ul>
+<li><a href="LightingGiUvs-GeneratingLightmappingUVs.html"> Generating lightmap UVs</a></li>
+<li><a href="LightingGiUvs-visualizing.html"> Visualizing lightmap UVs</a></li>
+<li><a href="ProgressiveLightmapper-UVOverlap.html"> Fixing lightmap UV overlap</a></li>
+</ul>
+</li>
+<li><a href="Lightmapping-SeamStitching.html"> Lightmap seam stitching</a></li>
+<li><a href="ProgressiveLightmapper-CustomFallOff.html"> Custom fall-off</a></li>
+</ul>
+</li>
+<li>
+<a href="realtime-gi-using-enlighten.html"> Realtime Global Illumination using Enlighten</a>
+
+<ul>
+<li><a href="LODRealtimeGI.html"> LOD and Enlighten Realtime Global Illumination</a></li>
+</ul>
+</li>
+<li>
+<a href="LightProbes.html"> Light Probes</a>
+
+<ul>
+<li><a href="LightProbes-TechnicalInformation.html"> Light Probes: Technical information</a></li>
+<li><a href="class-LightProbeGroup.html"> Light Probe Groups</a></li>
+<li><a href="LightProbes-Placing-Scripting.html"> Placing Light Probes using scripting</a></li>
+<li><a href="LightProbes-MovingObjects.html"> Light Probes for moving objects</a></li>
+<li><a href="LightProbes-MeshRenderer.html"> Light Probes and the Mesh Renderer</a></li>
+<li><a href="light-probes-and-scene-loading.html"> Light Probes and Scene loading</a></li>
+<li><a href="class-LightProbeProxyVolume.html"> Light Probe Proxy Volume component</a></li>
+</ul>
+</li>
+<li>
+<a href="ReflectionProbes.html"> Reflection Probes</a>
+
+<ul>
+<li><a href="RefProbeTypes.html"> Types of Reflection Probe</a></li>
+<li><a href="UsingReflectionProbes.html"> Using Reflection Probes</a></li>
+<li><a href="AdvancedRefProbe.html">Advanced Reflection Probe Features</a></li>
+<li><a href="RefProbePerformance.html"> Reflection Probe performance</a></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="class-ReflectionProbe.html">Reflection Probe</a><span class="tooltiptext">A rendering component that captures a spherical view of its surroundings in all directions, rather like a camera. The captured image is then stored as a Cubemap that can be used by objects with reflective materials. <a href="class-ReflectionProbe.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#ReflectionProbe">Glossary</a></span></span></span></li>
+</ul>
+</li>
+<li>
+<a href="lighting-precomputed-data.html"> Precomputed lighting data</a>
+
+<ul>
+<li><a href="UsingPrecomputedLighting.html"> Generating lighting data</a></li>
+<li><a href="LightmapSnapshot.html"> Lighting Data Asset</a></li>
+<li><a href="GICache.html"> GI cache</a></li>
+</ul>
+</li>
+<li><a href="GIVis.html"> Scene View Draw Modes for lighting</a></li>
+</ul>
+</li>
+<li>
+<a href="models.html"> Models</a>
+
+<ul>
+<li>
+<a href="CreatingDCCAssets.html"> Creating models outside of Unity</a>
+
+<ul>
+<li><a href="3D-formats.html"> Model file formats</a></li>
+<li><a href="HOWTO-ImportObjectsFrom3DApps.html"> Support for proprietary model file formats</a></li>
+<li><a href="models-preparing.html"> Preparing your model files for export</a></li>
+<li><a href="ModelingOptimizedCharacters.html"> Creating models for optimal performance</a></li>
+<li><a href="UsingHumanoidChars.html"> Creating models for animation</a></li>
+</ul>
+</li>
+<li>
+<a href="models-importing.html"> Importing models into Unity</a>
+
+<ul>
+<li><a href="ImportingModelFiles.html"> Importing a model</a></li>
+<li><a href="ConfiguringtheAvatar.html"> Importing a model with humanoid animations</a></li>
+<li><a href="GenericAnimations.html"> Importing a model with non-humanoid (generic) animations</a></li>
+<li>
+<a href="class-FBXImporter.html"> Model Import Settings window</a>
+
+<ul>
+<li><a href="FBXImporter-Model.html"> Model tab</a></li>
+<li>
+<a href="FBXImporter-Rig.html"> Rig tab</a>
+
+<ul>
+<li><a href="class-Avatar.html"> Avatar Mapping tab</a></li>
+<li><a href="MuscleDefinitions.html"> Avatar Muscle &amp; Settings tab</a></li>
+<li><a href="class-AvatarMask.html"> Avatar Mask window</a></li>
+<li><a href="class-HumanTemplate.html"> Human Template window</a></li>
+</ul>
+</li>
+<li>
+<a href="class-AnimationClip.html"> Animation tab</a>
+
+<ul>
+<li><a href="AnimationEulerCurveImport.html"> Euler curve resampling</a></li>
+<li><a href="Splittinganimations.html"> Extracting animation clips</a></li>
+<li><a href="LoopingAnimationClips.html"> Loop optimization on Animation clips</a></li>
+<li><a href="AnimationCurvesOnImportedClips.html"> Curves</a></li>
+<li><a href="AnimationEventsOnImportedClips.html"> Events</a></li>
+<li><a href="AnimationMaskOnImportedClips.html"> Mask</a></li>
+<li><a href="AnimationRootMotionNodeOnImportedClips.html"> Motion</a></li>
+</ul>
+</li>
+<li><a href="FBXImporter-Materials.html"> Materials tab</a></li>
+</ul>
+</li>
+<li><a href="class-SketchUpImporter.html"> SketchUp Import Settings window</a></li>
+<li>
+<a href="class-SpeedTreeImporter.html"> SpeedTree Import Settings window</a>
+
+<ul>
+<li><a href="SpeedTreeImporter-Model.html"> Model tab</a></li>
+<li><a href="SpeedTreeImporter-Materials.html"> Materials tab</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="mesh.html"> Meshes</a>
+
+<ul>
+<li><a href="mesh-introduction.html"> Meshes introduction</a></li>
+<li><a href="AnatomyofaMesh.html"> Mesh data</a></li>
+<li><a href="class-Mesh.html"> Mesh asset</a></li>
+<li>
+<a href="comp-MeshGroup.html"> Mesh components</a>
+
+<ul>
+<li><a href="class-MeshRenderer.html"> Mesh Renderer component</a></li>
+<li><a href="class-SkinnedMeshRenderer.html"> Skinned Mesh Renderer component</a></li>
+<li><a href="class-MeshFilter.html"> Mesh Filter component</a></li>
+<li><a href="class-TextMesh.html"> Text Mesh component (legacy)</a></li>
+</ul>
+</li>
+<li>
+<a href="GeneratingMeshGeometryProcedurally.html"> Using meshes with C# scripts</a>
+
+<ul>
+<li><a href="UsingtheMeshClass.html">Using the Mesh Class</a></li>
+<li><a href="Example-CreatingaBillboardPlane.html"> Example: creating a quad</a></li>
+</ul>
+</li>
+<li>
+<a href="LevelOfDetail.html"> Level of Detail (LOD) for meshes</a>
+
+<ul>
+<li><a href="class-LODGroup.html"> LOD Group</a></li>
+<li><a href="importing-lod-meshes.html"> Importing LOD Meshes</a></li>
+</ul>
+</li>
+<li><a href="mesh-compression.html"> Compressing mesh data</a></li>
+<li><a href="LoadingTextureandMeshData.html"> Loading texture and mesh data</a></li>
+</ul>
+</li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="Textures.html">Textures</a><span class="tooltiptext">An image used when rendering a GameObject, Sprite, or UI element. Textures are often applied to the surface of a mesh to give it visual detail. <a href="class-TextureImporter.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#texture">Glossary</a></span></span></span>
+
+<ul>
+<li>
+<a href="ImportingTextures.html"> Importing Textures</a>
+
+<ul>
+<li>
+<a href="class-TextureImporter.html"> Texture Import Settings</a>
+
+<ul>
+<li><a href="texture-type-default.html"> Default Import Settings reference</a></li>
+<li><a href="texture-type-normal-map.html"> Normal map Import Settings reference</a></li>
+<li><a href="texture-type-editor-gui-and-legacy-gui.html"> Editor GUI and Legacy GUI Import Settings reference</a></li>
+<li><a href="texture-type-sprite.html"> Sprite (2D and UI) Import Settings reference</a></li>
+<li><a href="texture-type-cursor.html"> Cursor Import Settings reference</a></li>
+<li><a href="texture-type-cookie.html"> Cookie Import Settings reference</a></li>
+<li><a href="texture-type-lightmap.html"> Lightmap Import Settings reference</a></li>
+<li><a href="texture-type-directional-lightmap.html"> Directional Lightmap Import Settings reference</a></li>
+<li><a href="texture-type-shadowmask.html"> Shadowmask Import Settings reference</a></li>
+<li><a href="texture-type-singlechannel.html"> Single Channel Import Settings reference</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="texture-compression-formats.html"> Texture formats</a>
+
+<ul>
+<li><a href="class-TextureImporterOverride.html"> Recommended, default, and supported texture formats, by platform</a></li>
+</ul>
+</li>
+<li>
+<a href="texture-mipmaps.html"> Mipmaps</a>
+
+<ul>
+<li><a href="texture-mipmaps-introduction.html"> Mipmaps introduction</a></li>
+<li><a href="TextureStreaming.html"> The Mipmap Streaming system</a></li>
+<li><a href="TextureStreaming-API.html"> The Mipmap Streaming system API</a></li>
+<li><a href="class-StreamingController.html"> Streaming Controller component</a></li>
+</ul>
+</li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="class-RenderTexture.html">Render Texture</a><span class="tooltiptext">A special type of Texture that is created and updated at runtime. To use them, first create a new Render Texture and designate one of your Cameras to render into it. Then you can use the Render Texture in a Material just like a regular Texture. <a href="class-RenderTexture.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#RenderTexture">Glossary</a></span></span></span></li>
+<li><a href="class-CustomRenderTexture.html"> Custom Render Textures</a></li>
+<li><a href="class-MovieTexture.html">Movie Textures</a></li>
+<li><a href="class-Texture3D.html"> 3D textures</a></li>
+<li><a href="class-Texture2DArray.html"> Texture arrays</a></li>
+<li><a href="class-Cubemap.html"> Cubemaps</a></li>
+<li><a href="class-CubemapArray.html"> Cubemap arrays</a></li>
+<li>
+<a href="svt-streaming-virtual-texturing.html"> Streaming Virtual Texturing</a>
+
+<ul>
+<li><a href="svt-requirements-compatibility.html"> Streaming Virtual Texturing requirements and compatibility</a></li>
+<li><a href="svt-how-it-works.html"> How Streaming Virtual Texturing works</a></li>
+<li><a href="svt-enable-in-project.html"> Enabling Streaming Virtual Texturing in your project</a></li>
+<li><a href="svt-use-in-shader-graph.html"> Using Streaming Virtual Texturing in Shader Graph</a></li>
+<li><a href="svt-cache-management.html"> Cache Management for Virtual Texturing</a></li>
+<li><a href="svt-marking-textures.html"> Marking textures as “Virtual Texturing Only”</a></li>
+<li><a href="svt-error-material.html"> Virtual Texturing error material</a></li>
+</ul>
+</li>
+<li><a href="SparseTextures.html">Sparse Textures</a></li>
+<li><a href="LoadingTextureandMeshData.html"> Loading texture and mesh data</a></li>
+</ul>
+</li>
+<li>
+<a href="Shaders.html"> Shaders</a>
+
+<ul>
+<li>
+<a href="ShadersOverview.html"> Shaders core concepts</a>
+
+<ul>
+<li><a href="shader-introduction.html"> Shaders introduction</a></li>
+<li><a href="shader-objects.html"> The Shader class</a></li>
+<li><a href="class-Shader.html"> Shader assets</a></li>
+<li>
+<a href="shader-compilation.html"> Shader compilation</a>
+
+<ul>
+<li><a href="AsynchronousShaderCompilation.html"> Asynchronous shader compilation</a></li>
+</ul>
+</li>
+<li>
+<a href="shader-variants-and-keywords.html"> Branching, variants, and keywords</a>
+
+<ul>
+<li><a href="shader-conditionals.html"> Conditionals in shaders</a></li>
+<li><a href="shader-branching.html"> Branching in shaders</a></li>
+<li><a href="shader-variants.html"> Shader variants</a></li>
+<li><a href="shader-how-many-variants.html"> Check how many shader variants you have</a></li>
+<li><a href="shader-keywords.html"> Shader keywords</a></li>
+<li><a href="shader-keywords-scripts.html"> Using shader keywords with C# scripts</a></li>
+<li><a href="shader-keywords-material-inspector.html"> Using shader keywords with the material Inspector</a></li>
+<li><a href="shader-variant-stripping.html"> Shader variant stripping</a></li>
+<li><a href="shader-variant-collections.html"> Shader variant collections</a></li>
+</ul>
+</li>
+<li><a href="shader-loading.html"> How Unity loads and uses shaders</a></li>
+<li><a href="SL-ShaderReplacement.html">Replacing shaders at runtime</a></li>
+<li><a href="class-ComputeShader.html"> Compute shaders</a></li>
+<li><a href="shader-error.html"> Error and loading shaders</a></li>
+</ul>
+</li>
+<li>
+<a href="shader-built-in.html"> Built-in shaders</a>
+
+<ul>
+<li>
+<a href="shader-StandardShader.html">Standard Shader</a>
+
+<ul>
+<li><a href="StandardShaderContextAndContent.html">Content and Context</a></li>
+<li><a href="StandardShaderMetallicVsSpecular.html">Metallic vs. specular workflow</a></li>
+<li>
+<a href="StandardShaderMaterialParameters.html"> Standard Shader Material Inspector reference</a>
+
+<ul>
+<li><a href="StandardShaderMaterialParameterRenderingMode.html"> Rendering Mode</a></li>
+<li><a href="StandardShaderMaterialParameterAlbedoColor.html"> Albedo Color and Transparency</a></li>
+<li><a href="StandardShaderMaterialParameterSpecular.html"> Specular mode: Specular Property</a></li>
+<li><a href="StandardShaderMaterialParameterMetallic.html"> Metallic mode: Metallic Property</a></li>
+<li><a href="StandardShaderMaterialParameterSmoothness.html"> Smoothness</a></li>
+<li><a href="StandardShaderMaterialParameterNormalMap.html">Normal map (Bump mapping)</a></li>
+<li><span class="tooltip"><a href="StandardShaderMaterialParameterHeightMap.html">Heightmap</a><span class="tooltiptext">A greyscale Texture that stores height data for an object. Each pixel stores the height difference perpendicular to the face that pixel represents.<br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#Heightmap">Glossary</a></span></span></span></li>
+<li><a href="StandardShaderMaterialParameterOcclusionMap.html">Occlusion Map</a></li>
+<li><a href="StandardShaderMaterialParameterEmission.html">Emission</a></li>
+<li><a href="StandardShaderMaterialParameterDetail.html">Secondary Maps (Detail Maps) &amp; Detail Mask</a></li>
+<li><a href="StandardShaderFresnel.html">The Fresnel Effect</a></li>
+</ul>
+</li>
+<li><a href="StandardShaderMaterialCharts.html"> Material charts</a></li>
+<li><a href="StandardShaderMakeYourOwn.html">Make your own</a></li>
+</ul>
+</li>
+<li><a href="shader-StandardParticleShaders.html">Standard Particle Shaders</a></li>
+<li><a href="Shader-Autodesk-Interactive.html"> Autodesk Interactive shader</a></li>
+<li>
+<a href="Built-inShaderGuide.html">Legacy Shaders</a>
+
+<ul>
+<li><a href="shader-Performance.html">Usage and Performance of Built-in Shaders</a></li>
+<li>
+<a href="shader-NormalFamily.html">Normal Shader Family</a>
+
+<ul>
+<li><a href="shader-NormalVertexLit.html">Vertex-Lit</a></li>
+<li><a href="shader-NormalDiffuse.html">Diffuse</a></li>
+<li><a href="shader-NormalSpecular.html">Specular</a></li>
+<li><a href="shader-NormalBumpedDiffuse.html">Bumped Diffuse</a></li>
+<li><a href="shader-NormalBumpedSpecular.html">Bumped Specular</a></li>
+<li><a href="shader-NormalParallaxDiffuse.html">Parallax Diffuse</a></li>
+<li><a href="shader-NormalParallaxSpecular.html">Parallax Bumped Specular</a></li>
+<li><a href="shader-NormalDecal.html">Decal</a></li>
+<li><a href="shader-NormalDiffuseDetail.html">Diffuse Detail</a></li>
+</ul>
+</li>
+<li>
+<a href="shader-TransparentFamily.html">Transparent Shader Family</a>
+
+<ul>
+<li><a href="shader-TransVertexLit.html">Transparent Vertex-Lit</a></li>
+<li><a href="shader-TransDiffuse.html">Transparent Diffuse</a></li>
+<li><a href="shader-TransSpecular.html">Transparent Specular</a></li>
+<li><a href="shader-TransBumpedDiffuse.html">Transparent Bumped Diffuse</a></li>
+<li><a href="shader-TransBumpedSpecular.html">Transparent Bumped Specular</a></li>
+<li><a href="shader-TransParallaxDiffuse.html">Transparent Parallax Diffuse</a></li>
+<li><a href="shader-TransParallaxSpecular.html">Transparent Parallax Specular</a></li>
+</ul>
+</li>
+<li>
+<a href="shader-TransparentCutoutFamily.html">Transparent Cutout Shader Family</a>
+
+<ul>
+<li><a href="shader-TransCutVertexLit.html">Transparent Cutout Vertex-Lit</a></li>
+<li><a href="shader-TransCutDiffuse.html">Transparent Cutout Diffuse</a></li>
+<li><a href="shader-TransCutSpecular.html">Transparent Cutout Specular</a></li>
+<li><a href="shader-TransCutBumpedDiffuse.html">Transparent Cutout Bumped Diffuse</a></li>
+<li><a href="shader-TransCutBumpedSpecular.html">Transparent Cutout Bumped Specular</a></li>
+</ul>
+</li>
+<li>
+<a href="shader-SelfIllumFamily.html">Self-Illuminated Shader Family</a>
+
+<ul>
+<li><a href="shader-SelfIllumVertexLit.html">Self-Illuminated Vertex-Lit</a></li>
+<li><a href="shader-SelfIllumDiffuse.html">Self-Illuminated Diffuse</a></li>
+<li><a href="shader-SelfIllumSpecular.html">Self-Illuminated Specular</a></li>
+<li><a href="shader-SelfIllumBumpedDiffuse.html">Self-Illuminated Normal mapped Diffuse</a></li>
+<li><a href="shader-SelfIllumBumpedSpecular.html">Self-Illuminated Normal mapped Specular</a></li>
+<li><a href="shader-SelfIllumParallaxDiffuse.html">Self-Illuminated Parallax Diffuse</a></li>
+<li><a href="shader-SelfIllumParallaxSpecular.html">Self-Illuminated Parallax Specular</a></li>
+</ul>
+</li>
+<li>
+<a href="shader-ReflectiveFamily.html">Reflective Shader Family</a>
+
+<ul>
+<li><a href="shader-ReflectiveVertexLit.html">Reflective Vertex-Lit</a></li>
+<li><a href="shader-ReflectiveDiffuse.html">Reflective Diffuse</a></li>
+<li><a href="shader-ReflectiveSpecular.html">Reflective Specular</a></li>
+<li><a href="shader-ReflectiveBumpedDiffuse.html">Reflective Bumped Diffuse</a></li>
+<li><a href="shader-ReflectiveBumpedSpecular.html">Reflective Bumped Specular</a></li>
+<li><a href="shader-ReflectiveParallaxDiffuse.html">Reflective Parallax Diffuse</a></li>
+<li><a href="shader-ReflectiveParallaxSpecular.html">Reflective Parallax Specular</a></li>
+<li><a href="shader-ReflectiveBumpedUnlit.html">Reflective Normal Mapped Unlit</a></li>
+<li><a href="shader-ReflectiveBumpedVertexLit.html">Reflective Normal mapped Vertex-lit</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="shader-graph.html"> Using Shader Graph</a></li>
+<li>
+<a href="shader-writing.html"> Writing shaders</a>
+
+<ul>
+<li><a href="SL-ShadingLanguage.html"> Writing shaders overview</a></li>
+<li>
+<a href="SL-Reference.html"> ShaderLab</a>
+
+<ul>
+<li>
+<a href="SL-Shader.html"> ShaderLab: defining a Shader object</a>
+
+<ul>
+<li><a href="SL-Properties.html"> ShaderLab: defining material properties</a></li>
+<li><a href="SL-Fallback.html"> ShaderLab: assigning a fallback</a></li>
+<li><a href="SL-CustomEditor.html"> ShaderLab: assigning a custom editor</a></li>
+</ul>
+</li>
+<li>
+<a href="SL-SubShader.html"> ShaderLab: defining a SubShader</a>
+
+<ul>
+<li><a href="SL-SubShaderTags.html"> ShaderLab: assigning tags to a SubShader</a></li>
+<li><a href="SL-ShaderLOD.html"> ShaderLab: assigning a LOD value to a SubShader</a></li>
+</ul>
+</li>
+<li>
+<a href="SL-Pass.html"> ShaderLab: defining a Pass</a>
+
+<ul>
+<li><a href="SL-Name.html"> ShaderLab: assigning a name to a Pass</a></li>
+<li><a href="SL-PassTags.html"> ShaderLab: assigning tags to a Pass</a></li>
+<li><a href="shader-predefined-pass-tags-built-in.html"> ShaderLab: Predefined Pass tags in the Built-in Render Pipeline</a></li>
+</ul>
+</li>
+<li><a href="shader-shaderlab-code-blocks.html"> ShaderLab: adding shader programs</a></li>
+<li><a href="SL-PackageRequirements.html"> ShaderLab: specifying package requirements</a></li>
+<li>
+<a href="shader-shaderlab-commands.html"> ShaderLab: commands</a>
+
+<ul>
+<li><a href="SL-Other.html"> ShaderLab: grouping commands with the Category block</a></li>
+<li><a href="SL-AlphaToMask.html"> ShaderLab command: AlphaToMask</a></li>
+<li><a href="SL-Blend.html"> ShaderLab command: Blend</a></li>
+<li><a href="SL-BlendOp.html"> ShaderLab command: BlendOp</a></li>
+<li><a href="SL-ColorMask.html"> ShaderLab command: ColorMask</a></li>
+<li><a href="SL-Conservative.html"> ShaderLab command: Conservative</a></li>
+<li><a href="SL-Cull.html"> ShaderLab command: Cull</a></li>
+<li><a href="SL-Offset.html"> ShaderLab command: Offset</a></li>
+<li><a href="SL-Stencil.html"> ShaderLab command: Stencil</a></li>
+<li><a href="SL-UsePass.html"> ShaderLab command: UsePass</a></li>
+<li><a href="SL-GrabPass.html"> ShaderLab command: GrabPass</a></li>
+<li><a href="SL-ZClip.html"> ShaderLab command: ZClip</a></li>
+<li><a href="SL-ZTest.html"> ShaderLab command: ZTest</a></li>
+<li><a href="SL-ZWrite.html"> ShaderLab command: ZWrite</a></li>
+<li>
+<a href="shader-shaderlab-legacy.html"> ShaderLab legacy functionality</a>
+
+<ul>
+<li><a href="SL-Fog.html"> ShaderLab: legacy fog</a></li>
+<li><a href="SL-Material.html"> ShaderLab: legacy lighting</a></li>
+<li><a href="SL-AlphaTest.html">ShaderLab: legacy alpha testing</a></li>
+<li><a href="SL-SetTexture.html">ShaderLab: legacy texture combining</a></li>
+<li><a href="SL-BindChannels.html"> ShaderLab: legacy vertex data channel mapping</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="SL-ShaderPrograms.html"> HLSL in Unity</a>
+
+<ul>
+<li>
+<a href="shader-preprocessor-directives.html"> Preprocessor directives in HLSL</a>
+
+<ul>
+<li><a href="shader-include-directives.html"> include and include_with_pragmas directives in HLSL</a></li>
+<li><a href="SL-PragmaDirectives.html"> pragma directives in HLSL</a></li>
+<li><a href="SL-ShaderCompileTargets.html"> Targeting shader models and GPU features in HLSL</a></li>
+<li><a href="SL-ShaderCompilationAPIs.html"> Targeting graphics APIs and platforms in HLSL</a></li>
+<li><a href="SL-MultipleProgramVariants.html"> Declaring and using shader keywords in HLSL</a></li>
+</ul>
+</li>
+<li><a href="SL-ShaderSemantics.html"> Shader semantics</a></li>
+<li><a href="SL-PropertiesInPrograms.html"> Accessing shader properties in Cg/HLSL</a></li>
+<li><a href="SL-VertexProgramInputs.html"> Providing vertex data to vertex programs</a></li>
+<li><a href="SL-BuiltinIncludes.html"> Built-in shader include files</a></li>
+<li><a href="SL-BuiltinMacros.html"> Built-in macros</a></li>
+<li><a href="SL-BuiltinFunctions.html"> Built-in shader helper functions</a></li>
+<li><a href="SL-UnityShaderVariables.html">Built-in shader variables</a></li>
+<li><a href="SL-DataTypesAndPrecision.html"> Shader data types and precision</a></li>
+<li><a href="SL-SamplerStates.html"> Using sampler states</a></li>
+</ul>
+</li>
+<li><a href="SL-GLSLShaderPrograms.html"> GLSL in Unity</a></li>
+<li><a href="shader-writing-vertex-fragment.html"> Example shaders</a></li>
+<li>
+<a href="SL-SurfaceShaders.html"> Writing Surface Shaders</a>
+
+<ul>
+<li><a href="SL-RenderPipeline.html">Surface Shaders and rendering paths</a></li>
+<li><a href="SL-SurfaceShaderExamples.html">Surface Shader examples</a></li>
+<li><a href="SL-SurfaceShaderLighting.html"> Custom lighting models in Surface Shaders</a></li>
+<li><a href="SL-SurfaceShaderLightingExamples.html"> Surface Shader lighting examples</a></li>
+<li><a href="SL-SurfaceShaderTessellation.html"> Surface Shaders with DX11 / OpenGL Core Tessellation</a></li>
+</ul>
+</li>
+<li><a href="SL-PlatformDifferences.html"> Writing shaders for different graphics APIs</a></li>
+</ul>
+</li>
+<li>
+<a href="shader-performance-debugging.html"> Understanding shader performance</a>
+
+<ul>
+<li><a href="SL-ShaderPerformance.html"> Optimizing shader runtime performance</a></li>
+<li><a href="SL-DebuggingD3D11ShadersWithVS.html"> Debugging shaders using Visual Studio</a></li>
+<li><a href="DebuggingShadersWithPIX.html"> Debugging DirectX 12 shaders with PIX</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="Materials.html"> Materials</a>
+
+<ul>
+<li><a href="materials-introduction.html"> Materials introduction</a></li>
+<li><a href="class-Material.html"> Material Inspector reference</a></li>
+<li><a href="MaterialValidator.html"> Physically Based Rendering Material Validator</a></li>
+<li><a href="MaterialsAccessingViaScript.html"> Using materials with C# scripts</a></li>
+<li><a href="materialvariant-landingpage.html"> Material Variants</a></li>
+<li><a href="materialvariant-concept.html"> Material Variant benefits and limitations</a></li>
+<li><a href="materialvariant-hierarchyconcept.html"> Material Variant inheritance</a></li>
+<li><a href="materialvariant-tasks.html"> Create, modify, and apply Material Variants</a></li>
+</ul>
+</li>
+<li>
+<a href="visual-effects.html"> Visual effects</a>
+
+<ul>
+<li><a href="PostProcessingOverview.html"> Post-processing and full-screen effects</a></li>
+<li>
+<a href="ParticleSystems.html"> Particle systems</a>
+
+<ul>
+<li><a href="ChoosingYourParticleSystem.html"> Choosing your particle system solution</a></li>
+<li>
+<a href="Built-inParticleSystem.html"> Built-in Particle System</a>
+
+<ul>
+<li><a href="PartSysUsage.html">Using the Built-in Particle System</a></li>
+<li><a href="PartSysVertexStreams.html"> Particle System vertex streams and Standard Shader support</a></li>
+<li><a href="PartSysInstancing.html"> Particle System GPU Instancing</a></li>
+<li><a href="particle-system-job-system-integration.html"> Particle System C# Job System integration</a></li>
+<li>
+<a href="PartSysReference.html">Components and Modules</a>
+
+<ul>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="class-ParticleSystem.html">Particle System</a><span class="tooltiptext">A component that simulates fluid entities such as liquids, clouds and flames by generating and animating large numbers of small 2D images in the scene. <a href="class-ParticleSystem.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#particlesystem">Glossary</a></span></span></span></li>
+<li>
+<a href="ParticleSystemModules.html">Particle System modules</a>
+
+<ul>
+<li><a href="PartSysMainModule.html">Main module</a></li>
+<li><a href="PartSysEmissionModule.html"> Emission module</a></li>
+<li><a href="PartSysShapeModule.html">Shape module</a></li>
+<li><a href="PartSysVelOverLifeModule.html">Velocity over Lifetime module</a></li>
+<li><a href="PartSysNoiseModule.html"> Noise module</a></li>
+<li><a href="PartSysLimitVelOverLifeModule.html">Limit Velocity over Lifetime module</a></li>
+<li><a href="PartSysInheritVelocity.html"> Inherit Velocity module</a></li>
+<li><a href="PartSysLifetimeByEmitterSpeedModule.html"> Lifetime by Emitter Speed module</a></li>
+<li><a href="PartSysForceOverLifeModule.html">Force over Lifetime module</a></li>
+<li><a href="PartSysColorOverLifeModule.html">Color over Lifetime module</a></li>
+<li><a href="PartSysColorBySpeedModule.html">Color by Speed module</a></li>
+<li><a href="PartSysSizeOverLifeModule.html">Size over Lifetime module</a></li>
+<li><a href="PartSysSizeBySpeedModule.html">Size by Speed module</a></li>
+<li><a href="PartSysRotOverLifeModule.html"> Rotation over Lifetime module</a></li>
+<li><a href="PartSysRotBySpeedModule.html">Rotation by Speed module</a></li>
+<li><a href="PartSysExtForceModule.html">External Forces module</a></li>
+<li><a href="PartSysCollisionModule.html">Collision module</a></li>
+<li><a href="PartSysTriggersModule.html"> Triggers module</a></li>
+<li><a href="PartSysSubEmitModule.html">Sub Emitters module</a></li>
+<li><a href="PartSysTexSheetAnimModule.html"> Texture Sheet Animation module</a></li>
+<li><a href="PartSysLightsModule.html"> Lights module</a></li>
+<li><a href="PartSysTrailsModule.html"> Trails module</a></li>
+<li><a href="PartSysCustomDataModule.html"> Custom Data module</a></li>
+<li><a href="PartSysRendererModule.html"> Renderer module</a></li>
+</ul>
+</li>
+<li><a href="class-ParticleSystemForceField.html">Particle System Force Field</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="VFXGraph.html"> Visual Effect Graph</a>
+
+<ul>
+<li><a href="class-VFXManager.html">Project Settings - VFX</a></li>
+<li><a href="class-VisualEffectAsset.html">Visual Effect Graph Asset</a></li>
+<li><a href="class-VisualEffectSubgraphBlock.html">Block Subgraph</a></li>
+<li><a href="class-VisualEffectSubgraphOperator.html">Operator Subgraph</a></li>
+<li><a href="class-VisualEffect.html">Visual Effect</a></li>
+<li><a href="script-VFXPropertyBinder.html">Property Binders</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="visual-effects-decals.html"> Decals and projectors</a>
+
+<ul>
+<li><a href="class-Projector.html"> Projector component</a></li>
+</ul>
+</li>
+<li>
+<a href="visual-effects-lens-flares.html"> Lens flares and halos</a>
+
+<ul>
+<li><a href="class-Flare.html"> Flare asset</a></li>
+<li><a href="class-LensFlare.html"> Lens Flare component</a></li>
+<li><a href="class-FlareLayer.html"> Flare Layer component</a></li>
+<li><a href="class-Halo.html"> Halo component</a></li>
+</ul>
+</li>
+<li>
+<a href="visual-effects-lines-trails-billboards.html"> Lines, trails, and billboards</a>
+
+<ul>
+<li><a href="class-LineRenderer.html"> Line Renderer component</a></li>
+<li><a href="class-TrailRenderer.html"> Trail Renderer component</a></li>
+<li><a href="class-BillboardRenderer.html"> Billboard Renderer component</a></li>
+<li><a href="class-BillboardAsset.html"> Billboard asset</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="sky.html"> Sky</a>
+
+<ul>
+<li><a href="using-skymanager.html"> SkyManager </a></li>
+<li>
+<a href="skyboxes.html"> Skyboxes</a>
+
+<ul>
+<li><a href="skyboxes-using.html"> Using skyboxes</a></li>
+</ul>
+</li>
+<li>
+<a href="skybox-shaders.html"> Skybox shaders</a>
+
+<ul>
+<li><a href="shader-skybox-6sided.html"> 6 Sided skybox</a></li>
+<li><a href="shader-skybox-cubemap.html"> Cubemap skybox</a></li>
+<li><a href="shader-skybox-panoramic.html"> Panoramic skybox</a></li>
+<li><a href="shader-skybox-procedural.html"> Procedural skybox</a></li>
+</ul>
+</li>
+<li><a href="class-Skybox.html"> Skybox component reference</a></li>
+</ul>
+</li>
+<li>
+<a href="graphics-color.html"> Color</a>
+
+<ul>
+<li>
+<a href="LinearLighting.html"> Color space</a>
+
+<ul>
+<li><a href="LinearRendering-LinearOrGammaWorkflow.html"> Linear or gamma workflow</a></li>
+<li><a href="LinearRendering-GammaTextures.html"> Gamma Textures with linear rendering</a></li>
+<li><a href="LinearRendering-LinearTextures.html"> Working with linear Textures</a></li>
+</ul>
+</li>
+<li>
+<a href="HDR.html"> High dynamic range</a>
+
+<ul>
+<li><a href="HDRColorPicker.html"> HDR color picker</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="GraphicsAPIs.html"> Graphics API support</a>
+
+<ul>
+<li><a href="UsingDX11GL3Features.html"> DirectX</a></li>
+<li>
+<a href="Metal.html"> Metal</a>
+
+<ul>
+<li><a href="metal-introduction.html"> Introduction to Metal</a></li>
+<li><a href="metal-requirements-and-compatibility.html"> Metal requirements and compatibility</a></li>
+<li><a href="metal-debug.html"> Debug Metal graphics</a></li>
+<li><a href="metal-optimize.html"> Optimize Metal graphics</a></li>
+</ul>
+</li>
+<li><a href="OpenGLCoreDetails.html">OpenGL Core</a></li>
+</ul>
+</li>
+<li>
+<a href="graphics-performance-profiling.html"> Graphics performance and profiling</a>
+
+<ul>
+<li><a href="OptimizingGraphicsPerformance.html"> Graphics performance fundamentals</a></li>
+<li>
+<a href="optimizing-draw-calls.html"> Optimizing draw calls</a>
+
+<ul>
+<li>
+<a href="GPUInstancing.html"> GPU instancing</a>
+
+<ul>
+<li><a href="gpu-instancing-shader.html"> Creating shaders that support GPU instancing</a></li>
+</ul>
+</li>
+<li>
+<a href="DrawCallBatching.html"> Draw call batching</a>
+
+<ul>
+<li><a href="static-batching.html"> Static batching</a></li>
+<li><a href="dynamic-batching.html"> Dynamic batching</a></li>
+</ul>
+</li>
+<li><a href="combining-meshes.html"> Manually combining meshes</a></li>
+<li><a href="SRPBatcher.html"> Scriptable Render Pipeline Batcher</a></li>
+</ul>
+</li>
+<li>
+<a href="batch-renderer-group.html"> BatchRendererGroup</a>
+
+<ul>
+<li><a href="batch-renderer-group-how.html"> How BatchRendererGroup works</a></li>
+<li><a href="batch-renderer-group-getting-started.html"> Getting started with BatchRendererGroup</a></li>
+<li>
+<a href="batch-renderer-group-creating-a-renderer.html"> Creating a renderer with BatchRendererGroup</a>
+
+<ul>
+<li><a href="batch-renderer-group-initializing.html"> Initializing a BatchRendererGroup object</a></li>
+<li><a href="batch-renderer-group-registering-meshes-and-materials.html"> Registering meshes and materials</a></li>
+<li><a href="batch-renderer-group-creating-batches.html"> Creating batches</a></li>
+<li><a href="batch-renderer-group-creating-draw-commands.html"> Creating draw commands</a></li>
+</ul>
+</li>
+<li><a href="dots-instancing-shaders.html"> DOTS Instancing shaders</a></li>
+</ul>
+</li>
+<li><a href="RenderingStatistics.html"> The Rendering Statistics window</a></li>
+<li>
+<a href="FrameDebugger.html"> Debug frames in Unity</a>
+
+<ul>
+<li><a href="frame-debugger-window.html"> Frame Debugger window reference</a></li>
+<li><a href="frame-debugger-window-event-hierarchy.html"> Frame Debugger Event Hierarchy</a></li>
+<li><a href="frame-debugger-window-event-information.html"> Frame Debugger event information</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="CreatingEnvironments.html"> World building</a>
+
+<ul>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="script-Terrain.html">Terrain</a><span class="tooltiptext">The landscape in your scene. A Terrain GameObject adds a large flat plane to your scene and you can use the Terrain’s Inspector window to create a detailed landscape. <a href="terrain-UsingTerrains.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#Terrain">Glossary</a></span></span></span>
+
+<ul>
+<li><a href="terrain-UsingTerrains.html">Creating and editing Terrains</a></li>
+<li><a href="terrain-CreateNeighborTerrains.html"> Create Neighbor Terrains</a></li>
+<li>
+<a href="terrain-Tools.html"> Terrain tools</a>
+
+<ul>
+<li><a href="terrain-RaiseLowerTerrain.html"> Raise or Lower Terrain</a></li>
+<li><a href="terrain-PaintHoles.html"> Paint Holes</a></li>
+<li><a href="terrain-PaintTexture.html"> Paint Texture</a></li>
+<li><a href="terrain-SetHeight.html"> Set Height</a></li>
+<li><a href="terrain-SmoothHeight.html"> Smooth Height</a></li>
+<li><a href="terrain-StampTerrain.html"> Stamp Terrain</a></li>
+</ul>
+</li>
+<li><a href="class-TerrainLayer.html"> Terrain Layers</a></li>
+<li><a href="class-Brush.html"> Brushes</a></li>
+<li>
+<a href="terrain-Trees.html"> Trees</a>
+
+<ul>
+<li><a href="SpeedTree.html">SpeedTree</a></li>
+</ul>
+</li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="class-WindZone.html">Wind Zones</a><span class="tooltiptext">A GameObject that adds the effect of wind to your terrain. For instance, Trees within a wind zone will bend in a realistic animated fashion and the wind itself will move in pulses to create natural patterns of movement among the tree. <a href="class-WindZone.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#windzone">Glossary</a></span></span></span></li>
+<li><a href="terrain-Grass.html"> Grass and other details</a></li>
+<li><a href="terrain-Heightmaps.html"> Working with Heightmaps</a></li>
+<li><a href="terrain-OtherSettings.html"> Terrain settings</a></li>
+<li><a href="terrain-Runtime.html"> Using Terrain at runtime</a></li>
+</ul>
+</li>
+<li><a href="TerrainTools.html"> Terrain Tools</a></li>
+<li>
+<a href="class-Tree.html">Tree Editor</a>
+
+<ul>
+<li><a href="tree-FirstTree.html">Building Your First Tree</a></li>
+<li><a href="tree-Structure.html">Tree Basics</a></li>
+<li><a href="tree-Branches.html">Branch Group Properties</a></li>
+<li><a href="tree-Leaves.html">Leaf Group Properties</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="PhysicsSection.html">Physics</a>
+
+<ul>
+<li>
+<a href="PhysicsOverview.html"> Built-in 3D Physics</a>
+
+<ul>
+<li>
+<a href="character-control-section.html"> Character control</a>
+
+<ul>
+<li><a href="CharacterControllers.html"> Introduction to character control</a></li>
+<li><a href="class-CharacterController.html"> Character Controller component reference</a></li>
+</ul>
+</li>
+<li>
+<a href="rigidbody-physics-section.html"> Rigidbody physics</a>
+
+<ul>
+<li><a href="RigidbodiesOverview.html"> Introduction to rigid body physics </a></li>
+<li><a href="rigidbody-configure-colliders.html"> Configure Rigidbody Colliders </a></li>
+<li><a href="rigidbody-constant-force.html"> Apply constant force to a Rigidbody</a></li>
+<li><a href="rigidbody-interpolation.html"> Apply interpolation to a Rigidbody</a></li>
+<li><a href="class-Rigidbody.html"> Rigidbody component reference</a></li>
+<li><a href="class-ConstantForce.html"> Constant Force component reference</a></li>
+</ul>
+</li>
+<li>
+<a href="collision-section.html"> Collision</a>
+
+<ul>
+<li><a href="CollidersOverview.html"> Introduction to collision</a></li>
+<li><a href="ContinuousCollisionDetection.html"> Continuous collision detection (CCD)</a></li>
+<li><a href="WheelColliderTutorial.html"> Create a vehicle with Wheel Colliders</a></li>
+<li><a href="PhysicsDebugVisualization.html"> Physics Debug window reference</a></li>
+<li><a href="class-BoxCollider.html"> Box Collider component reference</a></li>
+<li><a href="class-CapsuleCollider.html"> Capsule Collider component reference</a></li>
+<li><a href="class-TerrainCollider.html"> Terrain Collider component reference</a></li>
+<li><a href="class-WheelCollider.html"> Wheel Collider component reference</a></li>
+<li><a href="class-MeshCollider.html"> Mesh Collider component reference</a></li>
+<li><a href="class-SphereCollider.html"> Sphere Collider component reference</a></li>
+<li><a href="class-PhysicMaterial.html"> Physic Material component reference</a></li>
+</ul>
+</li>
+<li>
+<a href="joints-section.html"> Joints</a>
+
+<ul>
+<li><a href="Joints.html"> Introduction to joints</a></li>
+<li><a href="class-CharacterJoint.html"> Character Joint component reference</a></li>
+<li><a href="class-ConfigurableJoint.html"> Configurable Joint component reference</a></li>
+<li><a href="class-FixedJoint.html"> Fixed Joint component reference</a></li>
+<li><a href="class-HingeJoint.html"> Hinge Joint component reference</a></li>
+<li><a href="class-SpringJoint.html"> Spring Joint component reference</a></li>
+</ul>
+</li>
+<li>
+<a href="articulations-section.html"> Articulations</a>
+
+<ul>
+<li><a href="physics-articulations.html"> Introduction to physics articulations</a></li>
+<li><a href="class-ArticulationBody.html"> Articulation Body component reference</a></li>
+</ul>
+</li>
+<li>
+<a href="ragdoll-physics-section.html"> Ragdoll physics</a>
+
+<ul>
+<li><a href="wizard-RagdollWizard.html"> Create a ragdoll</a></li>
+<li><a href="RagdollStability.html"> Joint and Ragdoll stability</a></li>
+</ul>
+</li>
+<li><a href="class-Cloth.html"> Cloth</a></li>
+<li><a href="physics-multi-scene.html"> Multi-scene physics</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="ScriptingSection.html"> Scripting</a>
+
+<ul>
+<li>
+<a href="ScriptingSettingUp.html"> Setting Up Your Scripting Environment</a>
+
+<ul>
+<li><a href="ScriptingToolsIDEs.html"> Integrated development environment (IDE) support</a></li>
+<li><a href="ManagedCodeDebugging.html"> Debug C# code in Unity</a></li>
+<li><a href="StackTrace.html"> Stack trace logging</a></li>
+<li><a href="testing-editortestsrunner.html"> Unit Testing</a></li>
+<li><a href="roslyn-analyzers.html"> Roslyn analyzers and source generators</a></li>
+</ul>
+</li>
+<li>
+<a href="ScriptingConcepts.html"> Scripting concepts</a>
+
+<ul>
+<li><a href="CreatingAndUsingScripts.html">Creating and Using Scripts</a></li>
+<li><a href="VariablesAndTheInspector.html"> Variables and the Inspector</a></li>
+<li><a href="InstantiatingPrefabs.html"> Instantiating Prefabs at run time</a></li>
+<li><a href="ExecutionOrder.html"> Order of execution for event functions</a></li>
+<li><a href="EventFunctions.html">Event Functions</a></li>
+<li><a href="Coroutines.html"> Coroutines</a></li>
+<li><a href="Namespaces.html">Namespaces</a></li>
+<li><a href="Attributes.html"> Attributes</a></li>
+<li><a href="UnityEvents.html">UnityEvents</a></li>
+<li><a href="NullReferenceException.html"> Null Reference Exceptions</a></li>
+</ul>
+</li>
+<li>
+<a href="ScriptingImportantClasses.html"> Important Classes </a>
+
+<ul>
+<li><a href="class-GameObject.html"> GameObject</a></li>
+<li><a href="class-MonoBehaviour.html"> MonoBehaviour</a></li>
+<li><a href="class-Object.html"> Object</a></li>
+<li><a href="ScriptingTransform.html"> Transform</a></li>
+<li><a href="VectorCookbook.html"> Vectors</a></li>
+<li><a href="class-Quaternion.html"> Quaternion</a></li>
+<li><a href="class-ScriptableObject.html"> ScriptableObject</a></li>
+<li><a href="TimeFrameManagement.html"> Time</a></li>
+<li><a href="class-Mathf.html"> Mathf</a></li>
+<li><a href="class-Random.html"> Random</a></li>
+<li><a href="class-Debug.html"> Debug</a></li>
+<li><a href="GizmosAndHandles.html"> Gizmos and Handles</a></li>
+</ul>
+</li>
+<li>
+<a href="unity-architecture.html"> Unity architecture</a>
+
+<ul>
+<li>
+<a href="overview-of-dot-net-in-unity.html"> Overview of .NET in Unity</a>
+
+<ul>
+<li><a href="dotnetProfileSupport.html"> .NET profile support</a></li>
+<li><a href="dotnetProfileLimitations.html"> Stable scripting runtime: known limitations</a></li>
+<li><a href="dotnetProfileAssemblies.html"> Referencing additional class library assemblies</a></li>
+<li><a href="CSharpCompiler.html"> C# compiler</a></li>
+</ul>
+</li>
+<li>
+<a href="scripting-backends.html"> Scripting backends</a>
+
+<ul>
+<li><a href="Mono.html"> Mono overview</a></li>
+<li>
+<a href="IL2CPP.html"> IL2CPP Overview</a>
+
+<ul>
+<li><a href="handling-IL2CPP-additional-args.html"> Handling platform specific settings for IL2CPP additional arguments</a></li>
+<li><a href="linux-IL2CPPcrosscompiler.html"> Linux IL2CPP cross-compiler</a></li>
+<li><a href="IL2CPP-WindowsRuntimeSupport.html"> Windows Runtime support</a></li>
+<li><a href="IL2CPP-managed-stack-traces.html"> Managed stack traces with IL2CPP</a></li>
+</ul>
+</li>
+<li><a href="ScriptingRestrictions.html"> Scripting restrictions</a></li>
+<li><a href="ManagedCodeStripping.html"> Managed code stripping</a></li>
+<li><a href="unity-linker.html"> The Unity linker</a></li>
+</ul>
+</li>
+<li>
+<a href="code-reloading-editor.html"> Code reloading in the Unity Editor</a>
+
+<ul>
+<li>
+<a href="ConfigurableEnterPlayMode.html"> Configurable Enter Play Mode</a>
+
+<ul>
+<li><a href="DomainReloading.html"> Domain Reloading</a></li>
+<li><a href="SceneReloading.html"> Scene Reloading</a></li>
+<li><a href="ConfigurableEnterPlayModeDetails.html"> Details of disabling Domain and Scene Reload</a></li>
+</ul>
+</li>
+<li><a href="RunningEditorCodeOnLaunch.html">Running Editor Script Code on Launch</a></li>
+</ul>
+</li>
+<li><a href="script-Serialization.html"> Script serialization</a></li>
+<li>
+<a href="script-compilation.html"> Script compilation</a>
+
+<ul>
+<li><a href="ScriptCompileOrderFolders.html">Special folders and script compilation order</a></li>
+<li>
+<a href="PlatformDependentCompilation.html"> Conditional compilation</a>
+
+<ul>
+<li><a href="CustomScriptingSymbols.html"> Custom scripting symbols</a></li>
+</ul>
+</li>
+<li>
+<a href="ScriptCompilationAssemblyDefinitionFiles.html"> Assembly definitions</a>
+
+<ul>
+<li><a href="class-AssemblyDefinitionImporter.html"> Assembly Definition properties</a></li>
+<li><a href="class-AssemblyDefinitionReferenceImporter.html"> Assembly Definition Reference properties</a></li>
+<li><a href="AssemblyDefinitionFileFormat.html"> Assembly Definition File Format</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="Plugins.html"> Plug-ins</a>
+
+<ul>
+<li><a href="PluginInspector.html"> Import and configure plug-ins </a></li>
+<li><a href="UsingDLL.html"> Managed plug-ins</a></li>
+<li><a href="NativePlugins.html"> Native plug-ins</a></li>
+<li><a href="PluginsForDesktop.html"> Building plug-ins for desktop platforms</a></li>
+<li>
+<a href="NativePluginInterface.html"> Low-level native plug-in interface</a>
+
+<ul>
+<li><a href="LowLevelNativePluginRenderingExtensions.html">Low-level native plug-in rendering extensions</a></li>
+<li><a href="LowLevelNativePluginShaderCompilerAccess.html">Low-level native plug-in Shader compiler access</a></li>
+<li>
+<a href="low-level-native-plugin-memory-manager-api.html"> Memory Manager API for low-level native plug-ins</a>
+
+<ul>
+<li><a href="low-level-native-plugin-memory-manager-api-reference.html"> IUnityMemoryManager API reference</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="JobSystem.html"> Job system </a>
+
+<ul>
+<li><a href="JobSystemOverview.html"> Job system overview</a></li>
+<li><a href="job-system-jobs.html"> Jobs overview </a></li>
+<li>
+<a href="JobSystemNativeContainer.html"> Thread safe types</a>
+
+<ul>
+<li><a href="job-system-custom-nativecontainer.html"> Implement a custom native container</a></li>
+<li><a href="job-system-copy-nativecontainer.html"> Copying NativeContainer structures</a></li>
+<li><a href="job-system-custom-nativecontainer-example.html"> Custom NativeContainer example</a></li>
+</ul>
+</li>
+<li><a href="JobSystemCreatingJobs.html"> Create and run a job</a></li>
+<li><a href="JobSystemJobDependencies.html"> Job dependencies </a></li>
+<li><a href="JobSystemParallelForJobs.html"> Parallel jobs</a></li>
+</ul>
+</li>
+<li>
+<a href="properties.html"> Unity Properties</a>
+
+<ul>
+<li><a href="property-bags.html"> Property bags</a></li>
+<li><a href="property-visitors.html"> Property visitors</a></li>
+<li><a href="property-paths.html"> Property paths</a></li>
+<li><a href="property-visitors-PropertyVisitor.html"> Use <code>PropertyVisitor</code> to create a property visitor</a></li>
+<li><a href="property-visitors-low-level-api.html"> Use low-level APIs to create a property visitor</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="UNet.html"> Multiplayer and Networking</a>
+
+<ul>
+<li><a href="UNetOverview.html">Multiplayer Overview</a></li>
+<li><a href="UNetGettingStarted.html"> Setting up a multiplayer project</a></li>
+<li><a href="UNetManager.html"> Using the Network Manager</a></li>
+<li><a href="UNetManagerHUD.html"> Using the Network Manager HUD</a></li>
+<li><a href="UNetManagerHUDLanMode.html"> The Network Manager HUD in LAN mode</a></li>
+<li><a href="UNetManagerHUDMatchMakerMode.html"> The Network Manager HUD in Matchmaker mode</a></li>
+<li><a href="UNetConverting.html">Converting a single-player game to Unity Multiplayer</a></li>
+<li><a href="UNetDebugging.html">Debugging Information</a></li>
+<li>
+<a href="UNetReference.html">Multiplayer Component Reference</a>
+
+<ul>
+<li><a href="class-NetworkAnimator.html"> Network Animator</a></li>
+<li><a href="class-NetworkDiscovery.html">Network Discovery</a></li>
+<li><a href="class-NetworkIdentity.html"> Network Identity</a></li>
+<li><a href="class-NetworkLobbyManager.html">Network Lobby Manager</a></li>
+<li><a href="class-NetworkLobbyPlayer.html">Network Lobby Player</a></li>
+<li><a href="class-NetworkManagerHUD.html"> Network Manager HUD</a></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="class-NetworkManagerUNet.html">Network Manager</a><span class="tooltiptext">A Networking component that manages the network state of a project. <a href="UNetManager.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#NetworkManager">Glossary</a></span></span></span></li>
+<li><a href="class-NetworkProximityChecker.html"> Network Proximity Checker</a></li>
+<li><a href="class-NetworkStartPosition.html">NetworkStartPosition </a></li>
+<li><a href="class-NetworkTransform.html"> Network Transform</a></li>
+<li><a href="class-NetworkTransformChild.html"> Network Transform Child</a></li>
+<li><a href="class-NetworkTransformVisualizer.html"> Network Transform Visualizer</a></li>
+</ul>
+</li>
+<li>
+<a href="UNetClassesReference.html">Multiplayer Classes Reference</a>
+
+<ul>
+<li><a href="class-NetworkBehaviour.html"> NetworkBehaviour</a></li>
+<li><a href="class-NetworkClient.html"> NetworkClient</a></li>
+<li><a href="class-NetworkConnection.html">NetworkConnection </a></li>
+<li><a href="class-NetworkServer.html">NetworkServer </a></li>
+<li><a href="class-NetworkServerSimple.html">NetworkServerSimple </a></li>
+</ul>
+</li>
+<li><a href="UNetEncryptionPlugins.html"> Multiplayer Encryption Plug-ins</a></li>
+<li>
+<a href="UnityWebRequest.html">UnityWebRequest</a>
+
+<ul>
+<li>
+<a href="UnityWebRequest-HLAPI.html">Common operations: using the HLAPI</a>
+
+<ul>
+<li><a href="UnityWebRequest-RetrievingTextBinaryData.html">Retrieving text or binary data from an HTTP Server (GET)</a></li>
+<li><a href="UnityWebRequest-RetrievingTexture.html">Retrieving a Texture from an HTTP Server (GET)</a></li>
+<li><a href="UnityWebRequest-DownloadingAssetBundle.html">Downloading an AssetBundle from an HTTP server (GET)</a></li>
+<li><a href="UnityWebRequest-SendingForm.html">Sending a form to an HTTP server (POST)</a></li>
+<li><a href="UnityWebRequest-UploadingRawData.html">Uploading raw data to an HTTP server (PUT)</a></li>
+</ul>
+</li>
+<li>
+<a href="UnityWebRequest-LLAPI.html">Advanced operations: Using the LLAPI</a>
+
+<ul>
+<li><a href="UnityWebRequest-CreatingUnityWebRequests.html">Creating UnityWebRequests</a></li>
+<li><a href="UnityWebRequest-CreatingUploadHandlers.html">Creating UploadHandlers</a></li>
+<li><a href="UnityWebRequest-CreatingDownloadHandlers.html">Creating DownloadHandlers</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="Audio.html"> Audio</a>
+
+<ul>
+<li><a href="AudioOverview.html"> Audio overview</a></li>
+<li><a href="AudioFiles.html">Audio files</a></li>
+<li><a href="TrackerModules.html">Tracker Modules</a></li>
+<li>
+<a href="AudioMixer.html">Audio Mixer</a>
+
+<ul>
+<li><a href="AudioMixerOverview.html">An overview of the concepts and Audio Mixer</a></li>
+<li><a href="AudioMixerSpecifics.html"> Specifics on the Audio Mixer window</a></li>
+<li><a href="AudioMixerInspectors.html"> AudioGroup Inspector</a></li>
+<li><a href="AudioMixerUsage.html">Overview of Usage and API</a></li>
+</ul>
+</li>
+<li>
+<a href="AudioMixerNativeAudioPlugin.html"> Native audio plug-in SDK</a>
+
+<ul>
+<li><a href="AudioSpatializerSDK.html"> Audio Spatializer SDK</a></li>
+</ul>
+</li>
+<li><a href="AudioProfiler.html">Audio Profiler</a></li>
+<li>
+<a href="AmbisonicAudio.html"> Ambisonic Audio</a>
+
+<ul>
+<li><a href="AudioDevelopAmbisonicDecoder.html"> Develop an ambisonic audio decoder</a></li>
+</ul>
+</li>
+<li>Audio Reference
+
+<ul>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="class-AudioClip.html">Audio Clip</a><span class="tooltiptext">A container for audio data in Unity. Unity supports mono, stereo and multichannel audio assets (up to eight channels). Unity can import .aif, .wav, .mp3, and .ogg audio file format, and .xm, .mod, .it, and .s3m tracker module formats. <a href="class-AudioClip.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#AudioClip">Glossary</a></span></span></span></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="class-AudioListener.html">Audio Listener</a><span class="tooltiptext">A component that acts like a microphone, receiving sound from Audio Sources in the scene and outputting to the computer speakers. <a href="class-AudioListener.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#AudioListener">Glossary</a></span></span></span></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="class-AudioSource.html">Audio Source</a><span class="tooltiptext">A component which plays back an Audio Clip in the scene to an audio listener or through an audio mixer. <a href="class-AudioSource.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#AudioSource">Glossary</a></span></span></span></li>
+<li><a href="class-AudioMixer.html">Audio Mixer</a></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="class-AudioEffect.html">Audio Filters</a><span class="tooltiptext">Any audio filter that distorts the sound from an Audio Source or sounds reaching the Audio Listener. <a href="class-AudioEffect.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#AudioFilter">Glossary</a></span></span></span>
+
+<ul>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="class-AudioLowPassFilter.html">Audio Low Pass Filter</a><span class="tooltiptext">An audio filter that passes low frequencies of an Audio Source or all sound reaching an Audio Listener while removing frequencies higher than the Cutoff Frequency. <a href="class-AudioLowPassFilter.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#AudioLowPassFilter">Glossary</a></span></span></span></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="class-AudioHighPassFilter.html">Audio High Pass Filter</a><span class="tooltiptext">An audio filter that passes high frequencies of an AudioSource and cuts off signals with frequencies lower than the Cutoff Frequency. <a href="class-AudioHighPassFilter.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#AudioHighPassFilter">Glossary</a></span></span></span></li>
+<li><a href="class-AudioEchoFilter.html">Audio Echo Filter</a></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="class-AudioDistortionFilter.html">Audio Distortion Filter</a><span class="tooltiptext">An audio filter that distorts the sound from an Audio Source or sounds reaching the Audio Listener by simulating the sound of a low quality radio transmission. <a href="class-AudioDistortionFilter.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#AudioDistortionFilter">Glossary</a></span></span></span></li>
+<li><a href="class-AudioReverbFilter.html">Audio Reverb Filter</a></li>
+<li><a href="class-AudioChorusFilter.html">Audio Chorus Filter</a></li>
+</ul>
+</li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="class-AudioEffectMixer.html">Audio Effects</a><span class="tooltiptext">Any effect that can modify the output of Audio Mixer components, such as filtering frequency ranges of a sound or applying reverb. <a href="class-AudioEffectMixer.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#AudioEffect">Glossary</a></span></span></span>
+
+<ul>
+<li><a href="class-AudioLowPassEffect.html">Audio Low Pass Effect</a></li>
+<li><a href="class-AudioHighPassEffect.html">Audio High Pass Effect</a></li>
+<li><a href="class-AudioEchoEffect.html">Audio Echo Effect</a></li>
+<li><a href="class-AudioFlangeEffect.html">Audio Flange Effect</a></li>
+<li><a href="class-AudioDistortionEffect.html">Audio Distortion Effect</a></li>
+<li><a href="class-AudioNormalizeEffect.html">Audio Normalize Effect</a></li>
+<li><a href="class-AudioParamEQEffect.html">Audio Parametric Equalizer Effect</a></li>
+<li><a href="class-AudioPitchShifterEffect.html">Audio Pitch Shifter Effect</a></li>
+<li><a href="class-AudioChorusEffect.html">Audio Chorus Effect</a></li>
+<li><a href="class-AudioCompressor.html">Audio Compressor Effect</a></li>
+<li><a href="class-AudioReverbEffect.html">Audio SFX Reverb Effect</a></li>
+<li><a href="class-AudioLowPassSimpleEffect.html">Audio Low Pass Simple Effect</a></li>
+<li><a href="class-AudioHighPassSimpleEffect.html">Audio High Pass Simple Effect</a></li>
+</ul>
+</li>
+<li><a href="class-AudioReverbZone.html">Reverb Zones</a></li>
+<li><a href="class-Microphone.html">Microphone</a></li>
+<li><a href="class-AudioSettings.html">Audio Settings</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="VideoPlayer.html"> Video overview</a>
+
+<ul>
+<li>
+<a href="class-VideoPlayer.html"> Video Player component</a>
+
+<ul>
+<li><a href="VideoPlayer-MigratingFromMovieTexture.html"> Migrating from MovieTexture to VideoPlayer</a></li>
+<li><a href="class-VideoClip.html"> Video Clips</a></li>
+<li><a href="Video.html"> Video sources</a></li>
+<li><a href="VideoSources-FileCompatibility.html"> Video file compatibility</a></li>
+<li><a href="VideoSources-VideoFiles.html"> Understanding video files</a></li>
+<li><a href="VideoTransparency.html"> Video transparency support</a></li>
+<li><a href="VideoPanoramic.html"> Panoramic video</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="AnimationSection.html">Animation</a>
+
+<ul>
+<li><a href="AnimationOverview.html"> Animation system overview</a></li>
+<li><a href="AnimationRotate.html"> Rotation in animations</a></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="AnimationClips.html">Animation Clips</a><span class="tooltiptext">Animation data that can be used for animated characters or simple animations. It is a simple “unit” piece of motion, such as (one specific instance of) “Idle”, “Walk” or “Run”. <a href="class-AnimationClip.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#AnimationClip">Glossary</a></span></span></span>
+
+<ul>
+<li>
+<a href="AnimationsImport.html"> Animation from external sources</a>
+
+<ul>
+<li><a href="AvatarCreationandSetup.html"> Humanoid Avatars</a></li>
+</ul>
+</li>
+<li>
+<a href="AnimationEditorGuide.html">Animation Window Guide</a>
+
+<ul>
+<li><a href="animeditor-UsingAnimationEditor.html"> Using the Animation view</a></li>
+<li><a href="animeditor-CreatingANewAnimationClip.html">Creating a new Animation Clip</a></li>
+<li><a href="animeditor-AnimatingAGameObject.html">Animating a GameObject</a></li>
+<li><a href="animeditor-AnimationCurves.html">Using Animation Curves</a></li>
+<li><a href="EditingCurves.html">Editing Curves</a></li>
+<li><a href="animeditor-AdvancedKeySelectionAndManipulation.html">Key manipulation in Dopesheet mode</a></li>
+<li><a href="animeditor-KeyManipulationInCurvesMode.html">Key manipulation in Curves mode</a></li>
+<li><a href="animeditor-MultipleParts.html">Objects with Multiple Moving Parts</a></li>
+<li><a href="script-AnimationWindowEvent.html">Using Animation Events</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="AnimatorControllers.html">Animator Controllers</a><span class="tooltiptext">Controls animation through Animation Layers with Animation State Machines and Animation Blend Trees, controlled by Animation Parameters. The same Animator Controller can be referenced by multiple models with Animator components. <a href="class-AnimatorController.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#AnimatorController">Glossary</a></span></span></span>
+
+<ul>
+<li><a href="Animator.html">The Animator Controller Asset</a></li>
+<li><a href="AnimatorWindow.html">The Animator Window</a></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="AnimationStateMachines.html">Animation State Machines</a><span class="tooltiptext">A graph within an Animator Controller that controls the interaction of Animation States. Each state references an Animation Blend Tree or a single Animation Clip. <a href="AnimationStateMachines.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#AnimationStateMachine">Glossary</a></span></span></span>
+
+<ul>
+<li><a href="StateMachineBasics.html">State Machine Basics</a></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="AnimationParameters.html">Animation Parameters</a><span class="tooltiptext">Used to communicate between scripting and the Animator Controller. Some parameters can be set in scripting and used by the controller, while other parameters are based on Custom Curves in Animation Clips and can be sampled using the scripting API. <a href="AnimationParameters.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#AnimationParameters">Glossary</a></span></span></span></li>
+<li><a href="StateMachineTransitions.html">State Machine Transitions</a></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="StateMachineBehaviours.html">State Machine Behaviours</a><span class="tooltiptext">A script that attaches to a state within a state machine to control what happens when the state machine enters, exits or remains within a state, such as play sounds as states are entered. <a href="StateMachineBehaviours.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#StateMachineBehaviour">Glossary</a></span></span></span></li>
+<li><a href="NestedStateMachines.html">Sub-State Machines</a></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="AnimationLayers.html">Animation Layers</a><span class="tooltiptext">An Animation Layer contains an Animation State Machine that controls animations of a model or part of it. An example of this is if you have a full-body layer for walking or jumping and a higher layer for upper-body motions such as throwing an object or shooting. The higher layers take precedence for the body parts they control. <a href="AnimationLayers.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#AnimationLayer">Glossary</a></span></span></span></li>
+<li><a href="AnimationSoloMute.html">Solo and Mute functionality</a></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="TargetMatching.html">Target Matching</a><span class="tooltiptext">A scripting function that allows you to move characters in such a way that a hand or foot lands in a certain place at a certain time. For example, the character may need to jump across stepping stones or jump and grab an overhead beam. <a href="TargetMatching.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#Targetmatching">Glossary</a></span></span></span></li>
+<li><a href="InverseKinematics.html">Inverse Kinematics</a></li>
+<li>
+<a href="RootMotion.html">Root Motion - how it works</a>
+
+<ul>
+<li><a href="ScriptingRootMotion.html">Tutorial: Scripting Root Motion for “in-place” humanoid animations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="class-BlendTree.html">Blend Trees</a>
+
+<ul>
+<li><a href="BlendTree-1DBlending.html">1D Blending</a></li>
+<li><a href="BlendTree-2DBlending.html">2D Blending</a></li>
+<li><a href="BlendTree-DirectBlending.html">Direct Blending</a></li>
+<li><a href="BlendTree-AdditionalOptions.html"> Additional Blend Tree Options</a></li>
+</ul>
+</li>
+<li><a href="BlendShapes.html">Working with blend shapes</a></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="AnimatorOverrideController.html">Animator Override Controllers</a><span class="tooltiptext">Allows you to create multiple variants of an Animator Controller, with each variant using a different set of animations, while retaining the original Controller’s structure, parameters and logic. <a href="AnimatorOverrideController.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#AnimatorOverrideController">Glossary</a></span></span></span></li>
+</ul>
+</li>
+<li><a href="Retargeting.html">Retargeting of Humanoid animations</a></li>
+<li><a href="MecanimPeformanceandOptimization.html"> Performance and optimization</a></li>
+<li>
+<a href="comp-AnimationGroup.html"> Animation Reference</a>
+
+<ul>
+<li><a href="class-Animator.html"> Animator component</a></li>
+<li>
+<a href="class-AnimatorController.html">Animator Controller</a>
+
+<ul>
+<li><a href="AnimatorControllerCreation.html">Creating an AnimatorController</a></li>
+<li><a href="class-State.html">Animation States</a></li>
+<li><a href="class-Transition.html"> Animation transitions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="MecanimFAQ.html"> Animation FAQ</a></li>
+<li>
+<a href="Playables.html">Playables API</a>
+
+<ul>
+<li><a href="Playables-Graph.html">The PlayableGraph</a></li>
+<li><a href="Playables-ScriptPlayable.html">ScriptPlayable and PlayableBehaviour</a></li>
+<li><a href="Playables-Examples.html">Playables Examples</a></li>
+</ul>
+</li>
+<li><a href="AnimationGlossary.html">A Glossary of animation terms</a></li>
+<li>
+<a href="Animations.html"> Legacy Animation system</a>
+
+<ul>
+<li><a href="class-Animation.html"> Animation</a></li>
+<li><a href="AnimationScripting.html">Animation Scripting (Legacy)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="UIToolkits.html"> User interface (UI)</a>
+
+<ul>
+<li><a href="UI-system-compare.html"> Comparison of UI systems in Unity</a></li>
+<li>
+<a href="UIElements.html"> UI Toolkit</a>
+
+<ul>
+<li><a href="UIE-simple-ui-toolkit-workflow.html"> Get started with UI Toolkit</a></li>
+<li><a href="UIBuilder.html"> UI Builder</a></li>
+<li><a href="UIB-interface-overview.html"> UI Builder interface overview</a></li>
+<li><a href="UIB-getting-started.html"> Get started with UI Builder</a></li>
+<li><a href="UIB-structuring-ui-elements.html"> Work with elements</a></li>
+<li><a href="UIB-structuring-ui-templates.html"> Use UXML instances as templates</a></li>
+<li><a href="UIB-styling-ui-using-uss-selectors.html"> Style UI with UI Builder</a></li>
+<li><a href="UIB-styling-ui-using-uss-variables.html"> Assign USS variables in UI Builder</a></li>
+<li><a href="UIB-testing-ui.html"> Test UI</a></li>
+<li>
+<a href="UIE-structure-ui.html"> Structure UI</a>
+
+<ul>
+<li>
+<a href="UIE-VisualTree-landing.html"> The visual tree</a>
+
+<ul>
+<li><a href="UIE-VisualTree.html"> Introduction to visual elements and the visual tree</a></li>
+<li><a href="UIE-panels.html"> Panels</a></li>
+<li><a href="UIE-draw-order.html"> Draw order</a></li>
+<li><a href="UIE-coordinate-and-position-system.html"> Coordinate and position systems</a></li>
+</ul>
+</li>
+<li>
+<a href="UIE-UXML.html"> Structure UI with UXML</a>
+
+<ul>
+<li><a href="UIE-WritingUXMLTemplate.html"> Introduction to UXML</a></li>
+<li><a href="UIE-add-style-to-uxml.html"> Add styles to UXML</a></li>
+<li><a href="UIE-reuse-uxml-files.html"> Reuse UXML files</a></li>
+<li><a href="UIE-reference-other-files-from-uxml.html"> Reference other files from UXML</a></li>
+<li><a href="UIE-manage-asset-reference.html"> Load UXML and USS C# scripts</a></li>
+<li><a href="UIE-LoadingUXMLcsharp.html"> Instantiate UXML from C# scripts</a></li>
+<li><a href="UIE-UQuery.html"> Find visual elements with UQuery</a></li>
+</ul>
+</li>
+<li><a href="UIE-Controls.html"> Structure UI with C# scripts</a></li>
+<li>
+<a href="UIE-custom-controls.html"> Custom controls</a>
+
+<ul>
+<li><a href="UIE-create-custom-controls.html"> Create a custom control</a></li>
+<li><a href="UIE-expose-custom-control-to-uxml.html"> Expose custom control to UXML and UI Builder</a></li>
+<li><a href="UIE-custom-tag-name-and-attributes.html"> Customize UXML tag names and attributes</a></li>
+</ul>
+</li>
+<li><a href="UIE-best-practices-for-managing-elements.html"> Best practices for managing elements</a></li>
+<li><a href="UIE-encapsulate-uxml-with-logic.html"> Encapsulate UXML documents with logic</a></li>
+<li>
+<a href="UIE-ElementRef.html"> UXML elements reference</a>
+
+<ul>
+<li><a href="UIE-uxml-element-BindableElement.html"> UXML element BindableElement</a></li>
+<li><a href="UIE-uxml-element-VisualElement.html"> UXML element VisualElement</a></li>
+<li><a href="UIE-uxml-element-BoundsField.html"> UXML element BoundsField</a></li>
+<li><a href="UIE-uxml-element-BoundsIntField.html"> UXML element BoundsIntField</a></li>
+<li><a href="UIE-uxml-element-Box.html"> UXML element Box</a></li>
+<li><a href="UIE-uxml-element-Button.html"> UXML element Button</a></li>
+<li><a href="UIE-uxml-element-ColorField.html"> UXML element ColorField</a></li>
+<li><a href="UIE-uxml-element-CurveField.html"> UXML element CurveField</a></li>
+<li><a href="UIE-uxml-element-DoubleField.html"> UXML element DoubleField</a></li>
+<li><a href="UIE-uxml-element-DropdownField.html"> UXML element DropdownField</a></li>
+<li><a href="UIE-uxml-element-EnumField.html"> UXML element EnumField</a></li>
+<li><a href="UIE-uxml-element-EnumFlagsField.html"> UXML element EnumFlagsField</a></li>
+<li><a href="UIE-uxml-element-FloatField.html"> UXML element FloatField</a></li>
+<li><a href="UIE-uxml-element-Foldout.html"> UXML element Foldout</a></li>
+<li><a href="UIE-uxml-element-GradientField.html"> UXML element GradientField</a></li>
+<li><a href="UIE-uxml-element-GroupBox.html"> UXML element GroupBox</a></li>
+<li><a href="UIE-uxml-element-Hash128Field.html"> UXML element Hash128Field</a></li>
+<li><a href="UIE-uxml-element-HelpBox.html"> UXML element HelpBox</a></li>
+<li><a href="UIE-uxml-element-IMGUIContainer.html"> UXML element IMGUIContainer</a></li>
+<li><a href="UIE-uxml-element-Image.html"> UXML element Image</a></li>
+<li><a href="UIE-uxml-element-InspectorElement.html"> UXML element InspectorElement</a></li>
+<li><a href="UIE-uxml-element-IntegerField.html"> UXML element IntegerField</a></li>
+<li><a href="UIE-uxml-element-Label.html"> UXML element Label</a></li>
+<li><a href="UIE-uxml-element-LayerField.html"> UXML element LayerField</a></li>
+<li><a href="UIE-uxml-element-LayerMaskField.html"> UXML element LayerMaskField</a></li>
+<li><a href="UIE-uxml-element-LongField.html"> UXML element LongField</a></li>
+<li><a href="UIE-uxml-element-ListView.html"> UXML element ListView</a></li>
+<li><a href="UIE-uxml-element-MaskField.html"> UXML element MaskField</a></li>
+<li><a href="UIE-uxml-element-MinMaxSlider.html"> UXML element MinMaxSlider</a></li>
+<li><a href="UIE-uxml-element-MultiColumnListView.html"> UXML element MultiColumnListView</a></li>
+<li><a href="UIE-uxml-element-MultiColumnTreeView.html"> UXML element MultiColumnTreeView</a></li>
+<li><a href="UIE-uxml-element-ObjectField.html"> UXML element ObjectField</a></li>
+<li><a href="UIE-uxml-element-PopupWindow.html"> UXML element PopupWindow</a></li>
+<li><a href="UIE-uxml-element-ProgressBar.html"> UXML element ProgressBar</a></li>
+<li><a href="UIE-uxml-element-PropertyField.html"> UXML element PropertyField</a></li>
+<li><a href="UIE-uxml-element-RadioButton.html"> UXML element RadioButton</a></li>
+<li><a href="UIE-uxml-element-RadioButtonGroup.html"> UXML element RadioButtonGroup</a></li>
+<li><a href="UIE-uxml-element-RectField.html"> UXML element RectField</a></li>
+<li><a href="UIE-uxml-element-RectIntField.html"> UXML element RectIntField</a></li>
+<li><a href="UIE-uxml-element-RepeatButton.html"> UXML element RepeatButton</a></li>
+<li><a href="UIE-uxml-element-ScrollView.html"> UXML element ScrollView</a></li>
+<li><a href="UIE-uxml-element-Scroller.html"> UXML element Scroller</a></li>
+<li><a href="UIE-uxml-element-Slider.html"> UXML element Slider</a></li>
+<li><a href="UIE-uxml-element-SliderInt.html"> UXML element SliderInt</a></li>
+<li><a href="UIE-uxml-element-TagField.html"> UXML element TagField</a></li>
+<li><a href="UIE-uxml-element-TextElement.html"> UXML element TextElement</a></li>
+<li><a href="UIE-uxml-element-TextField.html"> UXML element TextField</a></li>
+<li><a href="UIE-uxml-element-TemplateContainer.html"> UXML element TemplateContainer</a></li>
+<li><a href="UIE-uxml-element-Toggle.html"> UXML element Toggle</a></li>
+<li><a href="UIE-uxml-element-Toolbar.html"> UXML element Toolbar</a></li>
+<li><a href="UIE-uxml-element-ToolbarBreadcrumbs.html"> UXML element ToolbarBreadcrumbs</a></li>
+<li><a href="UIE-uxml-element-ToolbarButton.html"> UXML element ToolbarButton</a></li>
+<li><a href="UIE-uxml-element-ToolbarMenu.html"> UXML element ToolbarMenu</a></li>
+<li><a href="UIE-uxml-element-ToolbarPopupSearchField.html"> UXML element ToolbarPopupSearchField</a></li>
+<li><a href="UIE-uxml-element-ToolbarSearchField.html"> UXML element ToolbarSearchField</a></li>
+<li><a href="UIE-uxml-element-ToolbarSpacer.html"> UXML element ToolbarSpacer</a></li>
+<li><a href="UIE-uxml-element-ToolbarToggle.html"> UXML element ToolbarToggle</a></li>
+<li><a href="UIE-uxml-element-TreeView.html"> UXML element TreeView</a></li>
+<li><a href="UIE-uxml-element-TwoPaneSplitView.html"> UXML element TwoPaneSplitView</a></li>
+<li><a href="UIE-uxml-element-UnsignedIntegerField.html"> UXML element UnsignedIntegerField</a></li>
+<li><a href="UIE-uxml-element-UnsignedLongField.html"> UXML element UnsignedLongField</a></li>
+<li><a href="UIE-uxml-element-Vector2Field.html"> UXML element Vector2Field</a></li>
+<li><a href="UIE-uxml-element-Vector2IntField.html"> UXML element Vector2IntField</a></li>
+<li><a href="UIE-uxml-element-Vector3Field.html"> UXML element Vector3Field</a></li>
+<li><a href="UIE-uxml-element-Vector3IntField.html"> UXML element Vector3IntField</a></li>
+<li><a href="UIE-uxml-element-Vector4Field.html"> UXML element Vector4Field</a></li>
+</ul>
+</li>
+<li>
+<a href="UIE-uxml-examples.html"> Structure UI examples</a>
+
+<ul>
+<li><a href="UIE-ListView-TreeView.html"> Create list and tree views</a></li>
+<li><a href="UIE-create-list-view-complex.html"> Create a complex list view</a></li>
+<li><a href="UIE-HowTo-CreateRuntimeUI.html"> Create a list view runtime UI</a></li>
+<li><a href="UIE-wrap-content-inside-scrollview.html"> Wrap content inside a scroll view</a></li>
+<li><a href="UIE-create-tabbed-menu-for-runtime.html"> Create a tabbed menu for runtime</a></li>
+<li><a href="UIE-create-a-popup-window.html"> Create a pop-up window</a></li>
+<li><a href="UIE-create-a-conditional-ui.html"> Use Toggle to create a conditional UI</a></li>
+<li><a href="UIB-structuring-ui-custom-elements.html"> Create a custom control with two attributes</a></li>
+<li><a href="UIE-slide-toggle.html"> Create a slide toggle custom control</a></li>
+<li><a href="UIE-create-bindable-custom-control.html"> Create a bindable custom control</a></li>
+<li><a href="UIE-create-custom-style-custom-control.html"> Create a custom style for a custom control</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="UIE-USS.html"> Style UI</a>
+
+<ul>
+<li><a href="UIE-about-uss.html"> Introduction to USS</a></li>
+<li>
+<a href="UIE-USS-Selectors.html"> USS selectors</a>
+
+<ul>
+<li><a href="UIE-USS-Selectors-type.html"> Type selectors</a></li>
+<li><a href="UIE-USS-Selectors-name.html"> Name selectors</a></li>
+<li><a href="UIE-USS-Selectors-class.html"> Class selectors</a></li>
+<li><a href="UIE-USS-Selectors-universal.html"> Universal selectors</a></li>
+<li><a href="UIE-USS-Selectors-descendant.html"> Descendant selectors</a></li>
+<li><a href="UIE-USS-Selectors-child.html"> Child selectors</a></li>
+<li><a href="UIE-USS-Selectors-multiple.html"> Multiple selectors</a></li>
+<li><a href="UIE-USS-Selectors-list.html"> Selector lists</a></li>
+<li><a href="UIE-USS-Selectors-Pseudo-Classes.html"> Pseudo-classes</a></li>
+<li><a href="UIE-uss-selector-precedence.html"> Selector precedence</a></li>
+</ul>
+</li>
+<li>
+<a href="UIE-uss-properties.html"> USS properties</a>
+
+<ul>
+<li><a href="UIE-USS-PropertyTypes.html"> USS data types</a></li>
+<li><a href="UIE-USS-SupportedProperties.html"> USS common properties</a></li>
+<li><a href="UIE-LayoutEngine.html"> Position element with the layout engine</a></li>
+<li><a href="UIE-relative-absolute-positioning-example.html"> Relative and absolute positioning</a></li>
+<li><a href="UIB-styling-ui-backgrounds.html"> Set background images</a></li>
+<li><a href="UIE-set-background-images-with-an-image-asset.html"> Set background images with an image asset</a></li>
+<li><a href="UIE-image-import-settings.html"> Image import settings</a></li>
+<li><a href="UIE-9-slice-images-with-ui-toolkit.html"> 9-Slice images with UI Toolkit</a></li>
+<li><a href="UIE-Transform.html"> USS transform</a></li>
+<li><a href="UIE-Transitions.html"> USS transition</a></li>
+<li><a href="UIE-USS-Properties-Reference.html"> USS properties reference</a></li>
+<li><a href="UIE-uss-color-keywords.html"> USS color keywords</a></li>
+</ul>
+</li>
+<li>
+<a href="UIE-USS-variables.html"> USS custom properties (variables)</a>
+
+<ul>
+<li><a href="UIE-USS-CustomProperties.html"> Create USS variables</a></li>
+<li><a href="UIE-USS-UnityVariables.html"> Introduction to USS built-in variables</a></li>
+<li><a href="UIE-uss-built-in-variable-reference.html"> USS built-in variable references</a></li>
+</ul>
+</li>
+<li><a href="UIE-apply-styles-with-csharp.html"> Apply styles in C# scripts</a></li>
+<li><a href="UIE-USS-WritingStyleSheets.html"> Best practices for USS</a></li>
+<li><a href="UIE-tss.html"> Theme Style Sheet (TSS)</a></li>
+</ul>
+</li>
+<li><a href="UIE-ui-debugger.html"> UI Toolkit Debugger</a></li>
+<li>
+<a href="UIE-Events.html"> Control behavior with events</a>
+
+<ul>
+<li><a href="UIE-Events-Dispatching.html"> Dispatch events</a></li>
+<li><a href="UIE-Events-Handling.html"> Handle events</a></li>
+<li><a href="UIE-manipulators.html"> Manipulators</a></li>
+<li><a href="UIE-Events-Synthesizing.html"> Synthesize and send events</a></li>
+<li>
+<a href="UIE-Events-Reference.html"> Event reference</a>
+
+<ul>
+<li><a href="UIE-Capture-Events.html"> Capture events</a></li>
+<li><a href="UIE-Change-Events.html"> Change events</a></li>
+<li><a href="UIE-Click-Events.html"> Click events</a></li>
+<li><a href="UIE-Command-Events.html"> Command events</a></li>
+<li><a href="UIE-Drag-Events.html"> Drag-and-drop events</a></li>
+<li><a href="UIE-Layout-Events.html"> Layout events</a></li>
+<li><a href="UIE-Focus-Events.html"> Focus events</a></li>
+<li><a href="UIE-Input-Events.html"> Input events</a></li>
+<li><a href="UIE-Keyboard-Events.html"> Keyboard events</a></li>
+<li><a href="UIE-Mouse-Events.html"> Mouse events</a></li>
+<li><a href="UIE-Navigation-Events.html"> Navigation events</a></li>
+<li><a href="UIE-Panel-Events.html"> Panel events</a></li>
+<li><a href="UIE-Pointer-Events.html"> Pointer events</a></li>
+<li><a href="UIE-Tooltip-Events.html"> Tooltip event</a></li>
+<li><a href="UIE-Transition-Events.html"> Transition events</a></li>
+<li><a href="UIE-contextual-menus.html"> Contextual menu events</a></li>
+<li><a href="UIE-IMGUI-Events.html"> IMGUI events</a></li>
+</ul>
+</li>
+<li>
+<a href="UIE-event-examples.html"> Event examples</a>
+
+<ul>
+<li><a href="UIE-transition-example.html"> Create a transition in a custom Editor window</a></li>
+<li><a href="UIE-create-drag-and-drop-ui.html"> Create a drag-and-drop UI inside a custom Editor window</a></li>
+<li><a href="UIE-drag-across-windows.html"> Create a drag-and-drop UI to drag between Editor windows</a></li>
+<li><a href="UIE-transition-event-example.html"> Create a transition event</a></li>
+<li><a href="UIE-transition-event-loop-example.html"> Create looping transitions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="UIE-ui-renderer.html"> UI Renderer</a>
+
+<ul>
+<li><a href="UIE-generate-2d-visual-content.html"> Generate 2D visual content</a></li>
+<li><a href="UIE-pie-chart.html"> Create a pie chart in the Editor and runtime UI</a></li>
+<li><a href="UIE-radial-progress-use-vector-api.html"> Use Vector API to create a radial progress indicator</a></li>
+<li><a href="UIE-radial-progress.html"> Use Mesh API to create a radial progress indicator</a></li>
+</ul>
+</li>
+<li>
+<a href="UIE-support-for-editor-ui.html"> Support for Editor UI</a>
+
+<ul>
+<li><a href="UIE-HowTo-CreateEditorWindow.html"> Create a custom Editor window</a></li>
+<li><a href="UIE-HowTo-CreateCustomInspector.html"> Create a Custom Inspector</a></li>
+<li>
+<a href="UIE-Binding.html"> SerializedObject data binding</a>
+
+<ul>
+<li><a href="UIE-bindable-elements.html"> Bindable elements reference</a></li>
+<li><a href="UIE-binding-data-type-conversion.html"> Bindable data types and fields</a></li>
+<li><a href="UIE-binding-implementation-details.html"> Binding system implementation details</a></li>
+<li>
+<a href="UIE-binding-examples.html"> Binding examples</a>
+
+<ul>
+<li><a href="UIE-create-a-binding-csharp.html"> Bind with binding path in C# script</a></li>
+<li><a href="UIE-bind-without-bindpath.html"> Bind without the binding path</a></li>
+<li><a href="UIE-create-a-binding-uxml-bind.html"> Bind with UXML and C# script</a></li>
+<li><a href="UIE-create-a-binding-uxml-inspector.html"> Create a binding with the Inspector</a></li>
+<li><a href="UIE-bind-to-nested-properties.html"> Bind to nested properties</a></li>
+<li><a href="UIE-bind-uxml-template.html"> Bind to a UXML template</a></li>
+<li><a href="UIE-create-a-binding-callback.html"> Receive callbacks when a bound property changes</a></li>
+<li><a href="UIE-create-a-binding-callback-any-properties.html"> Receive callbacks when any bound properties change</a></li>
+<li><a href="UIE-bind-to-list.html"> Bind to a list with ListView</a></li>
+<li><a href="UIE-bind-to-list-without-listview.html"> Bind to a list without ListView</a></li>
+<li><a href="UIE-bind-custom-control.html"> Bind a custom control </a></li>
+<li><a href="UIE-bind-to-custom-data-type.html"> Bind a custom control to custom data type</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="UIE-ViewData.html"> View data persistence</a></li>
+</ul>
+</li>
+<li>
+<a href="UIE-support-for-runtime-ui.html"> Support for runtime UI</a>
+
+<ul>
+<li><a href="UIE-get-started-with-runtime-ui.html"> Get started with runtime UI</a></li>
+<li><a href="UIE-render-runtime-ui.html"> Render UI in the Game view</a></li>
+<li><a href="UIE-Runtime-Panel-Settings.html"> Panel Settings properties reference</a></li>
+<li><a href="UIE-Runtime-Event-System.html"> Runtime UI event system</a></li>
+<li><a href="UIE-performance-consideration-runtime.html"> Performance consideration for runtime UI</a></li>
+<li><a href="UIE-faq-event-and-input-system.html"> FAQ for input and event systems with UI Toolkit</a></li>
+</ul>
+</li>
+<li>
+<a href="UIE-work-with-text.html"> Work with text</a>
+
+<ul>
+<li><a href="UIE-get-started-with-text.html"> Get started with text </a></li>
+<li><a href="UIB-styling-ui-text.html"> Style text with USS</a></li>
+<li><a href="UIE-rich-text-tags.html"> Style text with rich text tags</a></li>
+<li><a href="UIE-supported-tags.html"> Supported rich text tags</a></li>
+<li>
+<a href="UIE-font-asset-landing.html"> Font assets</a>
+
+<ul>
+<li><a href="UIE-font-asset.html"> Introduction to font assets</a></li>
+<li><a href="UIE-font-asset-properties.html"> Font Asset properties reference</a></li>
+<li><a href="UIE-font-creator-properties.html"> Font Asset Creator properties reference</a></li>
+</ul>
+</li>
+<li><a href="UIE-style-sheet.html"> Style sheets</a></li>
+<li>
+<a href="UIE-sprite.html"> Include sprites in text</a>
+
+<ul>
+<li><a href="UIE-sprite-asset-properties.html"> Sprite Asset properties reference</a></li>
+</ul>
+</li>
+<li><a href="UIE-color-gradient.html"> Color gradients</a></li>
+<li><a href="UIE-text-setting-asset.html"> Panel Text Settings assets</a></li>
+<li><a href="UIE-fallback-font.html"> Fallback font</a></li>
+</ul>
+</li>
+<li><a href="UIE-examples.html"> Examples</a></li>
+<li>
+<a href="UIE-migration-guides.html"> Migration guides</a>
+
+<ul>
+<li><a href="UIE-Transitioning-From-UGUI.html"> Migrate from Unity UI (uGUI) to UI Toolkit</a></li>
+<li><a href="UIE-IMGUI-migration.html"> Migrate from Immediate Mode GUI (IMGUI) to UI Toolkit</a></li>
+</ul>
+</li>
+<li><a href="com.unity.ugui.html"> Unity UI </a></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="UICanvas.html">Canvas</a><span class="tooltiptext">The area that contains all UI elements in a scene. The Canvas area is shown as a rectangle in the Scene View. <a href="UICanvas.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#Canvas">Glossary</a></span></span></span></li>
+<li><a href="UIBasicLayout.html"> Basic Layout</a></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="UIVisualComponents.html">Visual Components</a><span class="tooltiptext">A component that enables you to easily create GUI-specific functionality. <a href="UIVisualComponents.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#VisualComponent">Glossary</a></span></span></span></li>
+<li><a href="UIInteractionComponents.html">Interaction Components</a></li>
+<li><a href="UIAnimationIntegration.html">Animation Integration</a></li>
+<li><a href="UIAutoLayout.html">Auto Layout</a></li>
+<li><a href="StyledText.html"> Rich Text</a></li>
+<li>
+<a href="EventSystem.html"> Event System</a>
+
+<ul>
+<li><a href="MessagingSystem.html">Messaging System</a></li>
+<li><a href="InputModules.html">Input Modules</a></li>
+<li><a href="SupportedEvents.html">Supported Events</a></li>
+<li><a href="Raycasters.html">Raycasters</a></li>
+</ul>
+</li>
+<li>
+<a href="UIReference.html"> UI Reference</a>
+
+<ul>
+<li><a href="class-RectTransform.html"> Rect Transform</a></li>
+<li>
+<a href="comp-CanvasComponents.html"> Canvas Components</a>
+
+<ul>
+<li><a href="class-Canvas.html">Canvas</a></li>
+<li><a href="script-CanvasScaler.html"> Canvas Scaler</a></li>
+<li><a href="class-CanvasGroup.html"> Canvas Group</a></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="class-CanvasRenderer.html">Canvas Renderer</a><span class="tooltiptext">Renders a graphical UI object contained within a Canvas. <a href="class-CanvasRenderer.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#CanvasRenderer">Glossary</a></span></span></span></li>
+</ul>
+</li>
+<li>
+<a href="comp-UIVisual.html"> Visual Components</a>
+
+<ul>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="script-Text.html">Text</a><span class="tooltiptext">A non-interactive piece of text to the user. This can be used to provide captions or labels for other GUI controls or to display instructions or other text. <a href="script-Text.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#Text">Glossary</a></span></span></span></li>
+<li><a href="script-Image.html">Image</a></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="script-RawImage.html">Raw Image</a><span class="tooltiptext">A Visual UI Component that displays a non-interactive image to the user. This can be used for decoration, icons, and so on, and the image can also be changed from a script to reflect changes in other controls. <a href="script-RawImage.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#Rawimage">Glossary</a></span></span></span></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="script-Mask.html">Mask</a><span class="tooltiptext">Can refer to a Sprite Mask, a UI Mask, or a Layer Mask <a href="script-Mask.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#Mask">Glossary</a></span></span></span></li>
+<li><a href="script-RectMask2D.html"> RectMask2D</a></li>
+<li>
+<a href="comp-UIEffects.html"> UI Effect Components</a>
+
+<ul>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="script-Shadow.html">Shadow</a><span class="tooltiptext">A UI component that adds a simple outline effect to graphic components such as Text or Image. It must be on the same GameObject as the graphic component. <a href="script-Shadow.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#Shadow">Glossary</a></span></span></span></li>
+<li><a href="script-Outline.html">Outline</a></li>
+<li><a href="script-PositionAsUV1.html">Position as UV1</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="comp-UIInteraction.html"> Interaction Components</a>
+
+<ul>
+<li>
+<a href="script-Selectable.html"> Selectable Base Class</a>
+
+<ul>
+<li><a href="script-SelectableTransition.html"> Transition Options</a></li>
+<li><a href="script-SelectableNavigation.html"> Navigation Options</a></li>
+</ul>
+</li>
+<li><a href="script-Button.html">Button</a></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="script-Toggle.html">Toggle</a><span class="tooltiptext">A checkbox that allows the user to switch an option on or off. <a href="UIE-uxml-element-Toggle.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#Toggle">Glossary</a></span></span></span></li>
+<li><a href="script-ToggleGroup.html">Toggle Group</a></li>
+<li><a href="script-Slider.html">Slider</a></li>
+<li><a href="script-Scrollbar.html">Scrollbar</a></li>
+<li><a href="script-Dropdown.html">Dropdown</a></li>
+<li><a href="script-InputField.html">Input Field</a></li>
+<li><a href="script-ScrollRect.html"> Scroll Rect</a></li>
+</ul>
+</li>
+<li>
+<a href="comp-UIAutoLayout.html"> Auto Layout</a>
+
+<ul>
+<li><a href="script-LayoutElement.html"> Layout Element</a></li>
+<li><a href="script-ContentSizeFitter.html"> Content Size Fitter</a></li>
+<li><a href="script-AspectRatioFitter.html"> Aspect Ratio Fitter</a></li>
+<li><a href="script-HorizontalLayoutGroup.html"> Horizontal Layout Group</a></li>
+<li><a href="script-VerticalLayoutGroup.html"> Vertical Layout Group</a></li>
+<li><a href="script-GridLayoutGroup.html"> Grid Layout Group</a></li>
+</ul>
+</li>
+<li><span class="tooltip"><strong>Event System</strong><span class="tooltiptext">A way of sending events to objects in the application based on input, be it keyboard, mouse, touch, or custom input. The Event System consists of a few components that work together to send events. <a class="tooltipMoreInfoLink" href="EventSystem.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#EventSystem">Glossary</a></span></span></span> Reference
+
+<ul>
+<li><a href="script-EventSystem.html">Event System Manager</a></li>
+<li><a href="script-GraphicRaycaster.html">Graphic Raycaster</a></li>
+<li><a href="script-PhysicsRaycaster.html">Physics Raycaster</a></li>
+<li><a href="script-Physics2DRaycaster.html">Physics 2D Raycaster</a></li>
+<li><a href="script-StandaloneInputModule.html">Standalone Input Module</a></li>
+<li><a href="script-TouchInputModule.html">Touch Input Module</a></li>
+<li><a href="script-EventTrigger.html">Event Trigger</a></li>
+</ul>
+</li>
+<li><a href="class-Font.html">Font assets</a></li>
+</ul>
+</li>
+<li>
+<a href="UIHowTos.html"> UI How Tos</a>
+
+<ul>
+<li><a href="HOWTO-UIMultiResolution.html"> Designing UI for Multiple Resolutions</a></li>
+<li><a href="HOWTO-UIFitContentSize.html"> Making UI elements fit the size of their content</a></li>
+<li><a href="HOWTO-UIWorldSpace.html"> Creating a World Space UI</a></li>
+<li><a href="HOWTO-UICreateFromScripting.html"> Creating UI elements from scripting</a></li>
+<li><a href="HOWTO-UIScreenTransition.html"> Creating Screen Transitions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="GUIScriptingGuide.html">Immediate Mode GUI (IMGUI)</a>
+
+<ul>
+<li><a href="gui-Basics.html">IMGUI Basics</a></li>
+<li><a href="gui-Controls.html">Controls</a></li>
+<li><a href="gui-Customization.html">Customization</a></li>
+<li><a href="gui-Layout.html">IMGUI Layout Modes</a></li>
+<li><a href="gui-Extending.html">Extending IMGUI</a></li>
+<li><a href="class-GUISkin.html">GUI Skin (IMGUI System)</a></li>
+<li><a href="class-GUIStyle.html">GUI Style (IMGUI System)</a></li>
+<li>
+<a href="ExtendingTheEditor.html"> Extending the Editor with IMGUI</a>
+
+<ul>
+<li><a href="editor-EditorWindows.html">Editor Windows</a></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="editor-PropertyDrawers.html">Property Drawers</a><span class="tooltiptext">A Unity feature that allows you to customize the look of certain controls in the Inspector window by using attributes on your scripts, or by controlling how a specific Serializable class should look <a href="editor-PropertyDrawers.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#PropertyDrawer">Glossary</a></span></span></span></li>
+<li><a href="editor-CustomEditors.html">Custom Editors</a></li>
+<li><a href="TreeViewAPI.html"> TreeView</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="UnityServices.html">Unity Services</a>
+
+<ul>
+<li>
+<a href="SettingUpProjectServices.html"> Setting up your project for Unity services</a>
+
+<ul>
+<li><a href="DeveloperDashboard.html"> Using the developer dashboard</a></li>
+</ul>
+</li>
+<li>
+<a href="OrgsUnityOrganizations.html"> Unity Organizations</a>
+
+<ul>
+<li><a href="OrgsSubscriptionsAndSeats.html"> Subscriptions and seats</a></li>
+<li><a href="OrgsManagingyourOrganization.html"> Managing your Organization</a></li>
+<li><a href="OrgsManagingyourOrganizationsProjects.html"> Managing your Organization’s Projects</a></li>
+<li><a href="TransferringProjects.html"> Transfer a Project to a new Organization</a></li>
+</ul>
+</li>
+<li><a href="UnityAds.html">Unity Ads</a></li>
+<li><a href="UnityAnalytics.html"> Unity Analytics</a></li>
+<li><a href="UnityCCD.html"> Unity Cloud Content Delivery</a></li>
+<li><a href="UnityBuildAutomation.html"> Unity Build Automation (formerly Cloud Build)</a></li>
+<li>
+<a href="UnityIAP.html">﻿Unity IAP</a>
+
+<ul>
+<li>
+<a href="UnityIAPSettingUp.html"> Setting up Unity IAP</a>
+
+<ul>
+<li><a href="UnityIAPAppleConfiguration.html">Configuring for Apple App Store and Mac App Store</a></li>
+<li><a href="UnityIAPGoogleConfiguration.html">Configuring for Google Play Store</a></li>
+<li><a href="UnityIAPWindowsConfiguration.html">Configuring for Windows Store</a></li>
+<li><a href="UnityIAPAmazonConfiguration.html"> Configuration for the Amazon Appstore</a></li>
+</ul>
+</li>
+<li>Cross Platform Guide
+
+<ul>
+<li><a href="UnityIAPCodelessIAP.html"> Codeless IAP</a></li>
+<li><a href="UnityIAPDefiningProducts.html"> Defining products</a></li>
+<li><a href="UnityIAPSubscriptionProducts.html"> Subscription Product support</a></li>
+<li><a href="UnityIAPInitialization.html">Initialization</a></li>
+<li><a href="UnityIAPBrowsingMetadata.html">Browsing Product Metadata</a></li>
+<li><a href="UnityIAPInitiatingPurchases.html">Initiating Purchases</a></li>
+<li><a href="UnityIAPProcessingPurchases.html">Processing Purchases</a></li>
+<li><a href="UnityIAPHandlingPurchaseFailures.html">Handling purchase failures</a></li>
+<li><a href="UnityIAPRestoringTransactions.html">Restoring Transactions</a></li>
+<li><a href="UnityIAPPurchaseReceipts.html">﻿Purchase Receipts</a></li>
+<li><a href="UnityIAPValidatingReceipts.html"> Receipt validation</a></li>
+<li><a href="UnityIAPStoreExtensions.html">Store Extensions</a></li>
+<li><a href="UnityIAPCrossStoreInstallationIssues.html">Cross-store installation issues with Android in-app purchase stores</a></li>
+</ul>
+</li>
+<li>Store Guides
+
+<ul>
+<li><a href="UnityIAPiOSMAS.html">iOS &amp; Mac App Stores</a></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="UnityIAPUniversalWindows.html">Universal Windows Platform</a><span class="tooltiptext">An IAP feature that supports Microsoft’s In App Purchase simulator, which allows you to test IAP purchase flows on devices before publishing your application. <a href="UnityIAPUniversalWindows.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#UniversalWindowsPlatform">Glossary</a></span></span></span></li>
+<li><a href="UnityIAPGooglePlay.html">Google Play</a></li>
+<li><a href="UnityIAPAmazonExtendedFunctionality.html">Amazon Appstore and Amazon Underground Store </a></li>
+</ul>
+</li>
+<li>
+<a href="UnityIAPImplementingAStore.html">Implementing a Store</a>
+
+<ul>
+<li><a href="UnityIAPIStoreInitialization.html">Initialization</a></li>
+<li><a href="UnityIAPIStoreRetrievingProducts.html">Retrieving products</a></li>
+<li><a href="UnityIAPIStoreHandlingPurchases.html">Handling purchases</a></li>
+<li>
+<a href="UnityIAPModules.html">Store Modules</a>
+
+<ul>
+<li><a href="UnityIAPModuleRegistration.html">Registering your store</a></li>
+<li><a href="UnityIAPModuleConfiguration.html">Store Configuration</a></li>
+<li><a href="UnityIAPModuleExtension.html">Store Extensions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="UnityCloudDiagnostics.html"> Unity Cloud Diagnostics</a></li>
+<li><a href="UnityIntegrations.html"> Unity Integrations</a></li>
+<li><a href="UnityMultiplayerService.html">Multiplayer Services</a></li>
+<li>
+<a href="udp.html"> Unity Distribution Portal</a>
+
+<ul>
+<li><a href="udp-getting-started.html"> Getting started with UDP</a></li>
+<li><a href="udp-distribution.html"> Distributing your game with UDP</a></li>
+<li><a href="udp-implementing-iap.html"> Implementing IAP products</a></li>
+<li><a href="udp-sandbox-testing.html"> Testing your game in the UDP sandbox</a></li>
+<li><a href="udp-managing-and-publishing.html"> Managing and publishing your game on the UDP console</a></li>
+<li>
+<a href="udp-service-interoperability.html"> Using UDP with other services</a>
+
+<ul>
+<li><a href="udp-firebase.html"> Using Firebase with UDP builds</a></li>
+</ul>
+</li>
+<li>
+<a href="udp-reference.html"> UDP reference</a>
+
+<ul>
+<li><a href="udp-api.html"> UDP API</a></li>
+<li><a href="udp-sdk-data-collection.html"> UDP SDK data collection</a></li>
+</ul>
+</li>
+<li><a href="udp-troubleshooting.html"> UDP troubleshooting</a></li>
+</ul>
+</li>
+<li><a href="UnityAccelerator.html"> Unity Accelerator</a></li>
+</ul>
+</li>
+<li>
+<a href="XR.html"> XR</a>
+
+<ul>
+<li>
+<a href="xr-support-landing.html"> Overview</a>
+
+<ul>
+<li><a href="xr-support-packages.html"> XR packages</a></li>
+<li><a href="AROverview.html"> AR development in Unity</a></li>
+<li><a href="VROverview.html"> VR development in Unity</a></li>
+<li><a href="XRPluginArchitecture.html"> XR architecture</a></li>
+</ul>
+</li>
+<li>
+<a href="configuring-project-for-xr.html"> XR Project set up</a>
+
+<ul>
+<li><a href="xr-configure-providers.html"> Choose XR provider plug-ins</a></li>
+<li><a href="xr-create-projects.html"> Create an XR project</a></li>
+<li><a href="xr-scene-setup.html"> Set up an XR scene</a></li>
+<li><a href="xr-input-overview.html"> XR input options</a></li>
+<li><a href="xr-origin.html"> XR Origin</a></li>
+<li><a href="xr-plugin-management.html"> XR Plug-in Management settings</a></li>
+</ul>
+</li>
+<li><a href="xr-run.html"> Run an XR application</a></li>
+<li>
+<a href="xr-graphics.html"> XR graphics </a>
+
+<ul>
+<li><a href="xr-render-pipeline-compatibility.html"> Universal Render Pipeline compatibility in XR</a></li>
+<li>
+<a href="SinglePassStereoRendering.html"> Stereo rendering</a>
+
+<ul>
+<li><a href="SinglePassInstancing.html"> Single-pass instanced rendering and custom shaders</a></li>
+</ul>
+</li>
+<li><a href="VRFrameTiming.html"> VR frame timing </a></li>
+</ul>
+</li>
+<li>
+<a href="xr-audio.html"> XR audio</a>
+
+<ul>
+<li><a href="VRAudioSpatializer.html"> Audio Spatializers</a></li>
+</ul>
+</li>
+<li><a href="VRReference.html"> XR API reference</a></li>
+<li>
+<a href="xr-sdk.html"> Unity XR SDK</a>
+
+<ul>
+<li>Provider setup
+ * <a href="xrsdk-provider-setup.html"> Creating an XR provider</a>
+ * <a href="xrsdk-unity-subsystems-manifest-json.html"> UnitySubsystemsManifest.json</a>
+</li>
+<li><a href="xrsdk-runtime-discovery.html"> Runtime discovery and activation of subsystems</a></li>
+<li>Subsystems
+ * <a href="xrsdk-input.html"> XR SDK Input subsystem</a>
+ * <a href="xrsdk-display.html"> XR SDK Display subsystem</a>
+ * <a href="xrsdk-meshing.html"> XR SDK Meshing subsystem</a>
+</li>
+<li>Interfaces
+ * <a href="xrsdk-pre-init-interface.html"> XR SDK PreInit interface</a>
+ * <a href="xrsdk-stats.html"> XR SDK Stats interface</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="AssetStore.html"> Unity’s Asset Store</a>
+
+<ul>
+<li><span class="tooltip"><a href="AssetStorePackages.html"> Asset Store packages</a><span class="tooltiptext"><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#AssetStorepackage">Glossary</a></span></span></span>
+
+<ul>
+<li><a href="AssetPackagesPurchase.html"> Purchasing or downloading a package on the Asset Store</a></li>
+<li><a href="AssetPackagesOrganize.html"> Finding your Asset Store packages</a></li>
+<li><a href="AssetPackagesLabels.html"> Using labels to organize “My Assets”</a></li>
+</ul>
+</li>
+<li>
+<a href="AssetStorePublishing.html"> Publishing to the Asset Store</a>
+
+<ul>
+<li><a href="AssetStoreCreateAcct.html"> Creating your Publisher Account</a></li>
+<li><a href="AssetStoreCreatePkg.html"> Creating a new package draft</a></li>
+<li><a href="AssetStoreDeletePkg.html"> Deleting a package draft</a></li>
+<li><a href="AssetStoreUpload.html"> Uploading assets to your package</a></li>
+<li><a href="AssetStorePkgDetails.html"> Filling in the package details</a></li>
+<li><a href="AssetStoreSubmit.html"> Submitting your package for approval</a></li>
+<li><a href="AssetStoreStatus.html"> Viewing the status of your Asset Store submissions</a></li>
+<li><a href="AssetStorePayouts.html"> Collecting revenue</a></li>
+<li><a href="AssetStoreSupport.html"> Providing support to your customers</a></li>
+<li><a href="AssetStoreMassLabeler.html"> Adding tags to published packages</a></li>
+<li><a href="AssetStoreAnalytics.html"> Connecting your account to Google Analytics</a></li>
+<li><a href="AssetStorePromotion.html">Promoting your Assets</a></li>
+<li><a href="AssetStoreRefunding.html"> Refunding your customers</a></li>
+<li><a href="AssetStoreUpgrade.html"> Upgrading packages</a></li>
+<li><a href="AssetStoreRemoving.html"> Deprecating your Assets</a></li>
+<li><a href="AssetStoreVouchers.html"> Issuing vouchers</a></li>
+<li><a href="AssetStoreUsers.html"> Managing your publishing team</a></li>
+<li><a href="AssetStoreAdmin.html"> Asset Store Publisher portal</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="PlatformSpecific.html">Platform development </a>
+
+<ul>
+<li><a href="UnityasaLibrary.html"> Using Unity as a Library in other applications</a></li>
+<li><a href="deep-linking.html"> Deep linking</a></li>
+<li><a href="XcodeFrameDebuggerIntegration.html"> Xcode frame debugger Unity integration</a></li>
+<li>
+<a href="android.html"> Android</a>
+
+<ul>
+<li>
+<a href="android-introducing.html"> Introducing Android</a>
+
+<ul>
+<li><a href="android-requirements-and-compatibility.html"> Android requirements and compatibility</a></li>
+<li><a href="android-gradle-overview.html"> Gradle for Android</a></li>
+<li><a href="android-manifest.html"> Android App Manifest</a></li>
+<li><a href="android-launcher-manifest.html"> Unity Launcher Manifest</a></li>
+<li><a href="android-library-manifest.html"> Unity Library Manifest</a></li>
+<li><a href="how-unity-builds-android-applications.html"> How Unity builds Android applications</a></li>
+</ul>
+</li>
+<li>
+<a href="android-getting-started.html"> Getting started with Android</a>
+
+<ul>
+<li><a href="android-sdksetup.html"> Android environment setup</a></li>
+<li><a href="class-PlayerSettingsAndroid.html"> Android Player settings</a></li>
+<li>
+<a href="android-keystore.html"> Android keystores</a>
+
+<ul>
+<li><a href="android-keystore-manager.html"> Keystore Manager window reference</a></li>
+<li><a href="android-keystore-create.html"> Create a new keystore</a></li>
+<li><a href="android-keystore-add-keys.html"> Add keys to a keystore</a></li>
+<li><a href="android-keystore-load.html"> Load a keystore</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="android-developing.html"> Developing for Android</a>
+
+<ul>
+<li><a href="android-API.html"> Android mobile scripting</a></li>
+<li><a href="android-input.html"> Input for Android devices</a></li>
+<li>
+<a href="android-application-size-restrictions.html"> Android application size restrictions</a>
+
+<ul>
+<li><a href="android-asset-splitting.html"> Introduction to asset splitting</a></li>
+<li>
+<a href="android-OBBsupport.html"> APK expansion files</a>
+
+<ul>
+<li><a href="android-apk-expansion-files-in-unity.html"> APK expansion files in Unity</a></li>
+<li><a href="android-apk-expansion-files-install.html"> Manually install an APK expansion file</a></li>
+<li><a href="android-apk-expansion-files-host.html"> Host APK expansion files</a></li>
+</ul>
+</li>
+<li>
+<a href="play-asset-delivery.html"> Play Asset Delivery</a>
+
+<ul>
+<li><a href="android-asset-packs-in-unity.html"> Asset packs in Unity</a></li>
+<li><a href="android-asset-packs-set-up.html"> Set up Play Asset Delivery</a></li>
+<li><a href="android-asset-packs-create-custom.html"> Create a custom asset pack</a></li>
+<li><a href="android-asset-packs-manage.html"> Manage asset packs at runtime</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="android-graphics.html"> Graphics for Android</a>
+
+<ul>
+<li><a href="android-screen-configuration.html"> Screen configuration</a></li>
+<li><a href="Android-SinglePassStereoRendering.html"> Single-pass stereo rendering for Android</a></li>
+<li><a href="vulkan-swapchain-pre-rotation.html"> Framebuffer orientation</a></li>
+</ul>
+</li>
+<li>
+<a href="android-testing-and-debugging.html"> Testing and debugging</a>
+
+<ul>
+<li><a href="android-debugging-on-an-android-device.html"> Debugging on an Android device</a></li>
+<li><a href="android-symbols.html"> Android symbols</a></li>
+<li><a href="android-device-simulator.html"> Simulate an Android device</a></li>
+<li><a href="android-profile-on-an-android-device.html"> Profile on an Android device</a></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="UnityRemote5.html">Unity Remote</a><span class="tooltiptext">A downloadable app designed to help with Android, iOS and tvOS development. The app connects with Unity while you are running your project in Play Mode from the Unity Editor. <a href="UnityRemote5.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#UnityRemote">Glossary</a></span></span></span></li>
+<li><a href="android-AppPatching.html"> Application patching</a></li>
+</ul>
+</li>
+<li>
+<a href="PluginsForAndroid.html"> Create and use plug-ins in Android</a>
+
+<ul>
+<li>
+<a href="android-plugin-types.html"> Android plug-in types</a>
+
+<ul>
+<li>
+<a href="AndroidAARPlugins.html"> Android Library Projects and Android Archive plug-ins</a>
+
+<ul>
+<li><a href="android-library-project-and-aar-plugins-introducing.html"> Introducing Android Library Projects and Android Archive plug-ins</a></li>
+<li><a href="android-library-project-import.html"> Import an Android Library Project</a></li>
+<li><a href="android-aar-import.html"> Import an Android Archive plug-in</a></li>
+</ul>
+</li>
+<li><a href="AndroidJARPlugins.html"> JAR plug-ins</a></li>
+<li>
+<a href="AndroidNativePlugins.html"> Native plug-ins for Android</a>
+
+<ul>
+<li><a href="android-native-plugins-introducing.html"> Introducing native plug-ins for Android</a></li>
+<li><a href="android-native-plugins-create.html"> Create a native plug-in for Android</a></li>
+<li><a href="android-native-plugins-import.html"> Import a native plug-in for Android</a></li>
+<li><a href="android-native-plugins-call.html"> Call native plug-in for Android code</a></li>
+</ul>
+</li>
+<li><a href="AndroidJavaSourcePlugins.html"> Java and Kotlin source plug-ins</a></li>
+</ul>
+</li>
+<li><a href="android-plugins-java-code-from-c-sharp.html"> Call Java and Kotlin plug-in code from C# scripts</a></li>
+<li>
+<a href="AndroidUnityPlayerActivity.html"> Extend the default Unity activity</a>
+
+<ul>
+<li><a href="android-custom-activity.html"> Create a custom activity</a></li>
+<li><a href="android-custom-activity-command-line.html"> Specify Android Player command-line arguments</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="UnityasaLibrary-Android.html"> Integrating Unity into Android applications</a></li>
+<li><a href="deep-linking-android.html"> Deep linking on Android</a></li>
+<li><a href="android-thread-configuration.html"> Android thread configuration</a></li>
+<li>
+<a href="android-device-features-and-permissions.html"> Device features and permissions</a>
+
+<ul>
+<li><a href="android-permissions-in-unity.html"> Android permissions in Unity</a></li>
+<li><a href="android-permissions-declare.html"> Declare permissions for an application</a></li>
+<li><a href="android-RequestingPermissions.html"> Request runtime permissions</a></li>
+</ul>
+</li>
+<li><a href="android-handle-crashes.html"> Handle Android crashes</a></li>
+</ul>
+</li>
+<li>
+<a href="android-building-and-delivering.html"> Building and delivering for Android</a>
+
+<ul>
+<li><a href="gradle-templates.html"> Gradle templates</a></li>
+<li><a href="overriding-android-manifest.html"> Override the Android App Manifest</a></li>
+<li><a href="android-build-settings.html"> Android Build Settings</a></li>
+<li><a href="android-BuildProcess.html"> Build your application for Android</a></li>
+<li><a href="android-export-process.html"> Export an Android project</a></li>
+<li><a href="android-optimize-distribution-size.html"> Optimize distribution size</a></li>
+<li>
+<a href="android-distribution.html"> Digital distribution services for Android</a>
+
+<ul>
+<li><a href="android-distribution-google-play.html"> Delivering to Google Play</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="android-ChromeOS-introducing.html"> ChromeOS</a>
+
+<ul>
+<li><a href="android-ChromeOS-requirements-and-compatibility.html"> Requirements and compatibility</a></li>
+<li>
+<a href="android-ChromeOS-getting-started.html"> Getting started with ChromeOS </a>
+
+<ul>
+<li><a href="android-ChromeOS-preparing-your-development-environment.html"> Preparing your development environment for ChromeOS</a></li>
+<li><a href="android-ChromeOS-player-settings.html"> ChromeOS Player Settings</a></li>
+</ul>
+</li>
+<li>
+<a href="android-ChromeOS-developing.html"> Developing for ChromeOS </a>
+
+<ul>
+<li><a href="android-ChromeOS-support-user-input.html"> Support user input on ChromeOS devices</a></li>
+<li><a href="android-ChromeOS-debugging.html"> Debugging on a ChromeOS device</a></li>
+</ul>
+</li>
+<li><a href="android-ChromeOS-building-your-application.html"> Build for ChromeOS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="dedicated-server.html"> Dedicated Server</a>
+
+<ul>
+<li><a href="dedicated-server-introduction.html"> Introduction to Dedicated Server</a></li>
+<li>
+<a href="dedicated-server-get-started.html"> Get started with Dedicated Server</a>
+
+<ul>
+<li><a href="dedicated-server-requirements.html"> Dedicated Server requirements</a></li>
+<li><a href="dedicated-server-player-settings.html"> Dedicated Server Player settings</a></li>
+<li><a href="dedicated-server-optimizations.html"> Dedicated Server optimizations</a></li>
+</ul>
+</li>
+<li><a href="dedicated-server-build.html"> Build your application for Dedicated Server </a></li>
+<li><a href="dedicated-server-assetbundles.html"> Dedicated Server AssetBundles</a></li>
+<li><a href="desktop-headless-mode.html"> Desktop headless mode</a></li>
+</ul>
+</li>
+<li>
+<a href="iphone.html"> iOS</a>
+
+<ul>
+<li>
+<a href="ios-introducing.html"> Introducing iOS</a>
+
+<ul>
+<li><a href="ios-requirements-and-compatibility.html"> iOS requirements and compatibility</a></li>
+<li><a href="how-unity-builds-ios-applications.html"> How Unity builds iOS applications</a></li>
+<li><a href="StructureOfXcodeProject.html"> Structure of a Unity Xcode Project</a></li>
+</ul>
+</li>
+<li>
+<a href="iphone-GettingStarted.html"> Getting started with iOS</a>
+
+<ul>
+<li><a href="ios-environment-setup.html"> iOS environment setup</a></li>
+<li><a href="class-PlayerSettingsiOS.html"> iOS Player settings</a></li>
+</ul>
+</li>
+<li>
+<a href="ios-developing.html"> Developing for iOS</a>
+
+<ul>
+<li><a href="iphone-API.html"> iOS Scripting</a></li>
+<li>
+<a href="ios-input.html"> Input for iOS devices</a>
+
+<ul>
+<li><a href="ios-input-overview.html"> iOS input overview</a></li>
+<li>
+<a href="ios-game-controller-support.html"> Game Controller support</a>
+
+<ul>
+<li><a href="ios-detect-game-controllers.html"> Detect Game Controllers</a></li>
+<li><a href="ios-handle-game-controller-input.html"> Handle Game Controller input</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="ios-device-simulator.html"> Unity’s Device Simulator for iOS</a></li>
+<li><a href="unity-remote-ios.html">Unity Remote</a></li>
+<li><a href="iOSManagedStackTraces.html"> Managed stack traces on iOS</a></li>
+<li>
+<a href="iphone-performance.html">Optimizing Performance on iOS</a>
+
+<ul>
+<li><a href="iphone-iOS-Optimization.html">iOS-specific optimizations</a></li>
+<li><a href="iphone-InternalProfiler.html"> Measuring performance with the built-in profiler</a></li>
+<li><a href="iphone-playerSizeOptimization.html">Optimizing the size of the built iOS Player</a></li>
+<li><a href="iphone-Optimizing-Physics.html">Optimizing Physics Performance</a></li>
+</ul>
+</li>
+<li><a href="PluginsForIOS.html"> Building plug-ins for iOS</a></li>
+<li><a href="UnityasaLibrary-iOS.html"> Integrating Unity into native iOS applications</a></li>
+<li><a href="deep-linking-ios.html"> Deep linking on iOS</a></li>
+<li><a href="ios-authorizations-in-unity.html"> iOS authorizations in Unity</a></li>
+<li><a href="iphone-Downloadable-Content.html">Preparing your application for In-App Purchases (IAP)</a></li>
+<li><a href="net-SocialAPI.html"> Social API</a></li>
+</ul>
+</li>
+<li>
+<a href="ios-building-and-delivering.html"> Building and delivering for iOS</a>
+
+<ul>
+<li><a href="BuildSettingsiOS.html"> iOS build settings</a></li>
+<li><a href="iphone-BuildProcess.html"> Build for iOS</a></li>
+<li><a href="AppThinning.html"> App thinning</a></li>
+</ul>
+</li>
+<li><a href="TroubleShootingIPhone.html"> Troubleshooting on iOS devices</a></li>
+<li><a href="iphone-bugreporting.html">Reporting crash bugs on iOS</a></li>
+</ul>
+</li>
+<li>
+<a href="linux.html"> Linux</a>
+
+<ul>
+<li><a href="PlayerSettings-linux.html"> Linux Player settings</a></li>
+<li><a href="Buildsettings-linux.html"> Linux Build Settings</a></li>
+<li><a href="linux-editor-troubleshooting.html"> Troubleshooting the Linux Editor issues</a></li>
+</ul>
+</li>
+<li>
+<a href="AppleMac.html"> macOS</a>
+
+<ul>
+<li><a href="PlayerSettings-macOS.html"> macOS player settings</a></li>
+<li>
+<a href="macosdevelopment.html"> macOS development</a>
+
+<ul>
+<li><a href="deep-linking-macos.html"> Deep linking for macOS</a></li>
+<li><a href="macOSIL2CPPScriptingBackend.html"> Use IL2CPP with macOS</a></li>
+</ul>
+</li>
+<li>
+<a href="macos-delivery.html"> Build and distribute a macOS application</a>
+
+<ul>
+<li><a href="macos-building.html"> Build a macOS application</a></li>
+<li><a href="macosbuildsettings.html"> macOS build settings</a></li>
+<li>
+<a href="macos-building-notarization.html"> Code sign and notarize your macOS application</a>
+
+<ul>
+<li><a href="macoscodesigning.html"> Code sign your application</a></li>
+<li><a href="macosnotarizationxcode.html"> Notarize with Xcode and command-line tools</a></li>
+<li><a href="macosnotarizealtool.html"> Notarize with altool</a></li>
+</ul>
+</li>
+<li><a href="macos-distribution-mac-app-store.html"> Deliver applications to the Mac App Store</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="tvOS-introducing.html"> tvOS</a>
+
+<ul>
+<li><a href="tvos-requirements-and-compatibility.html"> Requirements and compatibility</a></li>
+<li><a href="tvos-player-settings.html"> tvOS Player Settings</a></li>
+<li>
+<a href="tvOS-developing.html"> Developing for tvOS</a>
+
+<ul>
+<li><a href="tvos-supporting-input-devices.html"> Supporting input devices on tvOS</a></li>
+<li><a href="tvos-setting-up-application-navigation.html"> Setting up app navigation from the Unity UI</a></li>
+<li><a href="tvos-debugging.html"> Debugging Your Application</a></li>
+</ul>
+</li>
+<li><a href="tvos-building-your-application.html"> Building your application for tvOS</a></li>
+</ul>
+</li>
+<li><a href="visionOS.html"> visionOS</a></li>
+<li><span class="tooltip"><a class="tooltipMoreInfoLink" href="webgl.html">WebGL</a><span class="tooltiptext">A JavaScript API that renders 2D and 3D graphics in a web browser. The Unity WebGL build option allows Unity to publish content as JavaScript programs which use HTML5 technologies and the WebGL rendering API to run Unity content in a web browser. <a href="webgl-gettingstarted.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#WebGL">Glossary</a></span></span></span>
+
+<ul>
+<li>
+<a href="webgl-intro.html">WebGL introduction </a>
+
+<ul>
+<li><a href="webgl-browsercompatibility.html"> WebGL browser compatibility</a></li>
+<li><a href="webgl-technical-overview.html"> Advanced overview</a></li>
+<li><a href="webgl-gettingstarted.html"> WebGL prerequisites</a></li>
+</ul>
+</li>
+<li>
+<a href="webgl-develop.html"> WebGL development</a>
+
+<ul>
+<li><a href="class-PlayerSettingsWebGL.html"> WebGL Player settings</a></li>
+<li><a href="webgl-interactingwithbrowserscripting.html"> Interaction with browser scripting</a></li>
+<li><a href="webgl-native-plugins-with-emscripten.html"> WebGL native plug-ins for Emscripten</a></li>
+<li><a href="webgl-memory.html"> Memory in Unity WebGL</a></li>
+<li><a href="webgl-caching.html"> Cache behavior in WebGL</a></li>
+<li><a href="webgl-graphics.html"> WebGL graphics</a></li>
+<li><a href="webgl-audio.html"> Audio in WebGL</a></li>
+<li><a href="webgl-texture-compression.html"> Texture compression in WebGL</a></li>
+<li><a href="webgl-embeddedresources.html"> Embedded resources in WebGL</a></li>
+<li><a href="webgl-input.html"> Input in WebGL</a></li>
+<li><a href="webgl-canvas-size.html"> Configure a WebGL Canvas size</a></li>
+<li><a href="webgl-browser-access-device.html"> WebGL browser access to device features</a></li>
+<li><a href="webgl-networking.html"> WebGL networking</a></li>
+<li><a href="webgl-cursorfullscreen.html"> Cursor locking and full-screen mode in WebGL</a></li>
+<li><a href="webgl-performance.html"> WebGL performance considerations</a></li>
+<li><a href="webgl-debugging.html"> Debug and troubleshoot WebGL builds</a></li>
+</ul>
+</li>
+<li>
+<a href="webgl-building-distribution.html"> Build and distribute a WebGL application</a>
+
+<ul>
+<li>
+<a href="webgl-building.html"> Build your WebGL application</a>
+
+<ul>
+<li><a href="webgl-assetbundles.html"> Reduce load times with AssetBundles</a></li>
+<li><a href="webgl-distributionsize-codestripping.html"> Distribution size and code stripping</a></li>
+</ul>
+</li>
+<li><a href="webgl-templates.html"> WebGL templates</a></li>
+<li><a href="webgl-deploying.html"> Deploy WebGL application</a></li>
+<li><a href="webgl-server-configuration-code-samples.html"> Server configuration code samples</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="Windows.html"> Windows</a>
+
+<ul>
+<li><a href="UnityasaLibrary-Windows.html"> Integrating Unity into Windows applications</a></li>
+<li><a href="playersettings-windows.html"> Windows Player settings</a></li>
+<li>
+<a href="windows-develop.html"> Develop for Windows</a>
+
+<ul>
+<li><a href="VisualStudioprojectgenerationWindows.html"> Visual Studio project generation for Windows </a></li>
+<li><a href="WindowsDebugging.html">﻿Windows debugging</a></li>
+<li><a href="WindowsLowIntegrity.html"> Windows integrity control</a></li>
+<li><a href="WindowsPlayerIL2CPPScriptingBackend.html"> Windows Player: IL2CPP Scripting Backend</a></li>
+</ul>
+</li>
+<li><a href="WindowsStandaloneBinaries.html"> Windows Build Settings</a></li>
+</ul>
+</li>
+<li>
+<a href="WindowsStore.html"> Universal Windows Platform</a>
+
+<ul>
+<li>
+<a href="uwp-introducing.html"> Introduction to Universal Windows Platform</a>
+
+<ul>
+<li><a href="uwp-requirements-and-compatibility.html"> UWP requirements and compatibility</a></li>
+<li><a href="UnityasaLibrary-UWP.html"> Integrate Unity into UWP applications</a></li>
+</ul>
+</li>
+<li>
+<a href="uwp-getting-started.html"> Get started with Universal Windows Platform</a>
+
+<ul>
+<li><a href="uwp-environment-setup.html"> Set up your environment for UWP</a></li>
+<li><a href="class-PlayerSettingsWSA.html"> UWP Player settings</a></li>
+</ul>
+</li>
+<li>
+<a href="uwp-developing.html"> Develop for Universal Windows Platform</a>
+
+<ul>
+<li><a href="deep-linking-universal-windows-platform.html"> Use deep linking on UWP</a></li>
+<li><a href="windowsstore-profiler.html"> Connect the profiler to UWP</a></li>
+<li><a href="uwp-defines.html"> UWP scripting symbols</a></li>
+<li>
+<a href="uwp-il2cpp-scripting.html"> IL2CPP scripting backend for UWP</a>
+
+<ul>
+<li>
+<a href="uwp-il2cpp-plugins.html"> Use UWP plug-ins with IL2CPP</a>
+
+<ul>
+<li><a href="uwp-managed-plugins.html"> Use managed UWP plug-ins</a></li>
+<li><a href="uwp-native-plugins-call.html"> Call and implement native UWP plug-ins</a></li>
+<li><a href="uwp-native-plugins-author.html"> Author native UWP plug-ins</a></li>
+<li><a href="uwp-pinvoke.html"> Use P/Invoke</a></li>
+</ul>
+</li>
+<li>
+<a href="uwp-il2cpp-debugging.html"> Debug UWP applications with IL2CPP</a>
+
+<ul>
+<li><a href="uwp-debug-c-sharp.html"> Debug C# code</a></li>
+<li><a href="uwp-debug-generated-cpp.html"> Debug generated C++ code</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="windowsstore-scripts.html"> WinRT API in C# scripts for UWP</a></li>
+<li><a href="windowsstore-appcallbacks.html"> AppCallbacks class reference</a></li>
+<li><a href="windowsstore-commandlinearguments.html"> Command line arguments for UWP</a></li>
+<li><a href="windowsstore-assocation-launching.html"> Association launching for UWP</a></li>
+</ul>
+</li>
+<li>
+<a href="uwp-building-and-delivering.html"> Build and deliver for Universal Windows Platform</a>
+
+<ul>
+<li><a href="windowsstore-buildsettings.html"> UWP build settings</a></li>
+<li><a href="windowsstore-generatedproject-il2cpp.html"> Generate your Visual Studio C++ solution</a></li>
+<li><a href="uwp-package-app-vs.html"> Package a UWP app in Visual Studio</a></li>
+<li><a href="windowsstore-deployment.html"> Deploy a UWP application</a></li>
+<li><a href="windowsstore-deviceportal.html"> Deploy a UWP app with the Windows Device Portal</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="search-overview.html"> Unity Search</a>
+
+<ul>
+<li>
+<a href="search-usage.html"> Search usage</a>
+
+<ul>
+<li><a href="search-filters.html"> Filter searches</a></li>
+<li><a href="search-query-operators.html"> Search query operators</a></li>
+<li><a href="search-index-manager.html"> The Index Manager</a></li>
+</ul>
+</li>
+<li><a href="search-tables.html"> Search tables</a></li>
+<li>
+<a href="search-providers.html"> Search Providers</a>
+
+<ul>
+<li><a href="search-assets.html"> Search Project Assets</a></li>
+<li><a href="search-scene.html"> Search the current Scene</a></li>
+<li><a href="search-menu.html"> Search the Unity main menu</a></li>
+<li><a href="search-advanced-object-picker.html"> Search Object Picker</a></li>
+<li><a href="search-settings.html"> Search Settings and Preferences</a></li>
+<li><a href="search-help.html"> Help Search Provider</a></li>
+<li><a href="search-calculator.html"> The calculator</a></li>
+<li><a href="search-files.html"> Search for files</a></li>
+<li><a href="search-api.html"> Execute API methods</a></li>
+<li><a href="search-packages.html"> Search for packages</a></li>
+<li><a href="search-asset-store.html"> Search the Unity Asset Store</a></li>
+<li><a href="search-saved-queries.html"> Search saved queries</a></li>
+<li><a href="search-additional-searchfilters.html"> Additional Search filters</a></li>
+</ul>
+</li>
+<li>
+<a href="search-expressions.html"> Search expressions</a>
+
+<ul>
+<li><a href="search-expression-functions-ref.html"> Functions reference</a></li>
+</ul>
+</li>
+<li>
+<a href="api.html"> Creating a custom Search Provider</a>
+
+<ul>
+<li><a href="api-search-provider-class.html"> The SearchProvider class</a></li>
+<li><a href="api-register-provider.html"> Registering a Search Provider</a></li>
+<li><a href="api-searching.html"> Performing a search</a></li>
+<li><a href="api-action-handler.html"> Registering an Action Handler</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a href="Glossary.html">Glossary</a></p></li>
+</ul>
+</li>
+</ul>
+<div id="_content"></div>
+<div class="nextprev clear"></div>
+</div>
+<div class="footer-wrapper"><div class="footer clear">
+<div class="copy">Copyright © 2023 Unity Technologies. Publication Date: 2023-12-14.</div>
+<div class="menu">
+<a href="https://learn.unity.com/">Tutorials</a><a href="https://answers.unity3d.com">Community Answers</a><a href="https://support.unity3d.com/hc/en-us">Knowledge Base</a><a href="https://forum.unity3d.com">Forums</a><a href="https://unity3d.com/asset-store">Asset Store</a><a href="https://docs.unity3d.com/Manual/TermsOfUse.html">Terms of use</a><a href="https://unity.com/legal">Legal</a><a href="https://unity.com/legal/privacy-policy">Privacy Policy</a><a href="https://unity.com/legal/cookie-policy">Cookies</a><a href="https://unity.com/legal/do-not-sell-my-personal-information">Do Not Sell or Share My Personal Information</a><div id="ot-sdk-btn-container"><a id="ot-sdk-btn" class="ot-sdk-show-settings" href="javascript:void(0);">Your Privacy Choices (Cookie Settings)</a></div>
+</div>
+</div></div>
+</div></div></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+
+import os
+emsdk_path = os.path.dirname(os.environ.get('EM_CONFIG')).replace('\\', '/')
+exe_suffix = '.exe' if (os.name == 'nt') else ''
+def file_if_exists(f):
+  return f if os.path.isfile(f) else None
+PYTHON = file_if_exists(emsdk_path + '/python/python' + exe_suffix) or file_if_exists(emsdk_path + '/python/bin/python3') or file_if_exists('/usr/bin/python3')
+LLVM_ROOT = emsdk_path + '/llvm'
+NODE_JS = emsdk_path + '/node/node' + exe_suffix
+EMSCRIPTEN_ROOT = emsdk_path + '/emscripten'
+BINARYEN_ROOT = emsdk_path + '/binaryen'
+EM_CACHE = emsdk_path + '/emscripten/cache'
+FROZEN_CACHE = True
+COMPILER_ENGINE = NODE_JS
+JS_ENGINES = [NODE_JS]

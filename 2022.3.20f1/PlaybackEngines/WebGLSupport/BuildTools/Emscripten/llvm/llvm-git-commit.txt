@@ -1,0 +1,16 @@
+commit c62053979489ccb002efe411c3af059addcb5d7d
+Author: Martin Storsjö <martin@martin.st>
+Date:   Wed Apr 6 00:44:38 2022 +0300
+
+    [AArch64] Fix the upper limit for folded address offsets for COFF
+    
+    In COFF, the immediates in IMAGE_REL_ARM64_PAGEBASE_REL21 relocations
+    are limited to 21 bit signed, i.e. the offset has to be less than
+    (1 << 20). The previous limit did intend to cover for this case, but
+    had missed that the 21 bit field was signed.
+    
+    This fixes issue https://github.com/llvm/llvm-project/issues/54753.
+    
+    Differential Revision: https://reviews.llvm.org/D123160
+    
+    (cherry picked from commit 8d7a17b7c8b7151b8453903db96fc7f45d9b1bae)

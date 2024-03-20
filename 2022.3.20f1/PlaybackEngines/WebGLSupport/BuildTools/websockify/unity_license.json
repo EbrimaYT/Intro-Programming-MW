@@ -1,0 +1,11 @@
+{
+    "licenses" : [
+        {
+            "formal_name" : "(websockify.js)",
+            "license" : "websockify.js.  A JavaScript implementation of the websockify WebSocket-to-TCP bridge/proxy | Licensed under LGPL-3, see http://github.com/kanaka/websockify for more info\nCopyright (c) 2013 Joel Martin (github.com/kanaka)\n",
+            "name" : "websockify",
+            "oss_licenses" : "LGPL2.0 or later",
+            "purpose" : "Web UI"
+        }
+    ]
+}

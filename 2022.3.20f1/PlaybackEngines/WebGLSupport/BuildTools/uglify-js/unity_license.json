@@ -1,0 +1,11 @@
+{
+    "licenses" : [
+        {
+            "formal_name" : "(uglifyJS)",
+            "license" : "uglifyJS | BSD 2-Clause License\nCopyright 2012-2019 (c) Mihai Bazon <mihai.bazon@gmail.com>\n",
+            "name" : "uglify-js",
+            "oss_licenses" : "BSD 2-Clause License",
+            "purpose" : "Web UI"
+        }
+    ]
+}
